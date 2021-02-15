@@ -33,11 +33,11 @@ LEXICON CasesDual
     +Loc:tse # ;
     ! +Loc+Short:ts # ;  TODO ???
     +Abl:lto # ;
-    ! +Poss:[w]at # ;  TODO ???
+    +Poss:t[w]a # ;  TODO ???
 
 LEXICON CasesPlur
     +Nom:r # ;
-    +Acc:i # ;
+    +Acc:r # ;
     +Gen:ron  # ;
     +Ins:inen # ;
     +All:nnar # ;
@@ -48,8 +48,8 @@ LEXICON CasesPlur
     ! +Poss:[w]ar # ;  TODO ???
 
 LEXICON CasesPlurPar
-    +Nom:lí # ;
-    +Acc:lí # ;
+    +Nom:li # ;
+    +Acc:li # ;
     +Gen:lion  # ;
     +Ins:línen # ;
     +All:linna # ;  ! r is optional for allative

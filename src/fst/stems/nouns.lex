@@ -15,7 +15,7 @@ LEXICON Nouns
     tasar:ta[th]ar      NounSuffix  "willow" ;
     ! Lesson 3
     hen:he{nd-n}        NounSuffix  "eye" ;
-    ranco:ranc{u-o}     NounSuffix  "arm" ;  ! plural is ranqui, not *rancur
+    ranco:ranc{u-o}     NounSuffix  "arm" ;  ! plural is ranqui, not *rancur or *rancor
     ando                NounSuffix  "gate"  ;
     cirya               NounSuffix  "ship" ;
     aiwë:aiwe           NounSuffix  "bird" ;
