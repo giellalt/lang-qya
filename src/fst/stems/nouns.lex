@@ -4,26 +4,26 @@
 
 LEXICON Nouns
     ! Lesson 2
-    Anar                Cases   "the Sun" ;
-    Isil:I[th]il        Cases   "the Moon" ;
-    Elda                Cases   "Elf" ;
-    lië                 Cases   "people, race" ;
-    vendë:[w]endë       Cases   "maiden, virgin" ;
-    rocco               Cases   "horse" ;
-    aran                Cases   "king" ;
-    tári                Cases   "queen" ;
-    tasar:ta[th]ar      Cases   "willow" ;
+    Anar                NounSuffix  "the Sun" ;
+    Isil:I[th]il        NounSuffix  "the Moon" ;
+    Elda                NounSuffix  "Elf" ;
+    lië:lie             NounSuffix  "people, race" ;
+    vendë:[w]ende       NounSuffix  "maiden, virgin" ;
+    rocco               NounSuffix  "horse" ;
+    aran                NounSuffix  "king" ;
+    tári                NounSuffix  "queen" ;
+    tasar:ta[th]ar      NounSuffix  "willow" ;
     ! Lesson 3
-    hen:he{nd-n}        Cases   "eye" ;
-    ranco:ranc{u-o}     Cases   "arm" ;  ! plural is ranqui, not *rancur
-    ando                Cases   "gate"  ;
-    cirya               Cases   "ship" ;
-    aiwë                Cases   "bird" ;
-    talan:tala{m-n}     Cases   "floor" ;
-    nér:n{e-é}r         Cases   "man (adult male)" ;
-    nís:n{i-í}{ss-s}    Cases   "woman (adult female)" ;
-    sar:sa{rd-r}        Cases   "pebble, stone" ;
-    alda                Cases   "tree" ;
-    oron:oro{nt-n}      Cases   "mountain" ;
+    hen:he{nd-n}        NounSuffix  "eye" ;
+    ranco:ranc{u-o}     NounSuffix  "arm" ;  ! plural is ranqui, not *rancur
+    ando                NounSuffix  "gate"  ;
+    cirya               NounSuffix  "ship" ;
+    aiwë:aiwe           NounSuffix  "bird" ;
+    talan:tala{m-n}     NounSuffix  "floor" ;
+    nér:n{e-é}r         NounSuffix  "man (adult male)" ;
+    nís:n{i-í}{ss-s}    NounSuffix  "woman (adult female)" ;
+    sar:sa{rd-r}        NounSuffix  "pebble, stone" ;
+    alda                NounSuffix  "tree" ;
+    oron:oro{nt-n}      NounSuffix  "mountain" ;
 
 ! vim: set ft=xfst-lexc:

@@ -38,8 +38,8 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
     +Use/-Spell
 
 !! The nominals are inflected in the following Case and Number
-    +Sg +Du +Pl
-    +Ess +Nom +Gen +Acc +Ill +Loc +Com +Com/Sh
+    +Sing +Dual +Plur +Par
+    +Nom +Acc +Gen +Ins +All +Dat +Loc +Short +Abl +Poss
 
 !! The possession is marked as such:
     +PxSg1 +PxSg2 +PxSg3 +PxDu1 +PxDu2 +PxDu3 +PxPl1 +PxPl2 +PxPl3
