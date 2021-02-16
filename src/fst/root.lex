@@ -101,9 +101,9 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !  ---------------
 !! To represent phonologic variations in word forms we use the following symbols in the lexicon files:
 !! Stem-dictionary forms (first form is the form used with endings, second is the form used with no endings)
-    {nd-n} {nt-n} {m-n} {ss-s} {rd-r} {rn-r}
-    {u-o}
-    {e-é} {i-í}
+    {stemd20} {stemt20} {stemm2n} {stems20} {stemn20}
+    {stemu2o}
+    {steme2é} {stemi2í}
 
 !! Appearing vowels to avoid consonant clusters
     {+e}
@@ -115,6 +115,9 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
     {w}  ! w/v
     ! th/s is written as þ
     ! ŋ/n is written as ñ
+
+!! Assorted archiphonemes
+    {strongi}
 
 !! !!Flag diacritics
 !! We have manually optimised the structure of our lexicon using following

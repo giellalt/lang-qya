@@ -12,11 +12,13 @@ Alphabet
     ! things to automatically convert (unless otherwise specified below)
     %>:0
 
-    %{nd%-n%}:nd %{nt%-n%}:nt %{m%-n%}:m %{ss%-s%}:ss %{rd%-r%}:rd %{rn%-r%}:rn
-    %{u%-o%}:u
-    %{e%-é%}:e %{i%-í%}:i
+    %{stemd20%}:d %{stemt20%}:t %{stemm2n%}:m %{stems20%}:s %{stemn20%}:n
+    %{stemu2o%}:u
+    %{steme2é%}:e %{stemi2í%}:i
 
     %{%+e%}:0 %{%-V%}:0 %{V%}:0
+
+    %{strongi%}:i
 
 ;
 
@@ -25,28 +27,24 @@ Sets
     Vowel = a e i o u á é í ó ú ä ë ï ö ü %{V%}
             A E I O U Á É Í Ó Ú Ä Ë Ï Ö Ü ;
     Consonant = b c d f g h j k l m n ñ p q r s t v w x y þ %{w%}
-                B C D F G H J K L M N Ñ P Q R S T V W X Y Þ
-                nd nt m ss rd rn ;
+                B C D F G H J K L M N Ñ P Q R S T V W X Y Þ ;
 
 
 Rules
 
 "Convert cu-/co to qu when followed by a vowel"
-    c:q <=> _ %{u%-o%}:u %>: :0* Vowel ;
+    c:q <=> _ %{stemu2o%}:u :0* Vowel ;
 
-"Deleting a short vowel from a triggered deletion"
+"Deleting a short vowel from a triggered deletion"  ! {strongi} should not be included here
     [ a:0 | e:0 | i:0 | o:0 | u:0 ] <=> _ (:0) %{%-V%}: ;
+
+"A 'strong i' is deleted if followed by another i"
+    %{strongi%}:0 <=> _ :0* :i ;
 
 "Inserting an -e- when surrounded by consonants"
     %{%+e%}:e <=> :Consonant :0* _ :0* :Consonant ;
 
 "Stems that alter when no suffix is attached"
-    [ %{nd%-n%}:n |
-      %{nt%-n%}:n |
-      %{m%-n%}:n |
-      %{ss%-s%}:s |
-      %{rd%-r%}:r |
-      %{rn%-r%}:r |
-      %{u%-o%}:o |
-      %{e%-é%}:é |
-      %{i%-í%}:í ] <=> _ ?* %>: # ;
+    [ %{stemd20%}:0 | %{stemt20%}:0 | %{stems20%}:0 | %{stemn20%}:0 |
+      %{stemm2n%}:n | %{stemu2o%}:o | %{steme2é%}:é | %{stemi2í%}:í ]
+        <=> _ ?* %>: # ;
