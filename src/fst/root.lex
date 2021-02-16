@@ -101,9 +101,15 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !  ---------------
 !! To represent phonologic variations in word forms we use the following symbols in the lexicon files:
 !! Stem-dictionary forms (first form is the form used with endings, second is the form used with no endings)
-    {nd-n} {nt-n} {m-n} {ss-s} {rd-r}
+    {nd-n} {nt-n} {m-n} {ss-s} {rd-r} {rn-r}
     {u-o}
     {e-é} {i-í}
+
+!! Appearing vowels to avoid consonant clusters
+    {+e}
+
+!! Symbols used to trigger alternations in two-level rules
+    {-V} {V}
 
 !! Symbols that are written differently in Tengwar script because of etymology, not phonology/context
     [th] [w]
@@ -135,6 +141,10 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! given the proper use of these flags.
     @U.Cap.Obl@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
     @U.Cap.Opt@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
+!!
+!! Flags for allowing u-based dual endings
+    @U.Dual.U@
+    @R.Dual.U@
 
 LEXICON Root
 !! The word forms in Quenya language start from the lexeme roots of basic

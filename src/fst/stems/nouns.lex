@@ -4,26 +4,28 @@
 
 LEXICON Nouns
     ! Lesson 2
-    Anar                NounSuffix  "the Sun" ;
-    Isil:I[th]il        NounSuffix  "the Moon" ;
-    Elda                NounSuffix  "Elf" ;
-    lië:lie             NounSuffix  "people, race" ;
-    vendë:[w]ende       NounSuffix  "maiden, virgin" ;
-    rocco               NounSuffix  "horse" ;
-    aran                NounSuffix  "king" ;
-    tári                NounSuffix  "queen" ;
-    tasar:ta[th]ar      NounSuffix  "willow" ;
+    Anar                                NounSuffix-I    "the Sun" ;
+    Isil:I[th]il                        NounSuffix-I    "the Moon" ;
+    Elda                                NounSuffix      "Elf" ;
+    lië:lie                             NounSuffix      "people, race" ;  ! TODO: possessive is lié[w]a, not lie[w]a
+    vendë:[w]ende                       NounSuffix      "maiden, virgin" ;
+    rocco                               NounSuffix      "horse" ;
+    aran                                NounSuffix-I    "king" ;
+    tári:tári{V}                        NounSuffix      "queen" ;
+    tasar:ta[th]ar                      NounSuffix-I    "willow" ;
+    ! tasarë:ta[th]are                    NounSuffix      "willow" ;
     ! Lesson 3
-    hen:he{nd-n}        NounSuffix  "eye" ;
-    ranco:ranc{u-o}     NounSuffix  "arm" ;  ! plural is ranqui, not *rancur or *rancor
-    ando                NounSuffix  "gate"  ;
-    cirya               NounSuffix  "ship" ;
-    aiwë:aiwe           NounSuffix  "bird" ;
-    talan:tala{m-n}     NounSuffix  "floor" ;
-    nér:n{e-é}r         NounSuffix  "man (adult male)" ;
-    nís:n{i-í}{ss-s}    NounSuffix  "woman (adult female)" ;
-    sar:sa{rd-r}        NounSuffix  "pebble, stone" ;
-    alda                NounSuffix  "tree" ;
-    oron:oro{nt-n}      NounSuffix  "mountain" ;
+    @U.Dual.U@hen:@U.Dual.U@he{nd-n}    NounSuffix-I    "eye" ;
+    ranco:ranc{u-o}                     NounSuffix      "arm" ;  ! TODO: plural is ranqui, not *rancur or *rancor
+    ando                                NounSuffix      "gate"  ;
+    cirya                               NounSuffix      "ship" ;
+    aiwë:aiwe                           NounSuffix-I    "bird" ;
+    talan:tala{m-n}                     NounSuffix-I    "floor" ;
+    nér:n{e-é}r                         NounSuffix-I    "man (adult male)" ;
+    nís:n{i-í}{ss-s}                    NounSuffix-I    "woman (adult female)" ;
+    sar:sa{rd-r}                        NounSuffix-I    "pebble, stone" ;
+    ! sar:sa{rn-r}                        NounSuffix-I    "pebble, stone" ;
+    @U.Dual.U@alda                      NounSuffix      "tree" ;
+    oron:oro{nt-n}                      NounSuffix-I    "mountain" ;
 
 ! vim: set ft=xfst-lexc:
