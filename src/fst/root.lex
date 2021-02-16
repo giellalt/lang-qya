@@ -112,7 +112,9 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
     {-V} {V}
 
 !! Symbols that are written differently in Tengwar script because of etymology, not phonology/context
-    [th] [w]
+    {w}  ! w/v
+    ! th/s is written as þ
+    ! ŋ/n is written as ñ
 
 !! !!Flag diacritics
 !! We have manually optimised the structure of our lexicon using following

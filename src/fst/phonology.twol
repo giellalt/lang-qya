@@ -1,0 +1,52 @@
+!! =================================== !
+!! The Quenya morphophonological/twol rules file !
+!! =================================== !
+
+Alphabet
+    a b c d e f g h i j k l m n o p q r s t u v w x y
+    á é í ó ú ä ë ï ö ü þ ñ %{w%}
+
+    A B C D E F G H I J K L M N O P Q R S T U V W X Y
+    Á É Í Ó Ú Ä Ë Ï Ö Ü Þ Ñ
+
+    ! things to automatically convert (unless otherwise specified below)
+    %>:0
+
+    %{nd%-n%}:nd %{nt%-n%}:nt %{m%-n%}:m %{ss%-s%}:ss %{rd%-r%}:rd %{rn%-r%}:rn
+    %{u%-o%}:u
+    %{e%-é%}:e %{i%-í%}:i
+
+    %{%+e%}:0 %{%-V%}:0 %{V%}:0
+
+;
+
+
+Sets
+    Vowel = a e i o u á é í ó ú ä ë ï ö ü %{V%}
+            A E I O U Á É Í Ó Ú Ä Ë Ï Ö Ü ;
+    Consonant = b c d f g h j k l m n ñ p q r s t v w x y þ %{w%}
+                B C D F G H J K L M N Ñ P Q R S T V W X Y Þ
+                nd nt m ss rd rn ;
+
+
+Rules
+
+"Convert cu%-/co to qu when followed by a vowel"
+    c%{u%-o%}:qu <=> _ Vowel ;
+
+"Deleting a short vowel from a triggered deletion"
+    [ a:0 | e:0 | i:0 | o:0 | u:0 ] <=> _ (:0) %{%-V%}: ;
+
+"Inserting an %-e%- when surrounded by consonants"
+    %{%+e%}:e <=> :Consonant :0* _ :0* :Consonant ;
+
+"Stems that alter when no suffix is attched"
+    [ %{nd%-n%}:n |
+      %{nt%-n%}:n |
+      %{m%-n%}:n |
+      %{ss%-s%}:s |
+      %{rd%-r%}:r |
+      %{rn%-r%}:r |
+      %{u%-o%}:o |
+      %{e%-é%}:é |
+      %{i%-í%}:í ] <=> _ ?* %>: # ;

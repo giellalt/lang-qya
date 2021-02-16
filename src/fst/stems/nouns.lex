@@ -5,15 +5,15 @@
 LEXICON Nouns
     ! Lesson 2
     Anar                                NounSuffix-I    "the Sun" ;
-    Isil:I[th]il                        NounSuffix-I    "the Moon" ;
+    Isil:Iþil                           NounSuffix-I    "the Moon" ;
     Elda                                NounSuffix      "Elf" ;
-    lië:lie                             NounSuffix      "people, race" ;  ! TODO: possessive is lié[w]a, not lie[w]a
-    vendë:[w]ende                       NounSuffix      "maiden, virgin" ;
+    lië:lie                             NounSuffix      "people, race" ;  ! TODO: possessive is lié{w}a, not lie{w}a
+    vendë:{w}ende                       NounSuffix      "maiden, virgin" ;
     rocco                               NounSuffix      "horse" ;
     aran                                NounSuffix-I    "king" ;
     tári:tári{V}                        NounSuffix      "queen" ;
-    tasar:ta[th]ar                      NounSuffix-I    "willow" ;
-    ! tasarë:ta[th]are                    NounSuffix      "willow" ;
+    tasar:taþar                         NounSuffix-I    "willow" ;
+    ! tasarë:taþare                    NounSuffix      "willow" ;
     ! Lesson 3
     @U.Dual.U@hen:@U.Dual.U@he{nd-n}    NounSuffix-I    "eye" ;
     ranco:ranc{u-o}                     NounSuffix      "arm" ;  ! TODO: plural is ranqui, not *rancur or *rancor

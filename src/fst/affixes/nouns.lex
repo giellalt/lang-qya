@@ -6,7 +6,7 @@
 ! Standard declensions (nouns that end with -a, -i, -ie, -o, -u)
 
 LEXICON NounSuffix
-    +N: Cases ;
+    +N:%> Cases ;
 
 LEXICON Cases
     +Sing:      CasesSing ;
@@ -24,7 +24,7 @@ LEXICON CasesSing
     +Loc:sse # ;
     +Loc+Short:s # ;
     +Abl:llo # ;
-    +Poss:[w]a # ;  ! TODO: connect to adjectival endings?
+    +Poss:{w}a # ;  ! TODO: connect to adjectival endings?
 
 LEXICON CasesDual
     +Nom:t # ;
@@ -36,8 +36,8 @@ LEXICON CasesDual
     +Loc:tse # ;
     ! +Loc+Short:ts # ;  TODO: ???
     +Abl:lto # ;
-    +Poss:t[w]a # ;  ! TODO: connect to adjectival endings?
-    CasesDual-U ;  ! If allowed, try using the dual endings in -u
+    +Poss:t{w}a # ;  ! TODO: connect to adjectival endings?
+    @R.Dual.U@ CasesDual-U ;  ! If allowed, try using the dual endings in -u
 
 LEXICON CasesPlur
     +Nom:r # ;
@@ -49,7 +49,7 @@ LEXICON CasesPlur
     +Loc:ssen # ;
     +Loc+Short:is # ;
     +Abl:llon # ;
-    +Poss:i[w]a # ;  ! TODO: connect to adjectival endings?
+    +Poss:i{w}a # ;  ! TODO: connect to adjectival endings?
 
 LEXICON CasesPlurPar
     +Nom:li # ;
@@ -64,14 +64,14 @@ LEXICON CasesPlurPar
     +Loc+Short:lis # ;
     +Abl:lillo # ;  ! n is optional for ablative
     +Abl:lillon # ;
-    +Poss:lí[w]a # ;  ! TODO: connect to adjectival endings?
+    +Poss:lí{w}a # ;  ! TODO: connect to adjectival endings?
 
 
 ! I-plural declensions (nouns that end with -e or a consonant)
 !!!! THIS SECTION IS NOT COMPLETE !!!!
 
 LEXICON NounSuffix-I
-    +N: Cases-I ;
+    +N:%> Cases-I ;
 
 LEXICON Cases-I
     +Sing:      CasesSing-I ;
@@ -89,19 +89,19 @@ LEXICON CasesSing-I
     +Loc:{+e}sse # ;
     +Loc+Short:{+e}s # ;
     +Abl:{+e}llo # ;
-    +Poss:[w]a # ;  ! TODO: connect to adjectival endings?
+    +Poss:{w}a # ;  ! TODO: connect to adjectival endings?
 
 LEXICON CasesDual-I
-    +Nom:t # ;
-    +Acc:t # ;
-    +Gen:to  # ;
-    +Ins:nten # ;
-    +All:nta # ;
-    +Dat:nt # ;
-    +Loc:tse # ;
-    ! +Loc+Short:ts # ;  TODO: ???
-    +Abl:lto # ;
-    +Poss:t[w]a # ;  ! TODO: connect to adjectival endings?
+    +Nom:{+e}t # ;
+    +Acc:{+e}t # ;
+    +Gen:{+e}to  # ;
+    +Ins:{+e}nten # ;
+    +All:{+e}nta # ;
+    +Dat:{+e}nt # ;
+    +Loc:{+e}tse # ;
+    ! +Loc+Short:{+e}ts # ;  TODO: ???
+    +Abl:{+e}lto # ;
+    +Poss:{+e}t{w}a # ;  ! TODO: connect to adjectival endings?
     @R.Dual.U@ CasesDual-U ;  ! If allowed, try using the dual endings in -u
 
 LEXICON CasesPlur-I
@@ -114,22 +114,25 @@ LEXICON CasesPlur-I
     +Loc:{-V}issen # ;
     +Loc+Short:{-V}is # ;
     +Abl:{-V}illon # ;
-    +Poss:{-V}i[w]a # ;  ! TODO: connect to adjectival endings?
+    +Poss:{-V}i{w}a # ;  ! TODO: connect to adjectival endings?
 
 LEXICON CasesPlurPar-I
-    +Nom:li # ;
-    +Acc:li # ;
-    +Gen:lion  # ;
-    +Ins:línen # ;
-    +All:linna # ;  ! r is optional for allative
-    +All:linnar # ;
-    +Dat:lin # ;
-    +Loc:lisse # ;  ! n is optional for locative
-    +Loc:lissen # ;
-    +Loc+Short:lis # ;
-    +Abl:lillo # ;  ! n is optional for ablative
-    +Abl:lillon # ;
-    +Poss:lí[w]a # ;  ! TODO: connect to adjectival endings?
+    +Nom:{+e}li # ;
+    +Acc:{+e}li # ;
+    +Gen:{+e}lion  # ;
+    +Ins:{+e}línen # ;
+    +All:{+e}linna # ;  ! r is optional for allative
+    +All:{+e}linnar # ;
+    +Dat:{+e}lin # ;
+    +Loc:{+e}lisse # ;  ! n is optional for locative
+    +Loc:{+e}lissen # ;
+    +Loc+Short:{+e}lis # ;
+    +Abl:{+e}lillo # ;  ! n is optional for ablative
+    +Abl:{+e}lillon # ;
+    +Poss:{+e}lí{w}a # ;  ! TODO: connect to adjectival endings?
+
+
+! dual endings that use -u (not -t)
 
 LEXICON CasesDual-U
     +Nom:{-V}u # ;
@@ -140,9 +143,9 @@ LEXICON CasesDual-U
     +Dat:{-V}un # ;
     +Dat:{-V}uen # ;  ! poorly attested
     +Loc:{-V}usse # ;
-    +Loc+Short:{-V}us # ;  TODO: ???
+    +Loc+Short:{-V}us # ;
     +Abl:{-V}ullo # ;
-    +Poss:{-V}u[w]a # ;  ! TODO: connect to adjectival endings?
+    +Poss:{-V}u{w}a # ;  ! TODO: connect to adjectival endings?
 
 ! vim: set ft=xfst-lexc:
 
