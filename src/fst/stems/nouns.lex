@@ -16,7 +16,7 @@ LEXICON Nouns
     ! tasarë:taþare                    NounSuffix      "willow" ;
     ! Lesson 3
     @U.Dual.U@hen:@U.Dual.U@he{nd-n}    NounSuffix-I    "eye" ;
-    ranco:ranc{u-o}                     NounSuffix      "arm" ;  ! TODO: plural is ranqui, not *rancur or *rancor
+    ranco:ranc{u-o}                     NounSuffix-I    "arm" ;  ! TODO: plural is ranqui, not *rancur or *rancor
     ando                                NounSuffix      "gate"  ;
     cirya                               NounSuffix      "ship" ;
     aiwë:aiwe                           NounSuffix-I    "bird" ;

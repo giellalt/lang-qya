@@ -31,16 +31,16 @@ Sets
 
 Rules
 
-"Convert cu%-/co to qu when followed by a vowel"
-    c%{u%-o%}:qu <=> _ Vowel ;
+"Convert cu-/co to qu when followed by a vowel"
+    c:q <=> _ %{u%-o%}:u %>: :0* Vowel ;
 
 "Deleting a short vowel from a triggered deletion"
     [ a:0 | e:0 | i:0 | o:0 | u:0 ] <=> _ (:0) %{%-V%}: ;
 
-"Inserting an %-e%- when surrounded by consonants"
+"Inserting an -e- when surrounded by consonants"
     %{%+e%}:e <=> :Consonant :0* _ :0* :Consonant ;
 
-"Stems that alter when no suffix is attched"
+"Stems that alter when no suffix is attached"
     [ %{nd%-n%}:n |
       %{nt%-n%}:n |
       %{m%-n%}:n |
