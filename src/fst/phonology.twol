@@ -57,8 +57,7 @@ Rules
 "Morpheme boundary optionally turns into e if the l was always l"
     %>:e => l _ %{L%}: ;
 
-! "Morpheme boundary turns into an e when surrounded by consonants"
-    ! %>:e <=> :Consonant _ :Consonant ;
-
+"Morpheme boundary turns into an e when surrounded by consonants"
+    %>:e <=> :Consonant _ [\%{L%}: & :Consonant] ;
 ! "But it can turn into 0 still when the environment is Vn>nV"
     ! %>:0 => :Vowel :n _ :n :Vowel ;
