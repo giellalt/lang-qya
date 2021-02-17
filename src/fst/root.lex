@@ -105,11 +105,9 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
     {stemu2o}
     {steme2é} {stemi2í}
 
-!! Appearing vowels to avoid consonant clusters
-    {+e}
-
 !! Symbols used to trigger alternations in two-level rules
-    {-V} {V}
+    {-V}    ! delete the preceeding vowel
+    {L}     ! an l that triggers total regressive assimilation if possible
 
 !! Symbols that are written differently in Tengwar script because of etymology, not phonology/context
     {w}  ! w/v
@@ -117,7 +115,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
     ! ŋ/n is written as ñ
 
 !! Assorted archiphonemes
-    {strongi}
+    {strongi}  ! not deleted by a following {-V}, but is deleted by a following 'i'
 
 !! !!Flag diacritics
 !! We have manually optimised the structure of our lexicon using following
