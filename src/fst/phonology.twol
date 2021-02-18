@@ -37,7 +37,8 @@ Rules
     c:q <=> _ %{stemu2o%}:u :0* :Vowel ;
 
 "Deleting a short vowel from a triggered deletion"  ! {strongi} should not be included here
-    [ a:0 | e:0 | i:0 | o:0 | u:0 ] <=> _ :0* %{%-V%}: ;
+    Vx:0 <=> _ %>:0 %{%-V%}: ;
+        where Vx in (Vowel) ;
 
 "A 'strong i' is deleted if followed by another i"
     %{strongi%}:0 <=> _ :0* :i ;
