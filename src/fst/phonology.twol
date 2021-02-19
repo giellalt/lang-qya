@@ -16,6 +16,7 @@ Alphabet
     %{stemu2o%}:u
     %{steme2é%}:e %{stemi2í%}:i
 
+    %{O%}:o
     %{%-V%}:0
     %{L%}:l
 
@@ -26,15 +27,19 @@ Alphabet
 ! allowed consonant clusters: ht, lc, ld, lf, lm, lp, lqu, lt, lv, lw, ly, mb, mn, mp, my, nc, nd, ng, nt, nw (ñw initial only), ny, ps, pt, qu, rc, rd, rm, rn, rp, rt, rs, rv, rw, ry, sc, st, sw, ts, tw, ty, x=cs, pp, tt, cc, mm, nn, ss, ll, rr
 
 Sets
-    Vowel = a e i o u á é í ó ú ä ë ï ö ü
-            A E I O U Á É Í Ó Ú Ä Ë Ï Ö Ü ;
+    ShortVowel = a e i o u ä ë ï ö ü
+                 A E I O U Ä Ë Ï Ö Ü ;
+    LongVowel = á é í ó ú
+                Á É Í Ó Ú ;
+    Vowel = ShortVowel LongVowel ;
+
     Consonant = b c d f g h l m n ñ p q r s þ t v w x y %{w%}
                 B C D F G H L M N Ñ P Q R S Þ T V W X Y ;
     CannotStartMedialCluster = b d f g ñ q v w %{w%} x y ;
 
 
 Definitions
-    ConsonantCluster = [:Consonant :Consonant] | x ;  ! x is really c s
+    ConsonantCluster = [:Consonant :Consonant] | x ;  ! x is really cs
 
 
 Rules
@@ -46,9 +51,12 @@ Rules
 "Convert cw to qu, part 2: c->q before a w"
     c:q <=> _ %{w%}: ;
 
-"Deleting a vowel from a triggered deletion"  ! {strongi} should not be included here
-    Vx:0 <=> _ %>:0 %{%-V%}: ;
-        where Vx in (Vowel) ;
+"Genitive ending {O} deletes a preceding a,o"
+    Vx:0 <=> :0* _ %>:0 %{O%}: ;
+        where Vx in (a o) ;
+"Deleting a short vowel from a triggered deletion"  ! {strongi} should not be included here
+    Vx:0 <=> :0* _ %>:0 %{%-V%}: ;
+        where Vx in (ShortVowel) ;
 "A 'strong i' is deleted iff followed by another i"
     %{strongi%}:0 <=> _ :0* :i ;
 

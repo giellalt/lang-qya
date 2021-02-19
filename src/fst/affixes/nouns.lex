@@ -17,7 +17,7 @@ LEXICON Cases
 LEXICON CasesSing
     +Nom: # ;
     +Acc: # ;
-    +Gen:{-V}o  # ;
+    +Gen:{O}  # ;
     +Ins:nen # ;
     +All:nna # ;
     +Dat:n # ;
@@ -81,7 +81,7 @@ LEXICON Cases-I
 LEXICON CasesSing-I
     +Nom: # ;
     +Acc: # ;
-    +Gen:{-V}o  # ;
+    +Gen:{O}  # ;
     +Ins:nen # ;
     +All:nna # ;
     +Dat:n # ;

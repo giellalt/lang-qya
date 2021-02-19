@@ -106,6 +106,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
     {steme2é} {stemi2í}
 
 !! Symbols used to trigger alternations in two-level rules
+    {O}     ! genetive ending, deletes only a,o
     {-V}    ! delete the preceeding vowel
     {L}     ! an l that triggers total regressive assimilation if possible
 

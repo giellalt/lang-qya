@@ -8,7 +8,7 @@ LEXICON Nouns
     Isil:Iþil                               NounSuffix-I    "the Moon" ;
     Elda                                    NounSuffix      "Elf" ;
     lië:lie                                 NounSuffix      "people, race" ;  ! TODO: possessive is lié{w}a, not lie{w}a
-    vendë:{w}ende                           NounSuffix      "maiden, virgin" ;
+    vendë:{w}ende                           NounSuffix-I    "maiden, virgin" ;
     rocco                                   NounSuffix      "horse" ;
     aran                                    NounSuffix-I    "king" ;
     tári:tár{strongi}                       NounSuffix      "queen" ;
