@@ -10,7 +10,7 @@ Alphabet
     Á É Í Ó Ú Ä Ë Ï Ö Ü Þ Ñ
 
     ! things to automatically convert (unless otherwise specified below)
-    %>:0
+    %>:0 %>:e
 
     %{stemd20%}:d %{stemt20%}:t %{stemm2n%}:m %{stems20%}:s %{stemn20%}:n
     %{stemu2o%}:u
@@ -23,42 +23,58 @@ Alphabet
 
 ;
 
+! allowed consonant clusters: ht, lc, ld, lf, lm, lp, lqu, lt, lv, lw, ly, mb, mn, mp, my, nc, nd, ng, nt, nw (ñw initial only), ny, ps, pt, qu, rc, rd, rm, rn, rp, rt, rs, rv, rw, ry, sc, st, sw, ts, tw, ty, x=cs, pp, tt, cc, mm, nn, ss, ll, rr
 
 Sets
     Vowel = a e i o u á é í ó ú ä ë ï ö ü
             A E I O U Á É Í Ó Ú Ä Ë Ï Ö Ü ;
-    Consonant = b c d f g h j k l m n ñ p q r s t v w x y þ %{w%}
-                B C D F G H J K L M N Ñ P Q R S T V W X Y Þ ;
+    Consonant = b c d f g h l m n ñ p q r s þ t v w x y %{w%}
+                B C D F G H L M N Ñ P Q R S Þ T V W X Y ;
+    CannotStartMedialCluster = b d f g ñ q v w %{w%} x y ;
+
+
+Definitions
+    ConsonantCluster = [:Consonant :Consonant] | x ;  ! x is really c s
 
 
 Rules
 
-"Convert cu-/co to qu when followed by a vowel"
+"Convert cu to qu when followed by a vowel, if the u is a u->o stem"
     c:q <=> _ %{stemu2o%}:u :0* :Vowel ;
+"Convert cw to qu, part 1: w->u after a c"
+    %{w%}:u <=> c: _ ;
+"Convert cw to qu, part 2: c->q before a w"
+    c:q <=> _ %{w%}: ;
 
-"Deleting a short vowel from a triggered deletion"  ! {strongi} should not be included here
+"Deleting a vowel from a triggered deletion"  ! {strongi} should not be included here
     Vx:0 <=> _ %>:0 %{%-V%}: ;
         where Vx in (Vowel) ;
-
-"A 'strong i' is deleted if followed by another i"
+"A 'strong i' is deleted iff followed by another i"
     %{strongi%}:0 <=> _ :0* :i ;
 
 "Stems that alter when no suffix is attached"
     [ %{stemd20%}:0 | %{stemt20%}:0 | %{stems20%}:0 | %{stemn20%}:0 |
       %{stemm2n%}:n | %{stemu2o%}:o | %{steme2é%}:é | %{stemi2í%}:í ]
-        <=> _ [\%>:]* %>: # ;
+        <=> _ ?* %>: :0* .#. ;
 
 "Assimilate r to l when at a morpheme boundary"
-    r:l <=> _ %>: %{L%}: ;
+    r:l <=> :Vowel _ %>: %{L%}: ;
 "Optionally assimilate n,s to l when at a morpheme boundary"
-    [ n:l | s:l ] => _ %>: %{L%}: ;
+    [ n:l | s:l ] => :Vowel _ %>: %{L%}: ;
 
-"Morpheme boundary turns into e if the l didn't cause assimilation"
-    %>:e <=> [:Consonant - :l] _ %{L%}: ;
-"Morpheme boundary optionally turns into e if the l was always l"
-    %>:e => l _ %{L%}: ;
-
-"Morpheme boundary turns into an e when surrounded by consonants"
-    %>:e <=> :Consonant _ [\%{L%}: & :Consonant] ;
-! "But it can turn into 0 still when the environment is Vn>nV"
-    ! %>:0 => :Vowel :n _ :n :Vowel ;
+"Situations that force the morpheme boundary to become 0"
+    %>:e /<= :Vowel :0* _ ;  _ :0* :Vowel ;  ! adjacent vowel on either side
+            :Vowel [:l - l:] _ %{L%}: :Vowel ;  ! assimilation happened (ended as l, but didn't start as l)
+            _ :0* .#. ;  ! there's nothing after the boundary
+"Situations that force the morpheme boundary to become e"
+    %>:0 /<= ConsonantCluster _ :Consonant ;  :Consonant _ ConsonantCluster ;  ! consonant cluster on either side
+            :Consonant _ :Consonant .#. ;  ! any consonant cluster, if not followed by a vowel
+            :Vowel [[r: | n: | s:] - :l] _ %{L%}: ;  ! assimilation could've happened, but didn't
+            :CannotStartMedialCluster _ :Consonant ;  ! prevents things like gn,gl,gt, etc.
+"Situations that force the morpheme boundary to become e; bad phonotactics"
+    %>:0 /<= :Cx :0* _ :0* :Cy ;  where
+                Cx in (c c c c     h h h h     l l   m m m m     n n   p p p     r   s s   þ þ   t t)
+                Cy in (n l t %{w%} n s l %{w%} n s   s l t %{w%} s l   n l %{w%} l   n l   n l   n l)
+                matched ;
+    ! the above pairs are illegal consonant clusters, out of only those that end with n s l t %{w%} (case endings could start with those)
+    ! it also doesn't include pairs starting with a symbol in CannotStartMedialCluster, since those are already taken care of
