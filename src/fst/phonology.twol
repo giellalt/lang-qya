@@ -16,15 +16,18 @@ Alphabet
     %{stemu2o%}:u
     %{steme2é%}:e %{stemi2í%}:i
 
-    %{O%}:o
+    %{i%}:i
+    %{o%}:o
     %{%-V%}:0
-    %{L%}:l
+    %{l%}:l
 
     %{strongi%}:i
 
 ;
 
-! allowed consonant clusters: ht, lc, ld, lf, lm, lp, lqu, lt, lv, lw, ly, mb, mn, mp, my, nc, nd, ng, nt, nw (ñw initial only), ny, ps, pt, qu, rc, rd, rm, rn, rp, rt, rs, rv, rw, ry, sc, st, sw, ts, tw, ty, x=cs, pp, tt, cc, mm, nn, ss, ll, rr
+! allowed initial consonant clusters: x, ps, ty, ny, ly, qu, ñw (became nw)
+! allowed medial consonant clusters: ht, lc, ld, lf, lm, lp, lqu, lt, lv, lw, ly, mb, mn, mp, my, nc, nd, ng, nt, nw (ñw initial only), ny, ps, pt, qu, rc, rd, rm, rn, rp, rt, rs, rv, rw, ry, sc, st, sw, ts, tw, ty, x=cs, pp, tt, cc, mm, nn, ss, ll, rr
+! allowed final consonants: n, r, l, s, t, nt
 
 Sets
     ShortVowel = a e i o u ä ë ï ö ü
@@ -51,8 +54,11 @@ Rules
 "Convert cw to qu, part 2: c->q before a w"
     c:q <=> _ %{w%}: ;
 
+"Plural endings with -i- delete a preceding e,i"
+    Vx:0 <=> :0* _ %>:0 %{i%}: ;
+        where Vx in (e i) ;
 "Genitive ending {O} deletes a preceding a,o"
-    Vx:0 <=> :0* _ %>:0 %{O%}: ;
+    Vx:0 <=> :0* _ %>:0 %{o%}: ;
         where Vx in (a o) ;
 "Deleting a short vowel from a triggered deletion"  ! {strongi} should not be included here
     Vx:0 <=> :0* _ %>:0 %{%-V%}: ;
@@ -66,18 +72,18 @@ Rules
         <=> _ ?* %>: :0* .#. ;
 
 "Assimilate r to l when at a morpheme boundary"
-    r:l <=> :Vowel _ %>: %{L%}: ;
+    r:l <=> :Vowel _ %>: %{l%}: ;
 "Optionally assimilate n,s to l when at a morpheme boundary"
-    [ n:l | s:l ] => :Vowel _ %>: %{L%}: ;
+    [ n:l | s:l ] => :Vowel _ %>: %{l%}: ;
 
 "Situations that force the morpheme boundary to become 0"
     %>:e /<= :Vowel :0* _ ;  _ :0* :Vowel ;  ! adjacent vowel on either side
-            :Vowel [:l - l:] _ %{L%}: :Vowel ;  ! assimilation happened (ended as l, but didn't start as l)
+            :Vowel [:l - l:] _ %{l%}: :Vowel ;  ! assimilation happened (ended as l, but didn't start as l)
             _ :0* .#. ;  ! there's nothing after the boundary
 "Situations that force the morpheme boundary to become e"
     %>:0 /<= ConsonantCluster _ :Consonant ;  :Consonant _ ConsonantCluster ;  ! consonant cluster on either side
             :Consonant _ :Consonant .#. ;  ! any consonant cluster, if not followed by a vowel
-            :Vowel [[r: | n: | s:] - :l] _ %{L%}: ;  ! assimilation could've happened, but didn't
+            :Vowel [[r: | n: | s:] - :l] _ %{l%}: ;  ! assimilation could've happened, but didn't
             :CannotStartMedialCluster _ :Consonant ;  ! prevents things like gn,gl,gt, etc.
 "Situations that force the morpheme boundary to become e; bad phonotactics"
     %>:0 /<= :Cx :0* _ :0* :Cy ;  where

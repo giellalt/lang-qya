@@ -17,7 +17,7 @@ LEXICON Cases
 LEXICON CasesSing
     +Nom: # ;
     +Acc: # ;
-    +Gen:{O}  # ;
+    +Gen:{o}  # ;
     +Ins:nen # ;
     +All:nna # ;
     +Dat:n # ;
@@ -81,7 +81,7 @@ LEXICON Cases-I
 LEXICON CasesSing-I
     +Nom: # ;
     +Acc: # ;
-    +Gen:{O}  # ;
+    +Gen:{o}  # ;
     +Ins:nen # ;
     +All:nna # ;
     +Dat:n # ;
@@ -104,31 +104,31 @@ LEXICON CasesDual-I
     @R.Dual.U@ CasesDual-U ;  ! If allowed, try using the dual endings in -u
 
 LEXICON CasesPlur-I
-    +Nom:{-V}i # ;
-    +Acc:{-V}i # ;
-    +Gen:{-V}ion  # ;
-    +Ins:{-V}inen # ;
-    +All:{-V}innar # ;
-    +Dat:{-V}in # ;
-    +Loc:{-V}issen # ;
-    +Loc+Short:{-V}is # ;
-    +Abl:{-V}illon # ;
-    +Poss:{-V}i{w}a # ;  ! TODO: connect to adjectival endings?
+    +Nom:{i} # ;
+    +Acc:{i} # ;
+    +Gen:{i}on  # ;
+    +Ins:{i}nen # ;
+    +All:{i}nnar # ;
+    +Dat:{i}n # ;
+    +Loc:{i}ssen # ;
+    +Loc+Short:{i}s # ;
+    +Abl:{i}llon # ;
+    +Poss:{i}{w}a # ;  ! TODO: connect to adjectival endings?
 
 LEXICON CasesPlurPar-I
-    +Nom:{L}i # ;
-    +Acc:{L}i # ;
-    +Gen:{L}ion  # ;
-    +Ins:{L}ínen # ;
-    +All:{L}inna # ;  ! r is optional for allative
-    +All:{L}innar # ;
-    +Dat:{L}in # ;
-    +Loc:{L}isse # ;  ! n is optional for locative
-    +Loc:{L}issen # ;
-    +Loc+Short:{L}is # ;
-    +Abl:{L}illo # ;  ! n is optional for ablative
-    +Abl:{L}illon # ;
-    +Poss:{L}í{w}a # ;  ! TODO: connect to adjectival endings?
+    +Nom:{l}i # ;
+    +Acc:{l}i # ;
+    +Gen:{l}ion  # ;
+    +Ins:{l}ínen # ;
+    +All:{l}inna # ;  ! r is optional for allative
+    +All:{l}innar # ;
+    +Dat:{l}in # ;
+    +Loc:{l}isse # ;  ! n is optional for locative
+    +Loc:{l}issen # ;
+    +Loc+Short:{l}is # ;
+    +Abl:{l}illo # ;  ! n is optional for ablative
+    +Abl:{l}illon # ;
+    +Poss:{l}í{w}a # ;  ! TODO: connect to adjectival endings?
 
 
 ! dual endings that use -u (not -t)

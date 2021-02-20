@@ -106,9 +106,10 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
     {steme2é} {stemi2í}
 
 !! Symbols used to trigger alternations in two-level rules
-    {O}     ! genetive ending, deletes only a,o
+    {i}     ! start of a plural ending, deletes only e,i
+    {o}     ! genitive ending, deletes only a,o
     {-V}    ! delete the preceeding vowel
-    {L}     ! an l that triggers total regressive assimilation if possible
+    {l}     ! an l that triggers total regressive assimilation if possible
 
 !! Symbols that are written differently in Tengwar script because of etymology, not phonology/context
     {w}  ! w/v
