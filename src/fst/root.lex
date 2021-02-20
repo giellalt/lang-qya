@@ -105,7 +105,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
     {stemu2o}
     {steme2é} {stemi2í}
 
-!! Symbols used to trigger alternations in two-level rules
+!! Symbols used to trigger alternations in preceding morphemes
     {i}     ! start of a plural ending, deletes only e,i
     {o}     ! genitive ending, deletes only a,o
     {-V}    ! delete the preceeding vowel
@@ -115,9 +115,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
     {w}  ! w/v
     ! th/s is written as þ
     ! ŋ/n is written as ñ
-
-!! Assorted archiphonemes
-    {strongi}  ! not deleted by a following {-V}, but is deleted by a following 'i'
 
 !! !!Flag diacritics
 !! We have manually optimised the structure of our lexicon using following

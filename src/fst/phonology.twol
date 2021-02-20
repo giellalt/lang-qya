@@ -21,8 +21,6 @@ Alphabet
     %{%-V%}:0
     %{l%}:l
 
-    %{strongi%}:i
-
 ;
 
 ! allowed initial consonant clusters: x, ps, ty, ny, ly, qu, ñw (became nw)
@@ -54,17 +52,19 @@ Rules
 "Convert cw to qu, part 2: c->q before a w"
     c:q <=> _ %{w%}: ;
 
-"Plural endings with -i- delete a preceding e,i"
-    Vx:0 <=> :0* _ %>:0 %{i%}: ;
-        where Vx in (e i) ;
-"Genitive ending {O} deletes a preceding a,o"
-    Vx:0 <=> :0* _ %>:0 %{o%}: ;
+"Plural endings with {i} delete a preceding e (but not if it's -ie)"
+    e:0 <=> \i _ %>:0 %{i%}: ;
+"Plural ending with {i} delete a preceding i"
+    i:0 <=> _ %>:0 %{i%}: ;
+"If the ending {i} deletes a preceding i, it could become long"
+    %{i%}:í => i:0 [:0 - i:]* _ ;
+
+"Genitive ending {o} deletes a preceding a,o"
+    Vx:0 <=> _ %>:0 %{o%}: ;
         where Vx in (a o) ;
-"Deleting a short vowel from a triggered deletion"  ! {strongi} should not be included here
-    Vx:0 <=> :0* _ %>:0 %{%-V%}: ;
+"Deleting a short vowel from a triggered deletion"
+    Vx:0 <=> _ %>:0 %{%-V%}: ;
         where Vx in (ShortVowel) ;
-"A 'strong i' is deleted iff followed by another i"
-    %{strongi%}:0 <=> _ :0* :i ;
 
 "Stems that alter when no suffix is attached"
     [ %{stemd20%}:0 | %{stemt20%}:0 | %{stems20%}:0 | %{stemn20%}:0 |

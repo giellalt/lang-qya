@@ -11,7 +11,7 @@ LEXICON Nouns
     vendë:{w}ende                           NounSuffix-I    "maiden, virgin" ;
     rocco                                   NounSuffix      "horse" ;
     aran                                    NounSuffix-I    "king" ;
-    tári:tár{strongi}                       NounSuffix      "queen" ;
+    tári                                    NounSuffix      "queen" ;
     tasar:taþar                             NounSuffix-I    "willow" ;
     ! tasarë:taþare                           NounSuffix      "willow" ;
     ! Lesson 3

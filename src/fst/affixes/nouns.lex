@@ -43,13 +43,13 @@ LEXICON CasesPlur
     +Nom:r # ;
     +Acc:r # ;
     +Gen:ron  # ;
-    +Ins:inen # ;
+    +Ins:{i}nen # ;
     +All:nnar # ;
-    +Dat:in # ;
+    +Dat:{i}n # ;
     +Loc:ssen # ;
-    +Loc+Short:is # ;
+    +Loc+Short:{i}s # ;
     +Abl:llon # ;
-    +Poss:i{w}a # ;  ! TODO: connect to adjectival endings?
+    +Poss:{i}{w}a # ;  ! TODO: connect to adjectival endings?
 
 LEXICON CasesPlurPar
     +Nom:li # ;
