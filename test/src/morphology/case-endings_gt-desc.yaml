@@ -1,0 +1,51 @@
+Config:
+  hfst:
+    Gen: ../../../src/generator-gt-desc.hfst
+    Morph: ../../../src/analyser-gt-desc.hfst
+
+Tests:
+  Standard nouns ending in -a:
+    # Singular
+    cirya+N+Sing+Nom: cirya
+    cirya+N+Sing+Acc: cirya
+    cirya+N+Sing+Gen: ciryo
+    cirya+N+Sing+Ins: ciryanen
+    cirya+N+Sing+All: ciryanna
+    cirya+N+Sing+Dat: ciryan
+    cirya+N+Sing+Loc: ciryasse
+    cirya+N+Sing+Loc+Short: ciryas
+    cirya+N+Sing+Abl: ciryallo
+    cirya+N+Sing+Poss: cirya{w}a
+    # Dual
+    cirya+N+Dual+Nom: ciryat
+    cirya+N+Dual+Acc: ciryat
+    cirya+N+Dual+Gen: ciryato
+    cirya+N+Dual+Ins: ciryanten
+    cirya+N+Dual+All: ciryanta
+    cirya+N+Dual+Dat: ciryant
+    cirya+N+Dual+Loc: ciryatse
+    # cirya+N+Dual+Loc+Short: ciryates ???
+    cirya+N+Dual+Abl: ciryalto
+    cirya+N+Dual+Poss: ciryat{w}a
+    # Plural
+    cirya+N+Plur+Nom: ciryar
+    cirya+N+Plur+Acc: ciryar
+    cirya+N+Plur+Gen: ciryron
+    cirya+N+Plur+Ins: ciryainen
+    cirya+N+Plur+All: ciryannar
+    cirya+N+Plur+Dat: ciryain
+    cirya+N+Plur+Loc: ciryassen
+    cirya+N+Plur+Loc+Short: ciryais
+    cirya+N+Plur+Abl: ciryallon
+    cirya+N+Plur+Poss: ciryai{w}a
+    # Partitive Plural
+    cirya+N+Plur+Par+Nom: ciryali
+    cirya+N+Plur+Par+Acc: ciryali
+    cirya+N+Plur+Par+Gen: cirylion
+    cirya+N+Plur+Par+Ins: ciryalínen
+    cirya+N+Plur+Par+All: [ciryalinnar, ciryalinna]
+    cirya+N+Plur+Par+Dat: ciryalin
+    cirya+N+Plur+Par+Loc: [ciryalissen, ciryalisse]
+    cirya+N+Plur+Par+Loc+Short: ciryalis
+    cirya+N+Plur+Par+Abl: [ciryalillon, ciryalillo]
+    cirya+N+Plur+Par+Poss: ciryalí{w}a
