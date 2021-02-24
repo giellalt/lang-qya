@@ -21,21 +21,12 @@ HFST_LEXC_LOCAL_FLAGS=
 ####### Morphology source file defs: ########
 
 # Set this to name of lexc file containing Multichar_Symbols and LEXICON Root
-GT_LEXC_ROOT=$(srcdir)/root.lex
+GT_LEXC_ROOT=$(srcdir)/root.lexc
 
 # Set this to the names of all regular lexc source files:
 GT_LEXC_SRCS_L1_L2=\
-			 stems/adjectives.lexc		\
-			 stems/nouns.lex			\
-			 stems/numerals.lexc		\
-			 stems/prefixes.lexc		\
-			 stems/pronouns.lexc		\
-			 stems/verbs.lexc			\
-			 affixes/adjectives.lexc	\
-			 affixes/nouns.lex			\
-			 affixes/propernouns.lexc	\
-			 affixes/symbols.lexc		\
-			 affixes/verbs.lexc
+			 stems/nouns.lexc			\
+			 affixes/nouns.lexc
 
 # If you are building an error-detecting L2 analyser, specify the lexc files
 # that differ between the regular L1 and the L2 analysers below, in L1 and
