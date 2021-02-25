@@ -30,7 +30,7 @@ Tests:
     # Plural
     cirya+N+Plur+Nom: ciryar
     cirya+N+Plur+Acc: ciryar
-    cirya+N+Plur+Gen: ciryron
+    cirya+N+Plur+Gen: ciryaron
     cirya+N+Plur+Ins: ciryainen
     cirya+N+Plur+All: ciryannar
     cirya+N+Plur+Dat: ciryain
@@ -41,7 +41,7 @@ Tests:
     # Partitive Plural
     cirya+N+Plur+Par+Nom: ciryali
     cirya+N+Plur+Par+Acc: ciryali
-    cirya+N+Plur+Par+Gen: cirylion
+    cirya+N+Plur+Par+Gen: ciryalion
     cirya+N+Plur+Par+Ins: ciryalínen
     cirya+N+Plur+Par+All: [ciryalinnar, ciryalinna]
     cirya+N+Plur+Par+Dat: ciryalin
@@ -49,3 +49,93 @@ Tests:
     cirya+N+Plur+Par+Loc+Short: ciryalis
     cirya+N+Plur+Par+Abl: [ciryalillon, ciryalillo]
     cirya+N+Plur+Par+Poss: ciryalí{w}a
+  Standard nouns ending in -o:
+    # Singular
+    rocco+N+Sing+Nom: rocco
+    rocco+N+Sing+Acc: rocco
+    rocco+N+Sing+Gen: rocco
+    rocco+N+Sing+Ins: rocconen
+    rocco+N+Sing+All: rocconna
+    rocco+N+Sing+Dat: roccon
+    rocco+N+Sing+Loc: roccosse
+    rocco+N+Sing+Loc+Short: roccos
+    rocco+N+Sing+Abl: roccollo
+    rocco+N+Sing+Poss: rocco{w}a
+    # Dual
+    rocco+N+Dual+Nom: roccot
+    rocco+N+Dual+Acc: roccot
+    rocco+N+Dual+Gen: roccoto
+    rocco+N+Dual+Ins: rocconten
+    rocco+N+Dual+All: rocconta
+    rocco+N+Dual+Dat: roccont
+    rocco+N+Dual+Loc: roccotse
+    # rocco+N+Dual+Loc+Short: roccotes ???
+    rocco+N+Dual+Abl: roccolto
+    rocco+N+Dual+Poss: roccot{w}a
+    # Plural
+    rocco+N+Plur+Nom: roccor
+    rocco+N+Plur+Acc: roccor
+    rocco+N+Plur+Gen: roccoron
+    rocco+N+Plur+Ins: roccoinen
+    rocco+N+Plur+All: rocconnar
+    rocco+N+Plur+Dat: roccoin
+    rocco+N+Plur+Loc: roccossen
+    rocco+N+Plur+Loc+Short: roccois
+    rocco+N+Plur+Abl: roccollon
+    rocco+N+Plur+Poss: roccoi{w}a
+    # Partitive Plural
+    rocco+N+Plur+Par+Nom: roccoli
+    rocco+N+Plur+Par+Acc: roccoli
+    rocco+N+Plur+Par+Gen: roccolion
+    rocco+N+Plur+Par+Ins: roccolínen
+    rocco+N+Plur+Par+All: [roccolinnar, roccolinna]
+    rocco+N+Plur+Par+Dat: roccolin
+    rocco+N+Plur+Par+Loc: [roccolissen, roccolisse]
+    rocco+N+Plur+Par+Loc+Short: roccolis
+    rocco+N+Plur+Par+Abl: [roccolillon, roccolillo]
+    rocco+N+Plur+Par+Poss: roccolí{w}a
+  Standard nouns ending in -i:
+    # Singular
+    tári+N+Sing+Nom: tári
+    tári+N+Sing+Acc: tári
+    tári+N+Sing+Gen: tário
+    tári+N+Sing+Ins: tárinen
+    tári+N+Sing+All: tárinna
+    tári+N+Sing+Dat: tárin
+    tári+N+Sing+Loc: tárisse
+    tári+N+Sing+Loc+Short: táris
+    tári+N+Sing+Abl: tárillo
+    tári+N+Sing+Poss: tári{w}a
+    # Dual
+    tári+N+Dual+Nom: tárit
+    tári+N+Dual+Acc: tárit
+    tári+N+Dual+Gen: tárito
+    tári+N+Dual+Ins: tárinten
+    tári+N+Dual+All: tárinta
+    tári+N+Dual+Dat: tárint
+    tári+N+Dual+Loc: táritse
+    # tári+N+Dual+Loc+Short: tárites ???
+    tári+N+Dual+Abl: tárilto
+    tári+N+Dual+Poss: tárit{w}a
+    # Plural
+    tári+N+Plur+Nom: tárir
+    tári+N+Plur+Acc: tárir
+    tári+N+Plur+Gen: táriron
+    tári+N+Plur+Ins: [tárínen, tárinen]
+    tári+N+Plur+All: tárinnar
+    tári+N+Plur+Dat: [tárín, tárin]
+    tári+N+Plur+Loc: tárissen
+    tári+N+Plur+Loc+Short: [tárís, táris]
+    tári+N+Plur+Abl: tárillon
+    tári+N+Plur+Poss: ['tárí{w}a', 'tári{w}a']
+    # Partitive Plural
+    tári+N+Plur+Par+Nom: tárili
+    tári+N+Plur+Par+Acc: tárili
+    tári+N+Plur+Par+Gen: tárilion
+    tári+N+Plur+Par+Ins: tárilínen
+    tári+N+Plur+Par+All: [tárilinnar, tárilinna]
+    tári+N+Plur+Par+Dat: tárilin
+    tári+N+Plur+Par+Loc: [tárilissen, tárilisse]
+    tári+N+Plur+Par+Loc+Short: tárilis
+    tári+N+Plur+Par+Abl: [tárilillon, tárilillo]
+    tári+N+Plur+Par+Poss: tárilí{w}a
