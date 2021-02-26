@@ -17,19 +17,19 @@ LEXICON Cases
 LEXICON CasesSing
     +Nom: # ;
     +Acc: # ;
-    +Gen:{o}  # ;
-    +Ins:nen # ;
+    +Gen:{o}{+}  # ;
+    +Ins:nen{+} # ;
     +All:nna # ;
     +Dat:n # ;
     +Loc:sse # ;
     +Loc+Short:s # ;
     +Abl:llo # ;
-    +Poss:{w}a # ;  ! TODO: connect to adjectival endings?
+    +Poss:{w}a{+} # ;  ! TODO: connect to adjectival endings?
 
 LEXICON CasesDual
     +Nom:t # ;
     +Acc:t # ;
-    +Gen:to  # ;
+    +Gen:to{+}  # ;
     +Ins:nten # ;
     +All:nta # ;
     +Dat:nt # ;
@@ -42,7 +42,7 @@ LEXICON CasesDual
 LEXICON CasesPlur
     +Nom:r # ;
     +Acc:r # ;
-    +Gen:ron  # ;
+    +Gen:ron{+}  # ;
     +Ins:{i}nen # ;
     +All:nnar # ;
     +Dat:{i}n # ;
@@ -52,16 +52,16 @@ LEXICON CasesPlur
     +Poss:{i}{w}a # ;  ! TODO: connect to adjectival endings?
 
 LEXICON CasesPlurPar
-    +Nom:li # ;
-    +Acc:li # ;
+    +Nom:li{+} # ;
+    +Acc:li{+} # ;
     +Gen:lion  # ;
     +Ins:línen # ;
     +All:linna # ;  ! r is optional for allative
     +All:linnar # ;
-    +Dat:lin # ;
+    +Dat:lin{+} # ;
     +Loc:lisse # ;  ! n is optional for locative
     +Loc:lissen # ;
-    +Loc+Short:lis # ;
+    +Loc+Short:lis{+} # ;
     +Abl:lillo # ;  ! n is optional for ablative
     +Abl:lillon # ;
     +Poss:lí{w}a # ;  ! TODO: connect to adjectival endings?

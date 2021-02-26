@@ -111,6 +111,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
     {o}     ! genitive ending, deletes only a,o
     {-V}    ! delete the preceeding vowel
     {l}     ! an l that triggers total regressive assimilation if possible
+    {+}     ! marks a stem in which the final vowel should be lengthened with certain endings
 
 !! Symbols that are written differently in Tengwar script because of etymology, not phonology/context
     {w}  ! w/v

@@ -7,13 +7,13 @@ LEXICON Nouns
     Anar                                    NounSuffix-Cons "the Sun" ;
     Isil:Iþil                               NounSuffix-Cons "the Moon" ;
     Elda                                    NounSuffix      "Elf" ;
-    lië:lie                                 NounSuffix      "people, race" ;  ! TODO: possessive is lié{w}a, not lie{w}a
+    lië:lie{+}                              NounSuffix      "people, race" ;  ! TODO: possessive is lié{w}a, not lie{w}a
     vendë:{w}ende                           NounSuffix-E    "maiden, virgin" ;
     rocco                                   NounSuffix      "horse" ;
     aran                                    NounSuffix-Cons "king" ;
     tári                                    NounSuffix      "queen" ;
     tasar:taþar                             NounSuffix-Cons "willow" ;
-    ! tasarë:taþare                           NounSuffix-E    "willow" ;
+    ! tasarë:taþare{+}                        NounSuffix-E    "willow" ;
     ! Lesson 3
     hen:hen{stemd20}                        NounSuffix-Cons "eye" ;
     ranco:ranc{stemu2o}                     NounSuffix-I    "arm" ;  ! plural is ranqui, not *rancur or *rancor
@@ -29,6 +29,6 @@ LEXICON Nouns
     oron:oron{stemt20}                      NounSuffix-Cons "mountain" ;
     ! Assorted
     nénu                                    NounSuffix      "yellow water-lily" ;
-    tyalië:tyalie                           NounSuffix      "sport, play, game" ;
+    tyalië:tyalie{+}                        NounSuffix      "sport, play, game" ;
 
 ! vim: set ft=xfst-lexc:

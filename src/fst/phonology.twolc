@@ -20,6 +20,7 @@ Alphabet
     %{o%}:o
     %{%-V%}:0
     %{l%}:l
+    %{%+%}:0
 
 ;
 
@@ -53,7 +54,7 @@ Rules
     c:q <=> _ %{w%}: ;
 
 "Plural endings with {i} or {í} delete a preceding e"
-    e:0 <=> _ %>:0 [%{i%}: | %{í%}:] ;
+    e:0 <=> _ (%{%+%}:0) %>:0 [%{i%}: | %{í%}:] ;
 "If the ending {i} deletes a preceding -e (in -ie), it becomes é"
     %{i%}:é <=> i e:0 [:0 - e:]* _ ;
 "Plural endings with {i} delete a preceding i"
@@ -61,11 +62,17 @@ Rules
 "If the ending {i} deletes a preceding i, it could become long"
     %{i%}:í => i:0 [:0 - i:]* _ ;
 
+"Words marked with {+} have the final vowel lengthened with certain endings, also marked with {+}"
+    Vx:Vy => _ %{%+%}: ?* %{%+%}: .#. ;
+        where   Vx in (a e i o u)
+                Vy in (á é í ó ú)
+                matched ;
+
 "Genitive ending {o} deletes a preceding a,o"
     Vx:0 <=> _ %>:0 %{o%}: ;
         where Vx in (a o) ;
 "Deleting a short vowel from a triggered deletion"
-    Vx:0 <=> _ %>:0 %{%-V%}: ;
+    Vx:0 <=> _ (%{%+%}:0) %>:0 %{%-V%}: ;
         where Vx in (ShortVowel) ;
 
 "Stems that alter when no suffix is attached"
@@ -88,8 +95,8 @@ Rules
             :Vowel [[r: | n: | s:] - :l] _ %{l%}: ;  ! assimilation could've happened, but didn't
             :CannotStartMedialCluster _ :Consonant ;  ! prevents things like gn,gl,gt, etc.
 "Situations that force the morpheme boundary to become e; bad phonotactics"
-    %>:0 /<= :Cx :0* _ :0* :Cy ;  where
-                Cx in (c c c c     h h h h     l l   m m m m     n n   p p p     r   s s   þ þ   t t)
+    %>:0 /<= :Cx :0* _ :0* :Cy ;
+        where   Cx in (c c c c     h h h h     l l   m m m m     n n   p p p     r   s s   þ þ   t t)
                 Cy in (n l t %{w%} n s l %{w%} n s   s l t %{w%} s l   n l %{w%} l   n l   n l   n l)
                 matched ;
     ! the above pairs are illegal consonant clusters, out of only those that end with n s l t %{w%} (case endings could start with those)
