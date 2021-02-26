@@ -16,7 +16,7 @@ Alphabet
     %{stemu2o%}:u
     %{steme2é%}:e %{stemi2í%}:i
 
-    %{i%}:i
+    %{i%}:i %{í%}:í
     %{o%}:o
     %{%-V%}:0
     %{l%}:l
@@ -52,9 +52,11 @@ Rules
 "Convert cw to qu, part 2: c->q before a w"
     c:q <=> _ %{w%}: ;
 
-"Plural endings with {i} delete a preceding e (but not if it's -ie)"
-    e:0 <=> \i _ %>:0 %{i%}: ;
-"Plural ending with {i} delete a preceding i"
+"Plural endings with {i} or {í} delete a preceding e"
+    e:0 <=> _ %>:0 [%{i%}: | %{í%}:] ;
+"If the ending {i} deletes a preceding -e (in -ie), it becomes é"
+    %{i%}:é <=> i e:0 [:0 - e:]* _ ;
+"Plural endings with {i} delete a preceding i"
     i:0 <=> _ %>:0 %{i%}: ;
 "If the ending {i} deletes a preceding i, it could become long"
     %{i%}:í => i:0 [:0 - i:]* _ ;

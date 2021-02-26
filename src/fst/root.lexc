@@ -107,6 +107,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 !! Symbols used to trigger alternations in preceding morphemes
     {i}     ! start of a plural ending, deletes only e,i
+    {í}     ! start of some plural endings
     {o}     ! genitive ending, deletes only a,o
     {-V}    ! delete the preceeding vowel
     {l}     ! an l that triggers total regressive assimilation if possible

@@ -229,3 +229,48 @@ Tests:
     tyalië+N+Plur+Par+Loc+Short: [tyalielis, tyaliélis]
     tyalië+N+Plur+Par+Abl: [tyalielillon, tyalielillo]
     tyalië+N+Plur+Par+Poss: tyalielí{w}a
+  Standard nouns ending in -e:
+    # Singular  aiwë:aiwe
+    aiwë+N+Sing+Nom: aiwe
+    aiwë+N+Sing+Acc: aiwe
+    aiwë+N+Sing+Gen: aiweo
+    aiwë+N+Sing+Ins: aiwenen
+    aiwë+N+Sing+All: aiwenna
+    aiwë+N+Sing+Dat: aiwen
+    aiwë+N+Sing+Loc: aiwesse
+    aiwë+N+Sing+Loc+Short: aiwes
+    aiwë+N+Sing+Abl: aiwello
+    aiwë+N+Sing+Poss: aiwe{w}a
+    # Dual
+    aiwë+N+Dual+Nom: [aiwet, aiwu]
+    aiwë+N+Dual+Acc: [aiwet, aiwu]
+    aiwë+N+Dual+Gen: [aiweto, aiwuo]
+    aiwë+N+Dual+Ins: [aiwenten, aiwunen]
+    aiwë+N+Dual+All: [aiwenta, aiwunna]
+    aiwë+N+Dual+Dat: [aiwent, aiwun, aiwuen]
+    aiwë+N+Dual+Loc: [aiwetse, aiwusse]
+    aiwë+N+Dual+Loc+Short: aiwus  # also aiwetes ???
+    aiwë+N+Dual+Abl: [aiwelto, aiwullo]
+    aiwë+N+Dual+Poss: ['aiwet{w}a', 'aiwu{w}a']
+    # Plural
+    aiwë+N+Plur+Nom: aiwi
+    aiwë+N+Plur+Acc: aiwi
+    aiwë+N+Plur+Gen: aiwion
+    aiwë+N+Plur+Ins: aiwínen
+    aiwë+N+Plur+All: aiwennar
+    aiwë+N+Plur+Dat: aiwín
+    aiwë+N+Plur+Loc: aiwessen
+    aiwë+N+Plur+Loc+Short: aiwís
+    aiwë+N+Plur+Abl: aiwellon
+    aiwë+N+Plur+Poss: aiwí{w}a
+    # Partitive Plural
+    aiwë+N+Plur+Par+Nom: aiweli
+    aiwë+N+Plur+Par+Acc: aiweli
+    aiwë+N+Plur+Par+Gen: aiwelion
+    aiwë+N+Plur+Par+Ins: aiwelínen
+    aiwë+N+Plur+Par+All: [aiwelinnar, aiwelinna]
+    aiwë+N+Plur+Par+Dat: aiwelin
+    aiwë+N+Plur+Par+Loc: [aiwelissen, aiwelisse]
+    aiwë+N+Plur+Par+Loc+Short: aiwelis
+    aiwë+N+Plur+Par+Abl: [aiwelillon, aiwelillo]
+    aiwë+N+Plur+Par+Poss: aiwelí{w}a

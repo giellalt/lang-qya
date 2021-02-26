@@ -4,29 +4,29 @@
 
 LEXICON Nouns
     ! Lesson 2
-    Anar                                    NounSuffix-I    "the Sun" ;
-    Isil:Iþil                               NounSuffix-I    "the Moon" ;
+    Anar                                    NounSuffix-Cons "the Sun" ;
+    Isil:Iþil                               NounSuffix-Cons "the Moon" ;
     Elda                                    NounSuffix      "Elf" ;
     lië:lie                                 NounSuffix      "people, race" ;  ! TODO: possessive is lié{w}a, not lie{w}a
-    vendë:{w}ende                           NounSuffix-I    "maiden, virgin" ;
+    vendë:{w}ende                           NounSuffix-E    "maiden, virgin" ;
     rocco                                   NounSuffix      "horse" ;
-    aran                                    NounSuffix-I    "king" ;
+    aran                                    NounSuffix-Cons "king" ;
     tári                                    NounSuffix      "queen" ;
-    tasar:taþar                             NounSuffix-I    "willow" ;
-    ! tasarë:taþare                           NounSuffix      "willow" ;
+    tasar:taþar                             NounSuffix-Cons "willow" ;
+    ! tasarë:taþare                           NounSuffix-E    "willow" ;
     ! Lesson 3
-    hen:hen{stemd20}                        NounSuffix-I    "eye" ;
+    hen:hen{stemd20}                        NounSuffix-Cons "eye" ;
     ranco:ranc{stemu2o}                     NounSuffix-I    "arm" ;  ! plural is ranqui, not *rancur or *rancor
     ando                                    NounSuffix      "gate"  ;
     cirya                                   NounSuffix      "ship" ;
-    aiwë:aiwe                               NounSuffix-I    "bird" ;
-    talan:tala{stemm2n}                     NounSuffix-I    "floor" ;
-    nér:n{steme2é}r                         NounSuffix-I    "man (adult male)" ;
-    nís:n{stemi2í}s{stems20}                NounSuffix-I    "woman (adult female)" ;
-    sar:sar{stemd20}                        NounSuffix-I    "pebble, stone" ;
-    ! sar:sar{stemn20}                        NounSuffix-I    "pebble, stone" ;
+    aiwë:aiwe                               NounSuffix-E    "bird" ;
+    talan:tala{stemm2n}                     NounSuffix-Cons "floor" ;
+    nér:n{steme2é}r                         NounSuffix-Cons "man (adult male)" ;
+    nís:n{stemi2í}s{stems20}                NounSuffix-Cons "woman (adult female)" ;
+    sar:sar{stemd20}                        NounSuffix-Cons "pebble, stone" ;
+    ! sar:sar{stemn20}                        NounSuffix-Cons "pebble, stone" ;
     alda                                    NounSuffix      "tree" ;
-    oron:oron{stemt20}                      NounSuffix-I    "mountain" ;
+    oron:oron{stemt20}                      NounSuffix-Cons "mountain" ;
     ! Assorted
     nénu                                    NounSuffix      "yellow water-lily" ;
     tyalië:tyalie                           NounSuffix      "sport, play, game" ;

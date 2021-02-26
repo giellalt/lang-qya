@@ -67,21 +67,21 @@ LEXICON CasesPlurPar
     +Poss:lí{w}a # ;  ! TODO: connect to adjectival endings?
 
 
-! I-plural declensions (nouns that end with -e or a consonant)
+! -e declensions (nouns that end with -e)
 
-LEXICON NounSuffix-I
-    +N:%> Cases-I ;
+LEXICON NounSuffix-E
+    +N:%> Cases-E ;
 
-LEXICON Cases-I
-    +Sing:      CasesSing-I ;
-    +Dual:      CasesDual-I ;
-    +Plur:      CasesPlur-I ;
-    +Plur+Par:  CasesPlurPar-I ;
+LEXICON Cases-E
+    +Sing:      CasesSing-E ;
+    +Dual:      CasesDual-E ;
+    +Plur:      CasesPlur-E ;
+    +Plur+Par:  CasesPlurPar-E ;
 
-LEXICON CasesSing-I
+LEXICON CasesSing-E
     +Nom: # ;
     +Acc: # ;
-    +Gen:{o}  # ;
+    +Gen:o  # ;
     +Ins:nen # ;
     +All:nna # ;
     +Dat:n # ;
@@ -90,7 +90,7 @@ LEXICON CasesSing-I
     +Abl:llo # ;
     +Poss:{w}a # ;  ! TODO: connect to adjectival endings?
 
-LEXICON CasesDual-I
+LEXICON CasesDual-E
     +Nom:t # ;
     +Acc:t # ;
     +Gen:to  # ;
@@ -103,19 +103,83 @@ LEXICON CasesDual-I
     +Poss:t{w}a # ;  ! TODO: connect to adjectival endings?
     CasesDual-U ;  ! also go to the dual endings in -u
 
-LEXICON CasesPlur-I
+LEXICON CasesPlur-E
     +Nom:{i} # ;
     +Acc:{i} # ;
     +Gen:{i}on  # ;
-    +Ins:{i}nen # ;
-    +All:{i}nnar # ;
-    +Dat:{i}n # ;
-    +Loc:{i}ssen # ;
-    +Loc+Short:{i}s # ;
-    +Abl:{i}llon # ;
-    +Poss:{i}{w}a # ;  ! TODO: connect to adjectival endings?
+    +Ins:{í}nen # ;
+    +All:nnar # ;
+    +Dat:{í}n # ;
+    +Loc:ssen # ;
+    +Loc+Short:{í}s # ;
+    +Abl:llon # ;
+    +Poss:{í}{w}a # ;  ! TODO: connect to adjectival endings?
 
-LEXICON CasesPlurPar-I
+LEXICON CasesPlurPar-E
+    +Nom:li # ;
+    +Acc:li # ;
+    +Gen:lion  # ;
+    +Ins:línen # ;
+    +All:linna # ;  ! r is optional for allative
+    +All:linnar # ;
+    +Dat:lin # ;
+    +Loc:lisse # ;  ! n is optional for locative
+    +Loc:lissen # ;
+    +Loc+Short:lis # ;
+    +Abl:lillo # ;  ! n is optional for ablative
+    +Abl:lillon # ;
+    +Poss:lí{w}a # ;  ! TODO: connect to adjectival endings?
+
+
+! -Cons declensions (nouns that end with a consonant)
+
+LEXICON NounSuffix-Cons
+    +N:%> Cases-Cons ;
+
+LEXICON Cases-Cons
+    +Sing:      CasesSing-Cons ;
+    +Dual:      CasesDual-Cons ;
+    +Plur:      CasesPlur-Cons ;
+    +Plur+Par:  CasesPlurPar-Cons ;
+
+LEXICON CasesSing-Cons
+    +Nom: # ;
+    +Acc: # ;
+    +Gen:o  # ;
+    +Ins:nen # ;
+    +All:nna # ;
+    +Dat:n # ;
+    +Loc:sse # ;
+    +Loc+Short:s # ;
+    +Abl:llo # ;
+    +Poss:{w}a # ;  ! TODO: connect to adjectival endings?
+
+LEXICON CasesDual-Cons
+    +Nom:t # ;
+    +Acc:t # ;
+    +Gen:to  # ;
+    +Ins:nten # ;
+    +All:nta # ;
+    +Dat:nt # ;
+    +Loc:tse # ;
+    ! +Loc+Short:ts # ;  TODO: ???
+    +Abl:lto # ;
+    +Poss:t{w}a # ;  ! TODO: connect to adjectival endings?
+    CasesDual-U ;  ! also go to the dual endings in -u
+
+LEXICON CasesPlur-Cons
+    +Nom:i # ;
+    +Acc:i # ;
+    +Gen:ion  # ;
+    +Ins:inen # ;
+    +All:innar # ;
+    +Dat:in # ;
+    +Loc:issen # ;
+    +Loc+Short:is # ;
+    +Abl:illon # ;
+    +Poss:i{w}a # ;  ! TODO: connect to adjectival endings?
+
+LEXICON CasesPlurPar-Cons
     +Nom:{l}i # ;
     +Acc:{l}i # ;
     +Gen:{l}ion  # ;
