@@ -30,5 +30,9 @@ LEXICON Nouns
     ! Assorted
     nénu                                    NounSuffix      "yellow water-lily" ;
     tyalië:tyalie{+}                        NounSuffix      "sport, play, game" ;
+    coimas                                  NounSuffix-Cons "life-bread, lembas" ;
+    manar                                   NounSuffix-Cons "doom, fate, fortune" ;
+    estel                                   NounSuffix-Cons "trust, hope" ;
+    lirit                                   NounSuffix-Cons "poem" ;
 
 ! vim: set ft=xfst-lexc:

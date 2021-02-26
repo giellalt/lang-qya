@@ -26,6 +26,7 @@ Alphabet
 
 ! allowed initial consonant clusters: x, ps, ty, ny, ly, qu, ñw (became nw)
 ! allowed medial consonant clusters: ht, lc, ld, lf, lm, lp, lqu, lt, lv, lw, ly, mb, mn, mp, my, nc, nd, ng, nt, nw (ñw initial only), ny, ps, pt, qu, rc, rd, rm, rn, rp, rt, rs, rv, rw, ry, sc, st, sw, ts, tw, ty, x=cs, pp, tt, cc, mm, nn, ss, ll, rr
+! allowed medial tri-consonantal clusters: nqu, lqu, rqu, squ, ngw, rhw, nty, lty, hty, rty, sty, lhy
 ! allowed final consonants: n, r, l, s, t, nt
 
 Sets
@@ -41,7 +42,7 @@ Sets
 
 Definitions
     ConsonantCluster = [:Consonant :Consonant] | x ;  ! x is really cs
-    Diphthongs = [:a :i] | [:a :u] | [:e :u] | [:o :i] | [:u :i] | [:i :u] ;
+    Diphthong = [:a :i] | [:a :u] | [:e :u] | [:o :i] | [:u :i] | [:i :u] ;
 
 
 Rules
@@ -94,7 +95,9 @@ Rules
         where   Cx in (h l l l l l l l l l     l m m m m n n n n n     n p p r r r r r r r r r     r s s s     t t     t c p t c m n s l r)
                 Cy in (t c d f m p q t v %{w%} y b n p y c d g t %{w%} y s t c d m n p t s v %{w%} y c t %{w%} s %{w%} y s p t c m n s l r)
                 matched ;
+"Situations that force the morpheme boundary to become 0; adding a -t to a word ending in Vn (-nt is allowed as final)"
+    %>:e /<= :Vowel :n :0* _ :t .#. ;
 "Situations that force the morpheme boundary to become e"
     %>:0 /<= ConsonantCluster _ :Consonant ;  :Consonant _ ConsonantCluster ;  ! consonant cluster on either side
-            :Consonant _ :Consonant .#. ;  ! any consonant cluster, if not followed by a vowel
+            :Consonant _ :Consonant .#. ;  ! any consonant cluster, if not followed by a vowel  ! TODO: EXCEPT 'nt'!
             :Vowel [[r: | n: | s:] - :l] _ %{l%}: ;  ! assimilation could've happened, but didn't
