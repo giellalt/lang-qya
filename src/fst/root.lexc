@@ -143,10 +143,6 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! given the proper use of these flags.
     @U.Cap.Obl@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
     @U.Cap.Opt@        !!≈ | @CODE@ | Allowing downcasing of derived names: deatnulasj.
-!!
-!! Flags for allowing u-based dual endings
-    @U.Dual.U@
-    @R.Dual.U@
 
 LEXICON Root
 !! The word forms in Quenya language start from the lexeme roots of basic

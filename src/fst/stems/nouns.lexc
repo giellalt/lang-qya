@@ -15,7 +15,7 @@ LEXICON Nouns
     tasar:taþar                             NounSuffix-I    "willow" ;
     ! tasarë:taþare                           NounSuffix      "willow" ;
     ! Lesson 3
-    @U.Dual.U@hen:@U.Dual.U@hen{stemd20}    NounSuffix-I    "eye" ;
+    hen:hen{stemd20}                        NounSuffix-I    "eye" ;
     ranco:ranc{stemu2o}                     NounSuffix-I    "arm" ;  ! plural is ranqui, not *rancur or *rancor
     ando                                    NounSuffix      "gate"  ;
     cirya                                   NounSuffix      "ship" ;
@@ -25,7 +25,10 @@ LEXICON Nouns
     nís:n{stemi2í}s{stems20}                NounSuffix-I    "woman (adult female)" ;
     sar:sar{stemd20}                        NounSuffix-I    "pebble, stone" ;
     ! sar:sar{stemn20}                        NounSuffix-I    "pebble, stone" ;
-    @U.Dual.U@alda                          NounSuffix      "tree" ;
+    alda                                    NounSuffix      "tree" ;
     oron:oron{stemt20}                      NounSuffix-I    "mountain" ;
+    ! Assorted
+    nénu                                    NounSuffix      "yellow water-lily" ;
+    tyalië:tyalie                           NounSuffix      "sport, play, game" ;
 
 ! vim: set ft=xfst-lexc:

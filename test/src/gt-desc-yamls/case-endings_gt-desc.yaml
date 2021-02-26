@@ -17,16 +17,16 @@ Tests:
     cirya+N+Sing+Abl: ciryallo
     cirya+N+Sing+Poss: cirya{w}a
     # Dual
-    cirya+N+Dual+Nom: ciryat
-    cirya+N+Dual+Acc: ciryat
-    cirya+N+Dual+Gen: ciryato
-    cirya+N+Dual+Ins: ciryanten
-    cirya+N+Dual+All: ciryanta
-    cirya+N+Dual+Dat: ciryant
-    cirya+N+Dual+Loc: ciryatse
-    # cirya+N+Dual+Loc+Short: ciryates ???
-    cirya+N+Dual+Abl: ciryalto
-    cirya+N+Dual+Poss: ciryat{w}a
+    cirya+N+Dual+Nom: [ciryat, ciryu]
+    cirya+N+Dual+Acc: [ciryat, ciryu]
+    cirya+N+Dual+Gen: [ciryato, ciryuo]
+    cirya+N+Dual+Ins: [ciryanten, ciryunen]
+    cirya+N+Dual+All: [ciryanta, ciryunna]
+    cirya+N+Dual+Dat: [ciryant, ciryun, ciryuen]
+    cirya+N+Dual+Loc: [ciryatse, ciryusse]
+    cirya+N+Dual+Loc+Short: ciryus  # also ciryates ???
+    cirya+N+Dual+Abl: [ciryalto, ciryullo]
+    cirya+N+Dual+Poss: ['ciryat{w}a', 'ciryu{w}a']
     # Plural
     cirya+N+Plur+Nom: ciryar
     cirya+N+Plur+Acc: ciryar
@@ -62,16 +62,16 @@ Tests:
     rocco+N+Sing+Abl: roccollo
     rocco+N+Sing+Poss: rocco{w}a
     # Dual
-    rocco+N+Dual+Nom: roccot
-    rocco+N+Dual+Acc: roccot
-    rocco+N+Dual+Gen: roccoto
-    rocco+N+Dual+Ins: rocconten
-    rocco+N+Dual+All: rocconta
-    rocco+N+Dual+Dat: roccont
-    rocco+N+Dual+Loc: roccotse
-    # rocco+N+Dual+Loc+Short: roccotes ???
-    rocco+N+Dual+Abl: roccolto
-    rocco+N+Dual+Poss: roccot{w}a
+    rocco+N+Dual+Nom: [roccot, roccu]
+    rocco+N+Dual+Acc: [roccot, roccu]
+    rocco+N+Dual+Gen: [roccoto, roccuo]
+    rocco+N+Dual+Ins: [rocconten, roccunen]
+    rocco+N+Dual+All: [rocconta, roccunna]
+    rocco+N+Dual+Dat: [roccont, roccun, roccuen]
+    rocco+N+Dual+Loc: [roccotse, roccusse]
+    rocco+N+Dual+Loc+Short: roccus  # also roccotes ???
+    rocco+N+Dual+Abl: [roccolto, roccullo]
+    rocco+N+Dual+Poss: ['roccot{w}a', 'roccu{w}a']
     # Plural
     rocco+N+Plur+Nom: roccor
     rocco+N+Plur+Acc: roccor
@@ -107,16 +107,16 @@ Tests:
     tári+N+Sing+Abl: tárillo
     tári+N+Sing+Poss: tári{w}a
     # Dual
-    tári+N+Dual+Nom: tárit
-    tári+N+Dual+Acc: tárit
-    tári+N+Dual+Gen: tárito
-    tári+N+Dual+Ins: tárinten
-    tári+N+Dual+All: tárinta
-    tári+N+Dual+Dat: tárint
-    tári+N+Dual+Loc: táritse
-    # tári+N+Dual+Loc+Short: tárites ???
-    tári+N+Dual+Abl: tárilto
-    tári+N+Dual+Poss: tárit{w}a
+    tári+N+Dual+Nom: [tárit, táru]
+    tári+N+Dual+Acc: [tárit, táru]
+    tári+N+Dual+Gen: [tárito, táruo]
+    tári+N+Dual+Ins: [tárinten, tárunen]
+    tári+N+Dual+All: [tárinta, tárunna]
+    tári+N+Dual+Dat: [tárint, tárun, táruen]
+    tári+N+Dual+Loc: [táritse, tárusse]
+    tári+N+Dual+Loc+Short: tárus  # also tárites ???
+    tári+N+Dual+Abl: [tárilto, tárullo]
+    tári+N+Dual+Poss: ['tárit{w}a', 'táru{w}a']
     # Plural
     tári+N+Plur+Nom: tárir
     tári+N+Plur+Acc: tárir
@@ -139,3 +139,93 @@ Tests:
     tári+N+Plur+Par+Loc+Short: tárilis
     tári+N+Plur+Par+Abl: [tárilillon, tárilillo]
     tári+N+Plur+Par+Poss: tárilí{w}a
+  Standard nouns ending in -u:
+    # Singular
+    nénu+N+Sing+Nom: nénu
+    nénu+N+Sing+Acc: nénu
+    nénu+N+Sing+Gen: nénuo
+    nénu+N+Sing+Ins: nénunen
+    nénu+N+Sing+All: nénunna
+    nénu+N+Sing+Dat: nénun
+    nénu+N+Sing+Loc: nénusse
+    nénu+N+Sing+Loc+Short: nénus
+    nénu+N+Sing+Abl: nénullo
+    nénu+N+Sing+Poss: nénu{w}a
+    # Dual
+    nénu+N+Dual+Nom: [nénut, nénu]
+    nénu+N+Dual+Acc: [nénut, nénu]
+    nénu+N+Dual+Gen: [nénuto, nénuo]
+    nénu+N+Dual+Ins: [nénunten, nénunen]
+    nénu+N+Dual+All: [nénunta, nénunna]
+    nénu+N+Dual+Dat: [nénunt, nénun, nénuen]
+    nénu+N+Dual+Loc: [nénutse, nénusse]
+    nénu+N+Dual+Loc+Short: nénus  # also nénutes ???
+    nénu+N+Dual+Abl: [nénulto, nénullo]
+    nénu+N+Dual+Poss: ['nénut{w}a', 'nénu{w}a']
+    # Plural
+    nénu+N+Plur+Nom: nénur
+    nénu+N+Plur+Acc: nénur
+    nénu+N+Plur+Gen: nénuron
+    nénu+N+Plur+Ins: nénuinen
+    nénu+N+Plur+All: nénunnar
+    nénu+N+Plur+Dat: nénuin
+    nénu+N+Plur+Loc: nénussen
+    nénu+N+Plur+Loc+Short: nénuis
+    nénu+N+Plur+Abl: nénullon
+    nénu+N+Plur+Poss: nénui{w}a
+    # Partitive Plural
+    nénu+N+Plur+Par+Nom: nénuli
+    nénu+N+Plur+Par+Acc: nénuli
+    nénu+N+Plur+Par+Gen: nénulion
+    nénu+N+Plur+Par+Ins: nénulínen
+    nénu+N+Plur+Par+All: [nénulinnar, nénulinna]
+    nénu+N+Plur+Par+Dat: nénulin
+    nénu+N+Plur+Par+Loc: [nénulissen, nénulisse]
+    nénu+N+Plur+Par+Loc+Short: nénulis
+    nénu+N+Plur+Par+Abl: [nénulillon, nénulillo]
+    nénu+N+Plur+Par+Poss: nénulí{w}a
+  Standard nouns ending in -ie:
+    # Singular
+    tyalië+N+Sing+Nom: tyalie
+    tyalië+N+Sing+Acc: tyalie
+    tyalië+N+Sing+Gen: [tyalieo, tyaliéo]
+    tyalië+N+Sing+Ins: [tyalienen, tyaliénen]
+    tyalië+N+Sing+All: tyalienna
+    tyalië+N+Sing+Dat: tyalien
+    tyalië+N+Sing+Loc: tyaliesse
+    tyalië+N+Sing+Loc+Short: tyalies
+    tyalië+N+Sing+Abl: tyaliello
+    tyalië+N+Sing+Poss: ['tyalie{w}a', 'tyalié{w}a']
+    # Dual
+    tyalië+N+Dual+Nom: [tyaliet, tyaliu]
+    tyalië+N+Dual+Acc: [tyaliet, tyaliu]
+    tyalië+N+Dual+Gen: [tyalieto, tyaliéto, tyaliuo]
+    tyalië+N+Dual+Ins: [tyalienten, tyaliunen]
+    tyalië+N+Dual+All: [tyalienta, tyaliunna]
+    tyalië+N+Dual+Dat: [tyalient, tyaliun, tyaliuen]
+    tyalië+N+Dual+Loc: [tyalietse, tyaliusse]
+    tyalië+N+Dual+Loc+Short: tyalius  # also tyalietes ???
+    tyalië+N+Dual+Abl: [tyalielto, tyaliullo]
+    tyalië+N+Dual+Poss: ['tyaliet{w}a', 'tyaliu{w}a']
+    # Plural
+    tyalië+N+Plur+Nom: tyalier
+    tyalië+N+Plur+Acc: tyalier
+    tyalië+N+Plur+Gen: [tyalieron, tyaliéron]
+    tyalië+N+Plur+Ins: tyaliénen
+    tyalië+N+Plur+All: tyaliennar
+    tyalië+N+Plur+Dat: tyalién
+    tyalië+N+Plur+Loc: tyaliessen
+    tyalië+N+Plur+Loc+Short: tyaliés
+    tyalië+N+Plur+Abl: tyaliellon
+    tyalië+N+Plur+Poss: tyalié{w}a
+    # Partitive Plural
+    tyalië+N+Plur+Par+Nom: [tyalieli, tyaliéli]
+    tyalië+N+Plur+Par+Acc: [tyalieli, tyaliéli]
+    tyalië+N+Plur+Par+Gen: tyalielion
+    tyalië+N+Plur+Par+Ins: tyalielínen
+    tyalië+N+Plur+Par+All: [tyalielinnar, tyalielinna]
+    tyalië+N+Plur+Par+Dat: [tyalielin, tyaliélin]
+    tyalië+N+Plur+Par+Loc: [tyalielissen, tyalielisse]
+    tyalië+N+Plur+Par+Loc+Short: [tyalielis, tyaliélis]
+    tyalië+N+Plur+Par+Abl: [tyalielillon, tyalielillo]
+    tyalië+N+Plur+Par+Poss: tyalielí{w}a

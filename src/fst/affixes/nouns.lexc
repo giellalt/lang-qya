@@ -37,7 +37,7 @@ LEXICON CasesDual
     ! +Loc+Short:ts # ;  TODO: ???
     +Abl:lto # ;
     +Poss:t{w}a # ;  ! TODO: connect to adjectival endings?
-    @R.Dual.U@ CasesDual-U ;  ! If allowed, try using the dual endings in -u
+    CasesDual-U ;  ! also go to the dual endings in -u
 
 LEXICON CasesPlur
     +Nom:r # ;
@@ -101,7 +101,7 @@ LEXICON CasesDual-I
     ! +Loc+Short:ts # ;  TODO: ???
     +Abl:lto # ;
     +Poss:t{w}a # ;  ! TODO: connect to adjectival endings?
-    @R.Dual.U@ CasesDual-U ;  ! If allowed, try using the dual endings in -u
+    CasesDual-U ;  ! also go to the dual endings in -u
 
 LEXICON CasesPlur-I
     +Nom:{i} # ;
@@ -140,7 +140,7 @@ LEXICON CasesDual-U
     +Ins:{-V}unen # ;
     +All:{-V}unna # ;
     +Dat:{-V}un # ;
-    +Dat:{-V}uen # ;  ! poorly attested
+    +Dat:{-V}uen # "weight: -1.0" ;  ! poorly attested
     +Loc:{-V}usse # ;
     +Loc+Short:{-V}us # ;
     +Abl:{-V}ullo # ;
