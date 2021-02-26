@@ -274,3 +274,48 @@ Tests:
     aiwë+N+Plur+Par+Loc+Short: aiwelis
     aiwë+N+Plur+Par+Abl: [aiwelillon, aiwelillo]
     aiwë+N+Plur+Par+Poss: aiwelí{w}a
+  Standard nouns ending in -Vr:
+    # Singular
+    Anar+N+Sing+Nom: Anar
+    Anar+N+Sing+Acc: Anar
+    Anar+N+Sing+Gen: Anaro
+    Anar+N+Sing+Ins: [Anarnen, Anarenen]
+    Anar+N+Sing+All: Anarenna
+    Anar+N+Sing+Dat: Anaren
+    Anar+N+Sing+Loc: Anaresse
+    Anar+N+Sing+Loc+Short: Anares
+    Anar+N+Sing+Abl: Anarello
+    Anar+N+Sing+Poss: Anar{w}a
+    # Dual
+    Anar+N+Dual+Nom: [Anaret, Anaru]
+    Anar+N+Dual+Acc: [Anaret, Anaru]
+    Anar+N+Dual+Gen: [Anarto, Anareto, Anaruo]
+    Anar+N+Dual+Ins: [Anarenten, Anarunen]
+    Anar+N+Dual+All: [Anarenta, Anarunna]
+    Anar+N+Dual+Dat: [Anarent, Anarun, Anaruen]
+    Anar+N+Dual+Loc: [Anaretse, Anarusse]
+    Anar+N+Dual+Loc+Short: Anarus  # also Anartes and Anaretes ???
+    Anar+N+Dual+Abl: [Anarelto, Anarullo]
+    Anar+N+Dual+Poss: ['Anaret{w}a', 'Anaru{w}a']
+    # Plural
+    Anar+N+Plur+Nom: Anari
+    Anar+N+Plur+Acc: Anari
+    Anar+N+Plur+Gen: Anarion
+    Anar+N+Plur+Ins: Anarinen
+    Anar+N+Plur+All: Anarinnar
+    Anar+N+Plur+Dat: Anarin
+    Anar+N+Plur+Loc: Anarissen
+    Anar+N+Plur+Loc+Short: Anaris
+    Anar+N+Plur+Abl: Anarillon
+    Anar+N+Plur+Poss: Anari{w}a
+    # Partitive Plural
+    Anar+N+Plur+Par+Nom: Analli
+    Anar+N+Plur+Par+Acc: Analli
+    Anar+N+Plur+Par+Gen: Anallion
+    Anar+N+Plur+Par+Ins: Anallínen
+    Anar+N+Plur+Par+All: [Anallinnar, Anallinna]
+    Anar+N+Plur+Par+Dat: Anallin
+    Anar+N+Plur+Par+Loc: [Anallissen, Anallisse]
+    Anar+N+Plur+Par+Loc+Short: Anallis
+    Anar+N+Plur+Par+Abl: [Anallillon, Anallillo]
+    Anar+N+Plur+Par+Poss: Anallí{w}a
