@@ -279,7 +279,7 @@ Tests:
     Anar+N+Sing+Nom: Anar
     Anar+N+Sing+Acc: Anar
     Anar+N+Sing+Gen: Anaro
-    Anar+N+Sing+Ins: [Anarnen, Anarenen]
+    Anar+N+Sing+Ins: Anarnen
     Anar+N+Sing+All: Anarenna
     Anar+N+Sing+Dat: Anaren
     Anar+N+Sing+Loc: Anaresse
@@ -289,12 +289,12 @@ Tests:
     # Dual
     Anar+N+Dual+Nom: [Anaret, Anaru]
     Anar+N+Dual+Acc: [Anaret, Anaru]
-    Anar+N+Dual+Gen: [Anarto, Anareto, Anaruo]
+    Anar+N+Dual+Gen: [Anarto, Anaruo]
     Anar+N+Dual+Ins: [Anarenten, Anarunen]
     Anar+N+Dual+All: [Anarenta, Anarunna]
     Anar+N+Dual+Dat: [Anarent, Anarun, Anaruen]
     Anar+N+Dual+Loc: [Anaretse, Anarusse]
-    Anar+N+Dual+Loc+Short: Anarus  # also Anartes and Anaretes ???
+    Anar+N+Dual+Loc+Short: Anarus  # also Anartes ???
     Anar+N+Dual+Abl: [Anarelto, Anarullo]
     Anar+N+Dual+Poss: ['Anaret{w}a', 'Anaru{w}a']
     # Plural

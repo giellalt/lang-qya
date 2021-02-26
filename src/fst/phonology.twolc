@@ -37,11 +37,11 @@ Sets
 
     Consonant = b c d f g h l m n ñ p q r s þ t v w x y %{w%}
                 B C D F G H L M N Ñ P Q R S Þ T V W X Y ;
-    CannotStartMedialCluster = b d f g ñ q v w %{w%} x y ;
 
 
 Definitions
     ConsonantCluster = [:Consonant :Consonant] | x ;  ! x is really cs
+    Diphthongs = [:a :i] | [:a :u] | [:e :u] | [:o :i] | [:u :i] | [:i :u] ;
 
 
 Rules
@@ -89,15 +89,12 @@ Rules
     %>:e /<= :Vowel :0* _ ;  _ :0* :Vowel ;  ! adjacent vowel on either side
             :Vowel [:l - l:] _ %{l%}: :Vowel ;  ! assimilation happened (ended as l, but didn't start as l)
             _ :0* .#. ;  ! there's nothing after the boundary
+"Situations that force the morpheme boundary to become 0; good phonotactics"
+    %>:e /<= :Vowel :Cx :0* _ :0* :Cy :Vowel ;
+        where   Cx in (h l l l l l l l l l     l m m m m n n n n n     n p p r r r r r r r r r     r s s s     t t     t c p t c m n s l r)
+                Cy in (t c d f m p q t v %{w%} y b n p y c d g t %{w%} y s t c d m n p t s v %{w%} y c t %{w%} s %{w%} y s p t c m n s l r)
+                matched ;
 "Situations that force the morpheme boundary to become e"
     %>:0 /<= ConsonantCluster _ :Consonant ;  :Consonant _ ConsonantCluster ;  ! consonant cluster on either side
             :Consonant _ :Consonant .#. ;  ! any consonant cluster, if not followed by a vowel
             :Vowel [[r: | n: | s:] - :l] _ %{l%}: ;  ! assimilation could've happened, but didn't
-            :CannotStartMedialCluster _ :Consonant ;  ! prevents things like gn,gl,gt, etc.
-"Situations that force the morpheme boundary to become e; bad phonotactics"
-    %>:0 /<= :Cx :0* _ :0* :Cy ;
-        where   Cx in (c c c c     h h h h     l l   m m m m     n n   p p p     r   s s   þ þ   t t)
-                Cy in (n l t %{w%} n s l %{w%} n s   s l t %{w%} s l   n l %{w%} l   n l   n l   n l)
-                matched ;
-    ! the above pairs are illegal consonant clusters, out of only those that end with n s l t %{w%} (case endings could start with those)
-    ! it also doesn't include pairs starting with a symbol in CannotStartMedialCluster, since those are already taken care of
