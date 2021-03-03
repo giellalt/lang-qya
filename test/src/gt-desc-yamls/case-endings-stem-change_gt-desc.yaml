@@ -1,0 +1,59 @@
+Config:
+  hfst:
+    Gen: ../../src/generator-gt-desc.hfst
+    Morph: ../../src/analyser-gt-desc.hfst
+
+Tests:
+
+  # Nouns with stem-changes
+
+  Stem-change nouns ending in a consonant cluster:
+    # Singular
+    nís+N+Sing+Nom: nís
+    nís+N+Sing+Acc: nís
+    nís+N+Sing+Gen: nisso
+    nís+N+Sing+Ins: nissenen
+    nís+N+Sing+All: nissenna
+    nís+N+Sing+Dat: nissen
+    nís+N+Sing+Loc: nissesse
+    nís+N+Sing+Loc+Short: nisses
+    nís+N+Sing+Abl: nissello
+    nís+N+Sing+Poss: nisse{w}a
+    # Dual
+    nís+N+Dual+Nom: [nisset, nissu]
+    nís+N+Dual+Acc: [nisset, nissu]
+    nís+N+Dual+Gen: [nisseto, nissuo]
+    nís+N+Dual+Ins: [nissenten, nissunen]
+    nís+N+Dual+All: [nissenta, nissunna]
+    nís+N+Dual+Dat: [nissent, nissun, nissuen]
+    nís+N+Dual+Loc: [nissetse, nissusse]
+    nís+N+Dual+Loc+Short: nissus  # also nisstes ???
+    nís+N+Dual+Abl: [nisselto, nissullo]
+    nís+N+Dual+Poss: ['nisset{w}a', 'nissu{w}a']
+    # Plural
+    nís+N+Plur+Nom: nissi
+    nís+N+Plur+Acc: nissi
+    nís+N+Plur+Gen: nission
+    nís+N+Plur+Ins: nissinen
+    nís+N+Plur+All: nissinnar
+    nís+N+Plur+Dat: nissin
+    nís+N+Plur+Loc: nississen
+    nís+N+Plur+Loc+Short: nissis
+    nís+N+Plur+Abl: nissillon
+    nís+N+Plur+Poss: nissi{w}a
+    # Partitive Plural
+    nís+N+Plur+Par+Nom: nisseli
+    nís+N+Plur+Par+Acc: nisseli
+    nís+N+Plur+Par+Gen: nisselion
+    nís+N+Plur+Par+Ins: nisselínen
+    nís+N+Plur+Par+All: [nisselinnar, nisselinna]
+    nís+N+Plur+Par+Dat: nisselin
+    nís+N+Plur+Par+Loc: [nisselissen, nisselisse]
+    nís+N+Plur+Par+Loc+Short: nisselis
+    nís+N+Plur+Par+Abl: [nisselillon, nisselillo]
+    nís+N+Plur+Par+Poss: nisselí{w}a
+  
+  # Stem-change nouns where the change is non-final:
+  # Stem-change nouns ending in o/u-:
+  # Stem-change nouns ending in co/cu- (also shifts to qu):
+  # Stem-change nouns ending in go/gu- (also shifts to gw):
