@@ -10,7 +10,7 @@ Alphabet
     Á É Í Ó Ú Ä Ë Ï Ö Ü Þ Ñ
 
     ! things to automatically convert (unless otherwise specified below)
-    %>:0 %>:e
+    %>:e
 
     %{stemd20%}:d %{stemt20%}:t %{stemm2n%}:m %{stems20%}:s %{stemn20%}:n
     %{stemu2o%}:u
@@ -86,18 +86,12 @@ Rules
 "Optionally assimilate n,s to l when at a morpheme boundary"
     [ n:l | s:l ] => :Vowel _ %>: %{l%}: ;
 
-"Situations that force the morpheme boundary to become 0"
-    %>:e /<= :Vowel :0* _ ;  _ :0* :Vowel ;  ! adjacent vowel on either side
-            :Vowel [:l - l:] _ %{l%}: :Vowel ;  ! assimilation happened (ended as l, but didn't start as l)
-            _ :0* .#. ;  ! there's nothing after the boundary
 "Situations that force the morpheme boundary to become 0; good phonotactics"
-    %>:e /<= :Vowel :Cx :0* _ :0* :Cy :Vowel ;
-        where   Cx in (h l l l l l l l l l     l m m m m n n n n n     n p p r r r r r r r r r     r s s s     t t     t c p t c m n s l r)
-                Cy in (t c d f m p q t v %{w%} y b n p y c d g t %{w%} y s t c d m n p t s v %{w%} y c t %{w%} s %{w%} y s p t c m n s l r)
+    %>:0 <=>
+            _ :0* .#. ;  ! nothing after
+            :Vowel :0* _ ; _ :0* :Vowel ;  ! Adjacent vowel
+            :Vowel :n :0* _ :t .#. ;  ! Vnt#
+            :Vowel :Cx :0* _ :0* :Cy :Vowel ;  ! a combination that's specifically allowed
+                where   Cx in (h l l l l l l l l l     l m m m m n n n n n     n p p r r r r r r r r r     r s s s     t t     t c p t c m n s l r)
+                        Cy in (t c d f m p q t v %{w%} y b n p y c d g t %{w%} y s t c d m n p t s v %{w%} y c t %{w%} s %{w%} y s p t c m n s l r)
                 matched ;
-"Situations that force the morpheme boundary to become 0; adding a -t to a word ending in Vn (-nt is allowed as final)"
-    %>:e /<= :Vowel :n :0* _ :t .#. ;
-"Situations that force the morpheme boundary to become e"
-    %>:0 /<= ConsonantCluster _ :Consonant ;  :Consonant _ ConsonantCluster ;  ! consonant cluster on either side
-            :Consonant _ :Consonant .#. ;  ! any consonant cluster, if not followed by a vowel  ! TODO: EXCEPT 'nt'!
-            :Vowel [[r: | n: | s:] - :l] _ %{l%}: ;  ! assimilation could've happened, but didn't
