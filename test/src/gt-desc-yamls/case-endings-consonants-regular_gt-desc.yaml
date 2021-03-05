@@ -236,3 +236,7 @@ Tests:
     lirit+N+Plur+Par+Loc+Short: liritelis
     lirit+N+Plur+Par+Abl: [liritelillon, liritelillo]
     lirit+N+Plur+Par+Poss: liritelí{w}a
+  
+  # Words are also allowed to end in -nt,
+  # but I haven't found any examples where the root ends like that,
+  # so I'm not writing any tests.
