@@ -11,6 +11,7 @@ Tests:
     # Singular
     manar+N+Sing+Nom: manar
   
+  
   # Weirdo adjectives
   
   Adjectives ending in -e that have an -i stem:
@@ -18,5 +19,7 @@ Tests:
     carnë+A+Nsing: carni
     carnë+A+Sing+Loc: carnisse
     carnë+A+Plur+Ins: [carnínen, carninen]
+    # Superlative
+    carnë+A+Superl: ancarne  # TODO: not done yet
   
   # TODO: add more adjective tests

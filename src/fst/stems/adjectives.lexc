@@ -4,10 +4,10 @@
 
 LEXICON Adjectives
     AdjPrefix ;
-    AdjStems ;
 
 LEXICON AdjPrefix
-    @U.AdjSup.TRUE@:@U.AdjSup.TRUE@a{n}%< AdjStems ;
+    @U.AdjSup.TRUE@:@U.AdjSup.TRUE@a{n}%< AdjStems ;  ! TODO: add twolc rules for {n} and <
+    @U.AdjSup.FALSE@ AdjStems ;
 
 LEXICON AdjStems
     ! Lesson 4
@@ -23,5 +23,14 @@ LEXICON AdjStems
     firin                   AdjSuffix-Cons  "dead" ;
     ! Assorted
     laurëa:laur             AdjSuffix-EA    "golden, like gold" ;
+    hiswa:hiþw              AdjSuffix       "grey" ;
+    hloirëa:hloir           AdjSuffix-EA    "venomous" ;
+    moina:moin              AdjSuffix       "familiar, dear" ;
+    sarta:sart              AdjSuffix       "steadfast, trusty, loyal" ;
+    tyelca:tyelc            AdjSuffix       "swift, agile" ;
+    nwalca:ñwalc            AdjSuffix       "cruel" ;
+    rempa:remp              AdjSuffix       "crooked, hooked" ;
+    sanda:þand              AdjSuffix       "firm, true, abiding" ;
+    pahta:paht              AdjSuffix       "closed, shut, private" ;
 
 ! vim: set ft=xfst-lexc:

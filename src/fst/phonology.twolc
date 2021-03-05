@@ -22,12 +22,14 @@ Alphabet
     %{%-V%}:0
     %{l%}:l
     %{%+%}:0
+    %{n%}:n
 
 ;
 
-! allowed initial consonant clusters: x, ps, ty, ny, ly, qu, ñw (became nw)
-! allowed medial consonant clusters: ht, lc, ld, lf, lm, lp, lqu, lt, lv, lw, ly, mb, mn, mp, my, nc, nd, ng, nt, nw (ñw initial only), ny, ps, pt, qu, rc, rd, rm, rn, rp, rt, rs, rv, rw, ry, sc, st, sw, ts, tw, ty, x=cs, pp, tt, cc, mm, nn, ss, ll, rr
-! allowed medial tri-consonantal clusters: nqu, lqu, rqu, squ, ngw, rhw, nty, lty, hty, rty, sty, lhy
+! allowed initial consonants: p, q, t, c, f, s, h, m, n, ñ, v, l, r, y, w
+! allowed initial consonant clusters: hy, hw, hl, hr, x, ps, ty, ny, ly, ñw (became nw)
+! allowed medial consonant clusters: ht, lc, ld, lf, lm, lp, lq, lt, lv, lw, ly, mb, mn, mp, my, nc, nd, nf (henfanwa), ng, nq, nt, nv, nw (ñw initial only), ny, ps, pt, qu, rc, rd, rm, rn, rp, rq, rt, rs, rv, rw, ry, sc, sq, st, sw, ts, tw, ty, x=cs, pp, tt, cc, mm, nn, ss, ll, rr
+! allowed medial tri-consonantal clusters: ngw, rhw, nty, lty, hty, rty, sty, lhy
 ! allowed final consonants: n, r, l, s, t, nt
 
 Sets
@@ -101,8 +103,8 @@ Rules
 
 "Assimilate r to l when at a morpheme boundary"
     r:l <=> :Vowel _ %>: %{l%}: ;
-"Optionally assimilate n,s to l when at a morpheme boundary"
-    [ n:l | s:l ] => :Vowel _ %>: %{l%}: ;
+"Optionally assimilate n,s,þ to l when at a morpheme boundary"
+    [ n:l | s:l | þ:l] => :Vowel _ %>: %{l%}: ;
 
 "Situations that force the morpheme boundary to become 0; good phonotactics"
     %>:0 <=>
@@ -110,6 +112,23 @@ Rules
             :Vowel :0* _ ; _ :0* :Vowel ;  ! Adjacent vowel
             :Vowel :n :0* _ :t .#. ;  ! Vnt#
             :Vowel :Cx :0* _ :0* :Cy :Vowel ;  ! a combination that's specifically allowed
-                where   Cx in (h l l l l l l l l l     l m m m m n n n n n     n p p r r r r r r r r r     r s s s     t t     t c p t c m n s l r)
-                        Cy in (t c d f m p q t v %{w%} y b n p y c d g t %{w%} y s t c d m n p t s v %{w%} y c t %{w%} s %{w%} y s p t c m n s l r)
+                where   Cx in (h l l l l l l l l l     l m m m m n n n n n n n n     n p p r r r r r r r r r r     r s s s s     t t     t c p t c m n s l r)
+                        Cy in (t c d f m p q t v %{w%} y b n p y c d f g q t v %{w%} y s t c d m n p q t s v %{w%} y c q t %{w%} s %{w%} y s p t c m n s l r)
                     matched ;
+
+"The boundary from the prefix a{n}<- needs to become non-zero"
+    %<:a <=> %{n%}: _ [ConsonantCluster - [:t :y]] ;  ! ty is the only cluster that can start a word which n is allowed to precede
+"{n} does not need to change"  ! [vowel c f n q t v w {w} y] are allowed following letters with no change to n
+    %{n%}:n <=> _ [%<: - :0] ;  ! inserting a divider thing also means no change
+                _ %<:0 h: ;  ! if the border goes to 0, then the h is not in a cluster and will change to c, so the n gets to stay
+                _ %<:0 :Vowel ;
+                _ %<:0 :Cx ;
+                    where Cx in (c f n q t v w %{w%} y) ;
+! need change: h l m p r s þ, consonant clusters (including x, excepty ty)
+"Total assimilation of {n}"
+    %{n%}:Cx <=> _ %<:0 :Cx :Vowel ;
+        where Cx in (l r s þ) ;
+"Labialization of {n}"
+    %{n%}:m <=> _ %<:0 [:p | :m] :Vowel ;
+"If the root starts with h-, the border goes to 0, and the n stays, then the h turns to c"
+    h:c <=> %{n%}:n %<:0 _ ;

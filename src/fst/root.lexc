@@ -115,7 +115,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
     {n}     ! end of the adjectival superlative prefix, which may retrogressively assimilate
 
 !! Symbols that are written differently in Tengwar script because of etymology, not phonology/context
-    {w}  ! w/v
+    {w}  ! w/v (if it's a w or v that can't alternate, just write plain w or v)
     ! th/s is written as þ
     ! ŋ/n is written as ñ
 
