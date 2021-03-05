@@ -74,8 +74,7 @@ Rules
 
 "Adjective with an i2e stem, no case suffix, delete the i2e; also {-V} and a plural ending with {i} both delete it"
     %{stemi2e%}:0 <=> _ %*: [i | e] .#. ;
-                      _ (%*:) %>:0 %{%-V%}: ;
-                      _ (%*:) %>:0 %{i%}: ;
+                      _ (%*:) %>:0 [%{%-V%}: | %{i%}:] ;
 
 
 "Words marked with {+} have the final vowel lengthened with certain endings, also marked with {+}"
