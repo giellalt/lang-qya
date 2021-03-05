@@ -53,7 +53,142 @@ Tests:
     nís+N+Plur+Par+Abl: [nisselillon, nisselillo]
     nís+N+Plur+Par+Poss: nisselí{w}a
   
-  # Stem-change nouns where the change is non-final:
-  # Stem-change nouns ending in o/u-:
-  # Stem-change nouns ending in co/cu- (also shifts to qu):
-  # Stem-change nouns ending in go/gu- (also shifts to gw):
+  Stem-change nouns where the change is non-final:
+    # Singular
+    nér+N+Sing+Nom: nér
+    nér+N+Sing+Acc: nér
+    nér+N+Sing+Gen: nero
+    nér+N+Sing+Ins: nernen
+    nér+N+Sing+All: nerenna
+    nér+N+Sing+Dat: neren
+    nér+N+Sing+Loc: neresse
+    nér+N+Sing+Loc+Short: neres
+    nér+N+Sing+Abl: nerello
+    nér+N+Sing+Poss: ner{w}a
+    # Dual
+    nér+N+Dual+Nom: [neret, neru]
+    nér+N+Dual+Acc: [neret, neru]
+    nér+N+Dual+Gen: [nerto, neruo]
+    nér+N+Dual+Ins: [nerenten, nerunen]
+    nér+N+Dual+All: [nerenta, nerunna]
+    nér+N+Dual+Dat: [nerent, nerun, neruen]
+    nér+N+Dual+Loc: [neretse, nerusse]
+    nér+N+Dual+Loc+Short: nerus  # also nertes ???
+    nér+N+Dual+Abl: [nerelto, nerullo]
+    nér+N+Dual+Poss: ['neret{w}a', 'neru{w}a']
+    # Plural
+    nér+N+Plur+Nom: neri
+    nér+N+Plur+Acc: neri
+    nér+N+Plur+Gen: nerion
+    nér+N+Plur+Ins: nerinen
+    nér+N+Plur+All: nerinnar
+    nér+N+Plur+Dat: nerin
+    nér+N+Plur+Loc: nerissen
+    nér+N+Plur+Loc+Short: neris
+    nér+N+Plur+Abl: nerillon
+    nér+N+Plur+Poss: neri{w}a
+    # Partitive Plural
+    nér+N+Plur+Par+Nom: nelli
+    nér+N+Plur+Par+Acc: nelli
+    nér+N+Plur+Par+Gen: nellion
+    nér+N+Plur+Par+Ins: nellínen
+    nér+N+Plur+Par+All: [nellinnar, nellinna]
+    nér+N+Plur+Par+Dat: nellin
+    nér+N+Plur+Par+Loc: [nellissen, nellisse]
+    nér+N+Plur+Par+Loc+Short: nellis
+    nér+N+Plur+Par+Abl: [nellillon, nellillo]
+    nér+N+Plur+Par+Poss: nellí{w}a
+  
+  # Stem-change nouns ending in o/u
+
+  Stem-change nouns ending in co/cu- (also shifts to qu):
+    # Singular
+    ranco+N+Sing+Nom: ranco
+    ranco+N+Sing+Acc: ranco
+    ranco+N+Sing+Gen: ranquo
+    ranco+N+Sing+Ins: rancunen
+    ranco+N+Sing+All: rancunna
+    ranco+N+Sing+Dat: rancun
+    ranco+N+Sing+Loc: rancusse
+    ranco+N+Sing+Loc+Short: rancus
+    ranco+N+Sing+Abl: rancullo
+    ranco+N+Sing+Poss: rancu{w}a
+    # Dual
+    ranco+N+Dual+Nom: [rancut, rancu]
+    ranco+N+Dual+Acc: [rancut, rancu]
+    ranco+N+Dual+Gen: [rancuto, ranquo]
+    ranco+N+Dual+Ins: [rancunten, rancunen]
+    ranco+N+Dual+All: [rancunta, rancunna]
+    ranco+N+Dual+Dat: [rancunt, rancun, ranquen]
+    ranco+N+Dual+Loc: [rancutse, rancusse]
+    ranco+N+Dual+Loc+Short: rancus  # also rancutes ???
+    ranco+N+Dual+Abl: [ranculto, rancullo]
+    ranco+N+Dual+Poss: ['rancut{w}a', 'rancu{w}a']
+    # Plural
+    ranco+N+Plur+Nom: ranqui
+    ranco+N+Plur+Acc: ranqui
+    ranco+N+Plur+Gen: ranquion
+    ranco+N+Plur+Ins: ranquinen
+    ranco+N+Plur+All: ranquinnar
+    ranco+N+Plur+Dat: ranquin
+    ranco+N+Plur+Loc: ranquissen
+    ranco+N+Plur+Loc+Short: ranquis
+    ranco+N+Plur+Abl: ranquillon
+    ranco+N+Plur+Poss: ranqui{w}a
+    # Partitive Plural
+    ranco+N+Plur+Par+Nom: ranculi
+    ranco+N+Plur+Par+Acc: ranculi
+    ranco+N+Plur+Par+Gen: ranculion
+    ranco+N+Plur+Par+Ins: ranculínen
+    ranco+N+Plur+Par+All: [ranculinnar, ranculinna]
+    ranco+N+Plur+Par+Dat: ranculin
+    ranco+N+Plur+Par+Loc: [ranculissen, ranculisse]
+    ranco+N+Plur+Par+Loc+Short: ranculis
+    ranco+N+Plur+Par+Abl: [ranculillon, ranculillo]
+    ranco+N+Plur+Par+Poss: ranculí{w}a
+
+  Stem-change nouns ending in go/gu- (also shifts to gw):
+    # Singular
+    ango+N+Sing+Nom: ango
+    ango+N+Sing+Acc: ango
+    ango+N+Sing+Gen: angwo
+    ango+N+Sing+Ins: angunen
+    ango+N+Sing+All: angunna
+    ango+N+Sing+Dat: angun
+    ango+N+Sing+Loc: angusse
+    ango+N+Sing+Loc+Short: angus
+    ango+N+Sing+Abl: angullo
+    ango+N+Sing+Poss: angu{w}a
+    # Dual
+    ango+N+Dual+Nom: [angut, angu]
+    ango+N+Dual+Acc: [angut, angu]
+    ango+N+Dual+Gen: [anguto, angwo]
+    ango+N+Dual+Ins: [angunten, angunen]
+    ango+N+Dual+All: [angunta, angunna]
+    ango+N+Dual+Dat: [angunt, angun, angwen]
+    ango+N+Dual+Loc: [angutse, angusse]
+    ango+N+Dual+Loc+Short: angus  # also angutes ???
+    ango+N+Dual+Abl: [angulto, angullo]
+    ango+N+Dual+Poss: ['angut{w}a', 'angu{w}a']
+    # Plural
+    ango+N+Plur+Nom: angwi
+    ango+N+Plur+Acc: angwi
+    ango+N+Plur+Gen: angwion
+    ango+N+Plur+Ins: angwinen
+    ango+N+Plur+All: angwinnar
+    ango+N+Plur+Dat: angwin
+    ango+N+Plur+Loc: angwissen
+    ango+N+Plur+Loc+Short: angwis
+    ango+N+Plur+Abl: angwillon
+    ango+N+Plur+Poss: angwi{w}a
+    # Partitive Plural
+    ango+N+Plur+Par+Nom: anguli
+    ango+N+Plur+Par+Acc: anguli
+    ango+N+Plur+Par+Gen: angulion
+    ango+N+Plur+Par+Ins: angulínen
+    ango+N+Plur+Par+All: [angulinnar, angulinna]
+    ango+N+Plur+Par+Dat: angulin
+    ango+N+Plur+Par+Loc: [angulissen, angulisse]
+    ango+N+Plur+Par+Loc+Short: angulis
+    ango+N+Plur+Par+Abl: [angulillon, angulillo]
+    ango+N+Plur+Par+Poss: angulí{w}a

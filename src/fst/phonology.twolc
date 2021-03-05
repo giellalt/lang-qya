@@ -41,18 +41,23 @@ Sets
 
 
 Definitions
-    ConsonantCluster = [:Consonant :Consonant] | x ;  ! x is really cs
+    ConsonantCluster = [:Consonant :Consonant] | :x ;  ! x is really cs
     Diphthong = [:a :i] | [:a :u] | [:e :u] | [:o :i] | [:u :i] | [:i :u] ;
 
 
 Rules
 
-"Convert cu to qu when followed by a vowel, if the u is a u->o stem"
-    c:q <=> _ %{stemu2o%}:u :0* :Vowel ;
-"Convert cw to qu, part 1: w->u after a c"
-    %{w%}:u <=> c: _ ;
-"Convert cw to qu, part 2: c->q before a w"
-    c:q <=> _ %{w%}: ;
+"Convert cu to qu when followed by a vowel, if the u is a u->o stem (cu/qu part 1)"
+    c:q <=> _ %{stemu2o%}: :0* [[Vowel - u] | u Vowel] ;
+"If the next vowel is a u, make stemu2o go to 0, not u (cu/qu  2)"
+    %{stemu2o%}:0 <=> c: _ :0* u ;
+
+"Delete a 'u' that's in the case ending if it's followed by a vowel (gu/gw part 1)"
+    u:0 <=> g %{stemu2o%}: %>: %{%-V%}: _ Vowel ;
+"Convert gu to gw when followed by a vowel, if the u is a u->o stem (gu/gw part 2)"
+    %{stemu2o%}:w <=> g _ :0* [Vowel - u] ;
+"If the next vowel is a u, make stemu2o go to 0, not u (gu/gw part 3)"
+    %{stemu2o%}:0 <=> g _ :0* u ;
 
 "Plural endings with {i} or {í} delete a preceding e"
     e:0 <=> _ (%{%+%}:0) %>:0 [%{i%}: | %{í%}:] ;
@@ -67,7 +72,7 @@ Rules
     Vx:Vy => _ %{%+%}: ?* %{%+%}: .#. ;
         where   Vx in (a e i o u)
                 Vy in (á é í ó ú)
-                matched ;
+            matched ;
 
 "Genitive ending {o} deletes a preceding a,o"
     Vx:0 <=> _ %>:0 %{o%}: ;
@@ -94,4 +99,4 @@ Rules
             :Vowel :Cx :0* _ :0* :Cy :Vowel ;  ! a combination that's specifically allowed
                 where   Cx in (h l l l l l l l l l     l m m m m n n n n n     n p p r r r r r r r r r     r s s s     t t     t c p t c m n s l r)
                         Cy in (t c d f m p q t v %{w%} y b n p y c d g t %{w%} y s t c d m n p t s v %{w%} y c t %{w%} s %{w%} y s p t c m n s l r)
-                matched ;
+                    matched ;
