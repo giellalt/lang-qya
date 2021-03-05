@@ -7,6 +7,14 @@
 
 LEXICON NounSuffix
     +N:%> Cases ;
+    +N:%> NounNoCase ;
+
+LEXICON NounNoCase  ! number without case, e.g. axor ilcalannar
+    +Sing: # ;
+    +Dual:t # ;
+    +Dual:{-V}u # ;
+    +Plur:r # ;
+    +Plur+Par:li{+} # ;
 
 LEXICON Cases
     +Sing:      CasesSing ;
@@ -71,6 +79,14 @@ LEXICON CasesPlurPar
 
 LEXICON NounSuffix-E
     +N:%> Cases-E ;
+    +N:%> NounNoCase-E ;
+
+LEXICON NounNoCase-E  ! number without case, e.g. axor ilcalannar
+    +Sing: # ;
+    +Dual:t # ;
+    +Dual:{-V}u # ;
+    +Plur:{i} # ;
+    +Plur+Par:li # ;
 
 LEXICON Cases-E
     +Sing:      CasesSing-E ;
@@ -135,6 +151,14 @@ LEXICON CasesPlurPar-E
 
 LEXICON NounSuffix-Cons
     +N:%> Cases-Cons ;
+    +N:%> NounNoCase-Cons ;
+
+LEXICON NounNoCase-Cons  ! number without case, e.g. axor ilcalannar
+    +Sing: # ;
+    +Dual:t # ;
+    +Dual:{-V}u # ;
+    +Plur:i # ;
+    +Plur+Par:{l}i # ;
 
 LEXICON Cases-Cons
     +Sing:      CasesSing-Cons ;

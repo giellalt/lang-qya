@@ -9,6 +9,7 @@ Tests:
 
   Stem-change nouns ending in a consonant cluster:
     # Singular
+    nís+N+Sing: nís
     nís+N+Sing+Nom: nís
     nís+N+Sing+Acc: nís
     nís+N+Sing+Gen: nisso
@@ -20,6 +21,7 @@ Tests:
     nís+N+Sing+Abl: nissello
     nís+N+Sing+Poss: nisse{w}a
     # Dual
+    nís+N+Dual: [nisset, nissu]
     nís+N+Dual+Nom: [nisset, nissu]
     nís+N+Dual+Acc: [nisset, nissu]
     nís+N+Dual+Gen: [nisseto, nissuo]
@@ -31,6 +33,7 @@ Tests:
     nís+N+Dual+Abl: [nisselto, nissullo]
     nís+N+Dual+Poss: ['nisset{w}a', 'nissu{w}a']
     # Plural
+    nís+N+Plur: nissi
     nís+N+Plur+Nom: nissi
     nís+N+Plur+Acc: nissi
     nís+N+Plur+Gen: nission
@@ -42,6 +45,7 @@ Tests:
     nís+N+Plur+Abl: nissillon
     nís+N+Plur+Poss: nissi{w}a
     # Partitive Plural
+    nís+N+Plur+Par: nisseli
     nís+N+Plur+Par+Nom: nisseli
     nís+N+Plur+Par+Acc: nisseli
     nís+N+Plur+Par+Gen: nisselion
@@ -55,6 +59,7 @@ Tests:
   
   Stem-change nouns where the change is non-final:
     # Singular
+    nér+N+Sing: nér
     nér+N+Sing+Nom: nér
     nér+N+Sing+Acc: nér
     nér+N+Sing+Gen: nero
@@ -66,6 +71,7 @@ Tests:
     nér+N+Sing+Abl: nerello
     nér+N+Sing+Poss: ner{w}a
     # Dual
+    nér+N+Dual: [neret, neru]
     nér+N+Dual+Nom: [neret, neru]
     nér+N+Dual+Acc: [neret, neru]
     nér+N+Dual+Gen: [nerto, neruo]
@@ -77,6 +83,7 @@ Tests:
     nér+N+Dual+Abl: [nerelto, nerullo]
     nér+N+Dual+Poss: ['neret{w}a', 'neru{w}a']
     # Plural
+    nér+N+Plur: neri
     nér+N+Plur+Nom: neri
     nér+N+Plur+Acc: neri
     nér+N+Plur+Gen: nerion
@@ -88,6 +95,7 @@ Tests:
     nér+N+Plur+Abl: nerillon
     nér+N+Plur+Poss: neri{w}a
     # Partitive Plural
+    nér+N+Plur+Par: nelli
     nér+N+Plur+Par+Nom: nelli
     nér+N+Plur+Par+Acc: nelli
     nér+N+Plur+Par+Gen: nellion
@@ -103,6 +111,7 @@ Tests:
 
   Stem-change nouns ending in co/cu- (also shifts to qu):
     # Singular
+    ranco+N+Sing: ranco
     ranco+N+Sing+Nom: ranco
     ranco+N+Sing+Acc: ranco
     ranco+N+Sing+Gen: ranquo
@@ -114,6 +123,7 @@ Tests:
     ranco+N+Sing+Abl: rancullo
     ranco+N+Sing+Poss: rancu{w}a
     # Dual
+    ranco+N+Dual: [rancut, rancu]
     ranco+N+Dual+Nom: [rancut, rancu]
     ranco+N+Dual+Acc: [rancut, rancu]
     ranco+N+Dual+Gen: [rancuto, ranquo]
@@ -125,6 +135,7 @@ Tests:
     ranco+N+Dual+Abl: [ranculto, rancullo]
     ranco+N+Dual+Poss: ['rancut{w}a', 'rancu{w}a']
     # Plural
+    ranco+N+Plur: ranqui
     ranco+N+Plur+Nom: ranqui
     ranco+N+Plur+Acc: ranqui
     ranco+N+Plur+Gen: ranquion
@@ -136,6 +147,7 @@ Tests:
     ranco+N+Plur+Abl: ranquillon
     ranco+N+Plur+Poss: ranqui{w}a
     # Partitive Plural
+    ranco+N+Plur+Par: ranculi
     ranco+N+Plur+Par+Nom: ranculi
     ranco+N+Plur+Par+Acc: ranculi
     ranco+N+Plur+Par+Gen: ranculion
@@ -149,6 +161,7 @@ Tests:
 
   Stem-change nouns ending in go/gu- (also shifts to gw):
     # Singular
+    ango+N+Sing: ango
     ango+N+Sing+Nom: ango
     ango+N+Sing+Acc: ango
     ango+N+Sing+Gen: angwo
@@ -160,6 +173,7 @@ Tests:
     ango+N+Sing+Abl: angullo
     ango+N+Sing+Poss: angu{w}a
     # Dual
+    ango+N+Dual: [angut, angu]
     ango+N+Dual+Nom: [angut, angu]
     ango+N+Dual+Acc: [angut, angu]
     ango+N+Dual+Gen: [anguto, angwo]
@@ -171,6 +185,7 @@ Tests:
     ango+N+Dual+Abl: [angulto, angullo]
     ango+N+Dual+Poss: ['angut{w}a', 'angu{w}a']
     # Plural
+    ango+N+Plur: angwi
     ango+N+Plur+Nom: angwi
     ango+N+Plur+Acc: angwi
     ango+N+Plur+Gen: angwion
@@ -182,6 +197,7 @@ Tests:
     ango+N+Plur+Abl: angwillon
     ango+N+Plur+Poss: angwi{w}a
     # Partitive Plural
+    ango+N+Plur+Par: anguli
     ango+N+Plur+Par+Nom: anguli
     ango+N+Plur+Par+Acc: anguli
     ango+N+Plur+Par+Gen: angulion
@@ -192,3 +208,55 @@ Tests:
     ango+N+Plur+Par+Loc+Short: angulis
     ango+N+Plur+Par+Abl: [angulillon, angulillo]
     ango+N+Plur+Par+Poss: angulí{w}a
+  
+  # Stem-change nouns ending in e/i
+
+  Stem-change nouns ending in e/i-:
+    # Singular
+    súrë+N+Sing: súre
+    súrë+N+Sing+Nom: súre
+    súrë+N+Sing+Acc: súre
+    súrë+N+Sing+Gen: súrio
+    súrë+N+Sing+Ins: súrinen
+    súrë+N+Sing+All: súrinna
+    súrë+N+Sing+Dat: súrin
+    súrë+N+Sing+Loc: súrisse
+    súrë+N+Sing+Loc+Short: súris
+    súrë+N+Sing+Abl: súrillo
+    súrë+N+Sing+Poss: súri{w}a
+    # Dual
+    súrë+N+Dual: [súrit, súru]
+    súrë+N+Dual+Nom: [súrit, súru]
+    súrë+N+Dual+Acc: [súrit, súru]
+    súrë+N+Dual+Gen: [súrito, súruo]
+    súrë+N+Dual+Ins: [súrinten, súrunen]
+    súrë+N+Dual+All: [súrinta, súrunna]
+    súrë+N+Dual+Dat: [súrint, súrun, súruen]
+    súrë+N+Dual+Loc: [súritse, súrusse]
+    súrë+N+Dual+Loc+Short: súrus  # also súrites ???
+    súrë+N+Dual+Abl: [súrilto, súrullo]
+    súrë+N+Dual+Poss: ['súrit{w}a', 'súru{w}a']
+    # Plural
+    súrë+N+Plur: súrir
+    súrë+N+Plur+Nom: súrir
+    súrë+N+Plur+Acc: súrir
+    súrë+N+Plur+Gen: súriron
+    súrë+N+Plur+Ins: [súrinen, súrínen]
+    súrë+N+Plur+All: súrinnar
+    súrë+N+Plur+Dat: [súrin, súrín]
+    súrë+N+Plur+Loc: súrissen
+    súrë+N+Plur+Loc+Short: [súris, súrís]
+    súrë+N+Plur+Abl: súrillon
+    súrë+N+Plur+Poss: ['súri{w}a', 'súrí{w}a']
+    # Partitive Plural
+    súrë+N+Plur+Par: súrili
+    súrë+N+Plur+Par+Nom: súrili
+    súrë+N+Plur+Par+Acc: súrili
+    súrë+N+Plur+Par+Gen: súrilion
+    súrë+N+Plur+Par+Ins: súrilínen
+    súrë+N+Plur+Par+All: [súrilinnar, súrilinna]
+    súrë+N+Plur+Par+Dat: súrilin
+    súrë+N+Plur+Par+Loc: [súrilissen, súrilisse]
+    súrë+N+Plur+Par+Loc+Short: súrilis
+    súrë+N+Plur+Par+Abl: [súrilillon, súrilillo]
+    súrë+N+Plur+Par+Poss: súrilí{w}a

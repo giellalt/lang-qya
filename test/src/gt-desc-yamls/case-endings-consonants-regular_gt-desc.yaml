@@ -9,6 +9,7 @@ Tests:
 
   Standard nouns ending in -Vr:
     # Singular
+    manar+N+Sing: manar
     manar+N+Sing+Nom: manar
     manar+N+Sing+Acc: manar
     manar+N+Sing+Gen: manaro
@@ -20,6 +21,7 @@ Tests:
     manar+N+Sing+Abl: manarello
     manar+N+Sing+Poss: manar{w}a
     # Dual
+    manar+N+Dual: [manaret, manaru]
     manar+N+Dual+Nom: [manaret, manaru]
     manar+N+Dual+Acc: [manaret, manaru]
     manar+N+Dual+Gen: [manarto, manaruo]
@@ -31,6 +33,7 @@ Tests:
     manar+N+Dual+Abl: [manarelto, manarullo]
     manar+N+Dual+Poss: ['manaret{w}a', 'manaru{w}a']
     # Plural
+    manar+N+Plur: manari
     manar+N+Plur+Nom: manari
     manar+N+Plur+Acc: manari
     manar+N+Plur+Gen: manarion
@@ -42,6 +45,7 @@ Tests:
     manar+N+Plur+Abl: manarillon
     manar+N+Plur+Poss: manari{w}a
     # Partitive Plural
+    manar+N+Plur+Par: manalli
     manar+N+Plur+Par+Nom: manalli
     manar+N+Plur+Par+Acc: manalli
     manar+N+Plur+Par+Gen: manallion
@@ -55,6 +59,7 @@ Tests:
   
   Standard nouns ending in -Vn:
     # Singular
+    aran+N+Sing: aran
     aran+N+Sing+Nom: aran
     aran+N+Sing+Acc: aran
     aran+N+Sing+Gen: arano
@@ -66,6 +71,7 @@ Tests:
     aran+N+Sing+Abl: aranello
     aran+N+Sing+Poss: aran{w}a
     # Dual
+    aran+N+Dual: [arant, aranu]
     aran+N+Dual+Nom: [arant, aranu]
     aran+N+Dual+Acc: [arant, aranu]
     aran+N+Dual+Gen: [aranto, aranuo]
@@ -77,6 +83,7 @@ Tests:
     aran+N+Dual+Abl: [aranelto, aranullo]
     aran+N+Dual+Poss: ['aranet{w}a', 'aranu{w}a']
     # Plural
+    aran+N+Plur: arani
     aran+N+Plur+Nom: arani
     aran+N+Plur+Acc: arani
     aran+N+Plur+Gen: aranion
@@ -88,6 +95,7 @@ Tests:
     aran+N+Plur+Abl: aranillon
     aran+N+Plur+Poss: arani{w}a
     # Partitive Plural
+    aran+N+Plur+Par: [aralli, araneli]
     aran+N+Plur+Par+Nom: [aralli, araneli]
     aran+N+Plur+Par+Acc: [aralli, araneli]
     aran+N+Plur+Par+Gen: [arallion, aranelion]
@@ -101,6 +109,7 @@ Tests:
   
   Standard nouns ending in -Vs:
     # Singular
+    coimas+N+Sing: coimas
     coimas+N+Sing+Nom: coimas
     coimas+N+Sing+Acc: coimas
     coimas+N+Sing+Gen: coimaso
@@ -112,6 +121,7 @@ Tests:
     coimas+N+Sing+Abl: coimasello
     coimas+N+Sing+Poss: coimas{w}a
     # Dual
+    coimas+N+Dual: [coimaset, coimasu]
     coimas+N+Dual+Nom: [coimaset, coimasu]
     coimas+N+Dual+Acc: [coimaset, coimasu]
     coimas+N+Dual+Gen: [coimasto, coimasuo]
@@ -123,6 +133,7 @@ Tests:
     coimas+N+Dual+Abl: [coimaselto, coimasullo]
     coimas+N+Dual+Poss: ['coimaset{w}a', 'coimasu{w}a']
     # Plural
+    coimas+N+Plur: coimasi
     coimas+N+Plur+Nom: coimasi
     coimas+N+Plur+Acc: coimasi
     coimas+N+Plur+Gen: coimasion
@@ -134,6 +145,7 @@ Tests:
     coimas+N+Plur+Abl: coimasillon
     coimas+N+Plur+Poss: coimasi{w}a
     # Partitive Plural
+    coimas+N+Plur+Par: [coimalli, coimaseli]
     coimas+N+Plur+Par+Nom: [coimalli, coimaseli]
     coimas+N+Plur+Par+Acc: [coimalli, coimaseli]
     coimas+N+Plur+Par+Gen: [coimallion, coimaselion]
@@ -147,6 +159,7 @@ Tests:
   
   Standard nouns ending in -Vl:
     # Singular
+    estel+N+Sing: estel
     estel+N+Sing+Nom: estel
     estel+N+Sing+Acc: estel
     estel+N+Sing+Gen: estelo
@@ -158,6 +171,7 @@ Tests:
     estel+N+Sing+Abl: estelello
     estel+N+Sing+Poss: estel{w}a
     # Dual
+    estel+N+Dual: [estelet, estelu]
     estel+N+Dual+Nom: [estelet, estelu]
     estel+N+Dual+Acc: [estelet, estelu]
     estel+N+Dual+Gen: [estelto, esteluo]
@@ -169,6 +183,7 @@ Tests:
     estel+N+Dual+Abl: [estelelto, estelullo]
     estel+N+Dual+Poss: ['estelet{w}a', 'estelu{w}a']
     # Plural
+    estel+N+Plur: esteli
     estel+N+Plur+Nom: esteli
     estel+N+Plur+Acc: esteli
     estel+N+Plur+Gen: estelion
@@ -180,6 +195,7 @@ Tests:
     estel+N+Plur+Abl: estelillon
     estel+N+Plur+Poss: esteli{w}a
     # Partitive Plural
+    estel+N+Plur+Par: estelli
     estel+N+Plur+Par+Nom: estelli
     estel+N+Plur+Par+Acc: estelli
     estel+N+Plur+Par+Gen: estellion
@@ -193,6 +209,7 @@ Tests:
   
   Standard nouns ending in -Vt:
     # Singular
+    lirit+N+Sing: lirit
     lirit+N+Sing+Nom: lirit
     lirit+N+Sing+Acc: lirit
     lirit+N+Sing+Gen: lirito
@@ -204,6 +221,7 @@ Tests:
     lirit+N+Sing+Abl: liritello
     lirit+N+Sing+Poss: lirit{w}a
     # Dual
+    lirit+N+Dual: [liritet, liritu]
     lirit+N+Dual+Nom: [liritet, liritu]
     lirit+N+Dual+Acc: [liritet, liritu]
     lirit+N+Dual+Gen: [liritto, lirituo]
@@ -215,6 +233,7 @@ Tests:
     lirit+N+Dual+Abl: [liritelto, liritullo]
     lirit+N+Dual+Poss: ['liritet{w}a', 'liritu{w}a']
     # Plural
+    lirit+N+Plur: liriti
     lirit+N+Plur+Nom: liriti
     lirit+N+Plur+Acc: liriti
     lirit+N+Plur+Gen: lirition
@@ -226,6 +245,7 @@ Tests:
     lirit+N+Plur+Abl: liritillon
     lirit+N+Plur+Poss: liriti{w}a
     # Partitive Plural
+    lirit+N+Plur+Par: [liriteli, liriteli]
     lirit+N+Plur+Par+Nom: [liriteli, liriteli]
     lirit+N+Plur+Par+Acc: [liriteli, liriteli]
     lirit+N+Plur+Par+Gen: [liritelion, liritelion]

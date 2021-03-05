@@ -9,6 +9,7 @@ Tests:
 
   Standard nouns ending in -a:
     # Singular
+    cirya+N+Sing: cirya
     cirya+N+Sing+Nom: cirya
     cirya+N+Sing+Acc: cirya
     cirya+N+Sing+Gen: ciryo
@@ -20,6 +21,7 @@ Tests:
     cirya+N+Sing+Abl: ciryallo
     cirya+N+Sing+Poss: cirya{w}a
     # Dual
+    cirya+N+Dual: [ciryat, ciryu]
     cirya+N+Dual+Nom: [ciryat, ciryu]
     cirya+N+Dual+Acc: [ciryat, ciryu]
     cirya+N+Dual+Gen: [ciryato, ciryuo]
@@ -31,6 +33,7 @@ Tests:
     cirya+N+Dual+Abl: [ciryalto, ciryullo]
     cirya+N+Dual+Poss: ['ciryat{w}a', 'ciryu{w}a']
     # Plural
+    cirya+N+Plur: ciryar
     cirya+N+Plur+Nom: ciryar
     cirya+N+Plur+Acc: ciryar
     cirya+N+Plur+Gen: ciryaron
@@ -42,6 +45,7 @@ Tests:
     cirya+N+Plur+Abl: ciryallon
     cirya+N+Plur+Poss: ciryai{w}a
     # Partitive Plural
+    cirya+N+Plur+Par: ciryali
     cirya+N+Plur+Par+Nom: ciryali
     cirya+N+Plur+Par+Acc: ciryali
     cirya+N+Plur+Par+Gen: ciryalion
@@ -55,6 +59,7 @@ Tests:
   
   Standard nouns ending in -o:
     # Singular
+    rocco+N+Sing: rocco
     rocco+N+Sing+Nom: rocco
     rocco+N+Sing+Acc: rocco
     rocco+N+Sing+Gen: rocco
@@ -66,6 +71,7 @@ Tests:
     rocco+N+Sing+Abl: roccollo
     rocco+N+Sing+Poss: rocco{w}a
     # Dual
+    rocco+N+Dual: [roccot, roccu]
     rocco+N+Dual+Nom: [roccot, roccu]
     rocco+N+Dual+Acc: [roccot, roccu]
     rocco+N+Dual+Gen: [roccoto, roccuo]
@@ -77,6 +83,7 @@ Tests:
     rocco+N+Dual+Abl: [roccolto, roccullo]
     rocco+N+Dual+Poss: ['roccot{w}a', 'roccu{w}a']
     # Plural
+    rocco+N+Plur: roccor
     rocco+N+Plur+Nom: roccor
     rocco+N+Plur+Acc: roccor
     rocco+N+Plur+Gen: roccoron
@@ -88,6 +95,7 @@ Tests:
     rocco+N+Plur+Abl: roccollon
     rocco+N+Plur+Poss: roccoi{w}a
     # Partitive Plural
+    rocco+N+Plur+Par: roccoli
     rocco+N+Plur+Par+Nom: roccoli
     rocco+N+Plur+Par+Acc: roccoli
     rocco+N+Plur+Par+Gen: roccolion
@@ -101,6 +109,7 @@ Tests:
   
   Standard nouns ending in -i:
     # Singular
+    tári+N+Sing: tári
     tári+N+Sing+Nom: tári
     tári+N+Sing+Acc: tári
     tári+N+Sing+Gen: tário
@@ -112,6 +121,7 @@ Tests:
     tári+N+Sing+Abl: tárillo
     tári+N+Sing+Poss: tári{w}a
     # Dual
+    tári+N+Dual: [tárit, táru]
     tári+N+Dual+Nom: [tárit, táru]
     tári+N+Dual+Acc: [tárit, táru]
     tári+N+Dual+Gen: [tárito, táruo]
@@ -123,6 +133,7 @@ Tests:
     tári+N+Dual+Abl: [tárilto, tárullo]
     tári+N+Dual+Poss: ['tárit{w}a', 'táru{w}a']
     # Plural
+    tári+N+Plur: tárir
     tári+N+Plur+Nom: tárir
     tári+N+Plur+Acc: tárir
     tári+N+Plur+Gen: táriron
@@ -134,6 +145,7 @@ Tests:
     tári+N+Plur+Abl: tárillon
     tári+N+Plur+Poss: ['tárí{w}a', 'tári{w}a']
     # Partitive Plural
+    tári+N+Plur+Par: tárili
     tári+N+Plur+Par+Nom: tárili
     tári+N+Plur+Par+Acc: tárili
     tári+N+Plur+Par+Gen: tárilion
@@ -147,6 +159,7 @@ Tests:
   
   Standard nouns ending in -u:
     # Singular
+    nénu+N+Sing: nénu
     nénu+N+Sing+Nom: nénu
     nénu+N+Sing+Acc: nénu
     nénu+N+Sing+Gen: nénuo
@@ -158,6 +171,7 @@ Tests:
     nénu+N+Sing+Abl: nénullo
     nénu+N+Sing+Poss: nénu{w}a
     # Dual
+    nénu+N+Dual: [nénut, nénu]
     nénu+N+Dual+Nom: [nénut, nénu]
     nénu+N+Dual+Acc: [nénut, nénu]
     nénu+N+Dual+Gen: [nénuto, nénuo]
@@ -169,6 +183,7 @@ Tests:
     nénu+N+Dual+Abl: [nénulto, nénullo]
     nénu+N+Dual+Poss: ['nénut{w}a', 'nénu{w}a']
     # Plural
+    nénu+N+Plur: nénur
     nénu+N+Plur+Nom: nénur
     nénu+N+Plur+Acc: nénur
     nénu+N+Plur+Gen: nénuron
@@ -180,6 +195,7 @@ Tests:
     nénu+N+Plur+Abl: nénullon
     nénu+N+Plur+Poss: nénui{w}a
     # Partitive Plural
+    nénu+N+Plur+Par: nénuli
     nénu+N+Plur+Par+Nom: nénuli
     nénu+N+Plur+Par+Acc: nénuli
     nénu+N+Plur+Par+Gen: nénulion
@@ -193,6 +209,7 @@ Tests:
   
   Standard nouns ending in -ie (which include {+}):
     # Singular
+    tyalië+N+Sing: tyalie
     tyalië+N+Sing+Nom: tyalie
     tyalië+N+Sing+Acc: tyalie
     tyalië+N+Sing+Gen: [tyalieo, tyaliéo]
@@ -204,6 +221,7 @@ Tests:
     tyalië+N+Sing+Abl: tyaliello
     tyalië+N+Sing+Poss: ['tyalie{w}a', 'tyalié{w}a']
     # Dual
+    tyalië+N+Dual: [tyaliet, tyaliu]
     tyalië+N+Dual+Nom: [tyaliet, tyaliu]
     tyalië+N+Dual+Acc: [tyaliet, tyaliu]
     tyalië+N+Dual+Gen: [tyalieto, tyaliéto, tyaliuo]
@@ -215,6 +233,7 @@ Tests:
     tyalië+N+Dual+Abl: [tyalielto, tyaliullo]
     tyalië+N+Dual+Poss: ['tyaliet{w}a', 'tyaliu{w}a']
     # Plural
+    tyalië+N+Plur: tyalier
     tyalië+N+Plur+Nom: tyalier
     tyalië+N+Plur+Acc: tyalier
     tyalië+N+Plur+Gen: [tyalieron, tyaliéron]
@@ -226,6 +245,7 @@ Tests:
     tyalië+N+Plur+Abl: tyaliellon
     tyalië+N+Plur+Poss: tyalié{w}a
     # Partitive Plural
+    tyalië+N+Plur+Par: [tyalieli, tyaliéli]
     tyalië+N+Plur+Par+Nom: [tyalieli, tyaliéli]
     tyalië+N+Plur+Par+Acc: [tyalieli, tyaliéli]
     tyalië+N+Plur+Par+Gen: tyalielion
@@ -238,7 +258,8 @@ Tests:
     tyalië+N+Plur+Par+Poss: tyalielí{w}a
   
   Standard nouns ending in -e:
-    # Singular  aiwë:aiwe
+    # Singular
+    aiwë+N+Sing: aiwe
     aiwë+N+Sing+Nom: aiwe
     aiwë+N+Sing+Acc: aiwe
     aiwë+N+Sing+Gen: aiweo
@@ -250,6 +271,7 @@ Tests:
     aiwë+N+Sing+Abl: aiwello
     aiwë+N+Sing+Poss: aiwe{w}a
     # Dual
+    aiwë+N+Dual: [aiwet, aiwu]
     aiwë+N+Dual+Nom: [aiwet, aiwu]
     aiwë+N+Dual+Acc: [aiwet, aiwu]
     aiwë+N+Dual+Gen: [aiweto, aiwuo]
@@ -261,6 +283,7 @@ Tests:
     aiwë+N+Dual+Abl: [aiwelto, aiwullo]
     aiwë+N+Dual+Poss: ['aiwet{w}a', 'aiwu{w}a']
     # Plural
+    aiwë+N+Plur: aiwi
     aiwë+N+Plur+Nom: aiwi
     aiwë+N+Plur+Acc: aiwi
     aiwë+N+Plur+Gen: aiwion
@@ -272,6 +295,7 @@ Tests:
     aiwë+N+Plur+Abl: aiwellon
     aiwë+N+Plur+Poss: aiwí{w}a
     # Partitive Plural
+    aiwë+N+Plur+Par: aiweli
     aiwë+N+Plur+Par+Nom: aiweli
     aiwë+N+Plur+Par+Acc: aiweli
     aiwë+N+Plur+Par+Gen: aiwelion

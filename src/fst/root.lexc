@@ -38,7 +38,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
     +Use/-Spell
 
 !! The nominals are inflected in the following Case and Number
-    +Sing +Dual +Plur +Par
+    +Sing +Dual +Plur +Par +Nsing
     +Nom +Acc +Gen +Ins +All +Dat +Loc +Short +Abl +Poss
 
 !! The possession is marked as such:
@@ -102,16 +102,17 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! To represent phonologic variations in word forms we use the following symbols in the lexicon files:
 !! Stem-dictionary forms (first form is the form used with endings, second is the form used with no endings)
     {stemd20} {stemt20} {stemm2n} {stems20} {stemn20}
-    {stemu2o}
+    {stemu2o} {stemi2e}
     {steme2é} {stemi2í}
 
-!! Symbols used to trigger alternations in preceding morphemes
+!! Symbols used to trigger alternations in morphemes
     {i}     ! start of a plural ending, deletes only e,i
     {í}     ! start of some plural endings
     {o}     ! genitive ending, deletes only a,o
     {-V}    ! delete the preceeding vowel
     {l}     ! an l that triggers total regressive assimilation if possible
     {+}     ! marks a stem in which the final vowel should be lengthened with certain endings
+    {n}     ! end of the adjectival superlative prefix, which may retrogressively assimilate
 
 !! Symbols that are written differently in Tengwar script because of etymology, not phonology/context
     {w}  ! w/v
@@ -119,6 +120,11 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
     ! ŋ/n is written as ñ
 
 !! !!Flag diacritics
+!!
+!! For coordinating the adjectival superlative prefix with tags that come later
+    @U.AdjSup.TRUE@
+    @U.AdjSup.FALSE@
+!!
 !! We have manually optimised the structure of our lexicon using following
 !! flag diacritics to restrict morhpological combinatorics - only allow compounds
 !! with verbs if the verb is further derived into a noun again:
@@ -150,6 +156,7 @@ LEXICON Root
 !! The word forms in Quenya language start from the lexeme roots of basic
 !! word classes, or optionally from prefixes:
     Nouns       ;
+    Adjectives  ;
     ! Punctuation ;
     ! Symbols     ;
 

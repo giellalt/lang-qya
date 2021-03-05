@@ -34,6 +34,7 @@ LEXICON Nouns
     manar                                   NounSuffix-Cons "doom, fate, fortune" ;
     estel                                   NounSuffix-Cons "trust, hope" ;
     lirit                                   NounSuffix-Cons "poem" ;
-    ango:ang{stemu2o}                       NounSuffix-Cons "snake" ;                                    
+    ango:ang{stemu2o}                       NounSuffix-Cons "snake" ;
+    súrë:súr{stemi2e}                       NounSuffix      "wind, breeze" ;
 
 ! vim: set ft=xfst-lexc:

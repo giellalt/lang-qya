@@ -1,0 +1,22 @@
+Config:
+  hfst:
+    Gen: ../../src/generator-gt-desc.hfst
+    Morph: ../../src/analyser-gt-desc.hfst
+
+Tests:
+  
+  # Standard Adjectives
+
+  Standard adjectives ending in -a:
+    # Singular
+    manar+N+Sing+Nom: manar
+  
+  # Weirdo adjectives
+  
+  Adjectives ending in -e that have an -i stem:
+    carnë+A: carne
+    carnë+A+Nsing: carni
+    carnë+A+Sing+Loc: carnisse
+    carnë+A+Plur+Ins: [carnínen, carninen]
+  
+  # TODO: add more adjective tests

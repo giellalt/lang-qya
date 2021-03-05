@@ -1,0 +1,27 @@
+!! Adjectives
+!  -----
+!! Adjectives in the Quenya language give descriptions or attributes.
+
+LEXICON Adjectives
+    AdjPrefix ;
+    AdjStems ;
+
+LEXICON AdjPrefix
+    @U.AdjSup.TRUE@:@U.AdjSup.TRUE@a{n}%< AdjStems ;
+
+LEXICON AdjStems
+    ! Lesson 4
+    vanya:vany              AdjSuffix       "beautiful, fair" ;
+    alta:alt                AdjSuffix       "large, great" ;
+    calima:calim            AdjSuffix       "bright" ;
+    taura:taur              AdjSuffix       "mighty, masterful" ;
+    saila:sail              AdjSuffix       "wise" ;
+    úmëa:úm                 AdjSuffix-EA    "abundant, swarming, teeming" ;
+    carnë:carn{stemi2e}     AdjSuffix-Spec  "red" ;
+    ninquë:ninqu            AdjSuffix-E     "white" ;
+    morë:mor                AdjSuffix-E     "black" ;
+    firin                   AdjSuffix-Cons  "dead" ;
+    ! Assorted
+    laurëa:laur             AdjSuffix-EA    "golden, like gold" ;
+
+! vim: set ft=xfst-lexc:

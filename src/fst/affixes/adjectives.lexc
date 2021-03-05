@@ -1,0 +1,69 @@
+!! Adjective inflection
+!  ---------------
+!! The Quenya language adjectives inflect by number, and may receive nominal cases.
+
+
+! A inflections (adjectives that end with -Ca)
+LEXICON AdjSuffix
+    +A: AdjSuper ;
+LEXICON AdjSuper
+    @U.AdjSup.TRUE@+Superl:@U.AdjSup.TRUE@ AdjNumber ;
+    @U.AdjSup.FALSE@ AdjNumber ;
+LEXICON AdjNumber
+    :a AdjPost ;
+    +Nsing:e # ;
+LEXICON AdjPost
+    # ;  ! Could stop right here, even without being labelled as +Sing+Nom or anything
+    :%> Cases ;  ! may be treated directly as a noun, or otherwise receive case endings for its noun
+
+! EA inflections (adjectives that end with -ea)
+LEXICON AdjSuffix-EA
+    +A: AdjSuper-EA ;
+LEXICON AdjSuper-EA
+    @U.AdjSup.TRUE@+Superl:@U.AdjSup.TRUE@ AdjNumber-EA ;
+    @U.AdjSup.FALSE@ AdjNumber-EA ;
+LEXICON AdjNumber-EA
+    :ea AdjPost-EA ;
+    +Nsing:ie # ;
+LEXICON AdjPost-EA
+    # ;  ! Could stop right here, even without being labelled as +Sing+Nom or anything
+    :%> Cases ;  ! may be treated directly as a noun, or otherwise receive case endings for its noun
+
+! E inflections (adjectives that end with -Ce)
+LEXICON AdjSuffix-E
+    +A: AdjSuper-E ;
+LEXICON AdjSuper-E
+    @U.AdjSup.TRUE@+Superl:@U.AdjSup.TRUE@ AdjNumber-E ;
+    @U.AdjSup.FALSE@ AdjNumber-E ;
+LEXICON AdjNumber-E
+    :e AdjPost-E ;
+    +Nsing:i # ;
+LEXICON AdjPost-E
+    # ;  ! Could stop right here, even without being labelled as +Sing+Nom or anything
+    :%> Cases-E ;  ! may be treated directly as a noun, or otherwise receive case endings for its noun
+
+! Consonant inflections (adjectives that end with -C, typically -in)
+LEXICON AdjSuffix-Cons
+    +A: AdjSuper-Cons ;
+LEXICON AdjSuper-Cons
+    @U.AdjSup.TRUE@+Superl:@U.AdjSup.TRUE@ AdjNumber-Cons ;
+    @U.AdjSup.FALSE@ AdjNumber-Cons ;
+LEXICON AdjNumber-Cons
+    :0 AdjPost-Cons ;
+    +Nsing:i # ;
+LEXICON AdjPost-Cons
+    # ;  ! Could stop right here, even without being labelled as +Sing+Nom or anything
+    :%> Cases-Cons ;  ! may be treated directly as a noun, or otherwise receive case endings for its noun
+
+! Special inflections (adjectives that end with -e, which is an -i stem)
+LEXICON AdjSuffix-Spec
+    +A:* AdjSuper-Spec ;
+LEXICON AdjSuper-Spec
+    @U.AdjSup.TRUE@+Superl:@U.AdjSup.TRUE@ AdjNumber-Spec ;
+    @U.AdjSup.FALSE@ AdjNumber-Spec ;
+LEXICON AdjNumber-Spec
+    AdjPost-Spec ;
+    +Nsing:i # ;
+LEXICON AdjPost-Spec
+    :e # ;  ! Could stop right here, even without being labelled as +Sing+Nom or anything
+    :%> Cases ;  ! may be treated directly as a noun, or otherwise receive case endings for its noun
