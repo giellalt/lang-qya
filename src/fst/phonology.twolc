@@ -46,6 +46,7 @@ Sets
 Definitions
     ConsonantCluster = [:Consonant :Consonant] | :x ;  ! x is really cs
     Diphthong = [:a :i] | [:a :u] | [:e :u] | [:o :i] | [:u :i] | [:i :u] ;
+    SuperlPrefixNeedsInsert = [ConsonantCluster - [:t :y]] ;  ! ty is the only cluster that can start a word which n is allowed to precede
 
 
 
@@ -116,8 +117,10 @@ Rules
                         Cy in (t c d f m p q t v %{w%} y b n p y c d f g q t v %{w%} y s t c d m n p q t s v %{w%} y c q t %{w%} s %{w%} y s p t c m n s l r)
                     matched ;
 
-"The boundary from the prefix a{n}<- needs to become non-zero"
-    %<:a <=> %{n%}: _ [ConsonantCluster - [:t :y]] ;  ! ty is the only cluster that can start a word which n is allowed to precede
+"The boundary from the prefix a{n}<- needs to become non-zero, part 1 (list the allowed options)"
+    [%<:a | %<:%-] => %{n%}: _ SuperlPrefixNeedsInsert ;
+"The boundary from the prefix a{n}<- needs to become non-zero, part 2 (disallow 0)"
+    %<:0 /<= %{n%}: _ SuperlPrefixNeedsInsert ;
 "{n} does not need to change"  ! [vowel c f n q t v w {w} y] are allowed following letters with no change to n
     %{n%}:n <=> _ [%<: - :0] ;  ! inserting a divider thing also means no change
                 _ %<:0 h: ;  ! if the border goes to 0, then the h is not in a cluster and will change to c, so the n gets to stay

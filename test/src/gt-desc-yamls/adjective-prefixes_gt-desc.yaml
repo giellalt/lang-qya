@@ -1,0 +1,92 @@
+Config:
+  hfst:
+    Gen: ../../src/generator-gt-desc.hfst
+    Morph: ../../src/analyser-gt-desc.hfst
+
+Tests:
+  
+  # Superlative prefix 'an-'
+  
+  Superlative, no assimilation needed:
+    # Vowel
+    walda+A+Superl: anwalda
+    walda+A+Superl+Nsing: analte
+    walda+A+Superl+Sing+Loc: anwaldasse
+    # c
+    calima+A+Superl: ancalima
+    calima+A+Superl+Nsing: ancalime
+    calima+A+Superl+Sing+Loc: ancalimasse
+    # f
+    firin+A+Superl: anfirin
+    firin+A+Superl+Nsing: anfirini
+    firin+A+Superl+Sing+Loc: anfirinesse
+    # n
+    ninquë+A+Superl: anninque
+    ninquë+A+Superl+Nsing: anninqui
+    ninquë+A+Superl+Sing+Loc: anninquesse
+    # q
+    quinna+A+Superl: anquinna
+    quinna+A+Superl+Nsing: anquinne
+    quinna+A+Superl+Sing+Loc: anquinnasse
+    # t
+    taura+A+Superl: antaura
+    taura+A+Superl+Nsing: antaure
+    taura+A+Superl+Sing+Loc: antaurasse
+    # v
+    vanya+A+Superl: anvanya
+    vanya+A+Superl+Nsing: anvanye
+    vanya+A+Superl+Sing+Loc: anvanyasse
+    # w
+    walda+A+Superl: anwalda
+    walda+A+Superl+Nsing: anwalde
+    walda+A+Superl+Sing+Loc: anwaldasse
+    # y
+    yonda+A+Superl: anyonda
+    yonda+A+Superl+Nsing: anyonde
+    yonda+A+Superl+Sing+Loc: anyondasse
+    # ty
+    tyelca+A+Superl: antyelca
+    tyelca+A+Superl+Nsing: antyelce
+    tyelca+A+Superl+Sing+Loc: antyelcasse
+
+  Superlative, total assimilation:
+    # l
+    laurëa+A+Superl: allaurea
+    laurëa+A+Superl+Nsing: allaurie
+    laurëa+A+Superl+Sing+Loc: allaureasse
+    # r
+    rempa+A+Superl: arrempa
+    rempa+A+Superl+Nsing: arrempe
+    rempa+A+Superl+Sing+Loc: arrempasse
+    # s
+    sarta+A+Superl: assarta
+    sarta+A+Superl+Nsing: assarte
+    sarta+A+Superl+Sing+Loc: assartasse
+    # þ
+    sinda+A+Superl: aþþinda
+    sinda+A+Superl+Nsing: aþþinde
+    sinda+A+Superl+Sing+Loc: aþþindasse
+  
+  Superlative, labial assimilation:
+    # p
+    pahta+A+Superl: ampahta
+    pahta+A+Superl+Nsing: ampahte
+    pahta+A+Superl+Sing+Loc: ampahtasse
+    # m
+    moina+A+Superl: ammoina
+    moina+A+Superl+Nsing: ammoine
+    moina+A+Superl+Sing+Loc: ammoinasse
+  
+  Superlative, border becomes a vowel:
+    # consonant cluster
+    hloirëa+A+Superl: [anahloirea, an-hloirea]
+    hloirëa+A+Superl+Nsing: [anahloirie, an-hloirie]
+    hloirëa+A+Superl+Sing+Loc: [anahloireasse, an-hloireasse]
+    nwalca+A+Superl: [anañwalca, an-ñwalca]
+    nwalca+A+Superl+Nsing: [anañwalce, an-ñwalce]
+    nwalca+A+Superl+Sing+Loc: [anañwalcasse, an-ñwalcasse]
+  
+  Superlative, following h becomes c:
+    hiswa+A+Superl: anciþwa
+    hiswa+A+Superl+Nsing: anciþwe
+    hiswa+A+Superl+Sing+Loc: anciþwasse

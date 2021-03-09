@@ -32,5 +32,9 @@ LEXICON AdjStems
     rempa:remp              AdjSuffix       "crooked, hooked" ;
     sanda:þand              AdjSuffix       "firm, true, abiding" ;
     pahta:paht              AdjSuffix       "closed, shut, private" ;
+    quinna:quinn            AdjSuffix       "crested" ;
+    walda:wald              AdjSuffix       "excited, wild" ;
+    yonda:yond              AdjSuffix       "wide, roomy, extensive" ;
+    sinda:þind              AdjSuffix       "grey" ;
 
 ! vim: set ft=xfst-lexc:
