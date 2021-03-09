@@ -4,9 +4,9 @@
 
 LEXICON Nouns
     ! Lesson 2
-    Anar                                    NounSuffix-Cons "the Sun" ;
-    Isil:Iþil                               NounSuffix-Cons "the Moon" ;
-    Elda                                    NounSuffix      "Elf" ;
+    anar                                    NounSuffix-Cons "(the) sun" ;
+    isil:iþil                               NounSuffix-Cons "(the) moon" ;
+    dlda                                    NounSuffix      "elf" ;
     lië:lie{+}                              NounSuffix      "people, race" ;
     vendë:{w}ende                           NounSuffix-E    "maiden, virgin" ;
     rocco                                   NounSuffix      "horse" ;
@@ -36,5 +36,6 @@ LEXICON Nouns
     lirit                                   NounSuffix-Cons "poem" ;
     ango:ang{stemu2o}                       NounSuffix-Cons "snake" ;
     súrë:súr{stemi2e}                       NounSuffix      "wind, breeze" ;
+    lassë:lasse                             NounSuffix-E    "leaf" ;
 
 ! vim: set ft=xfst-lexc:

@@ -28,10 +28,10 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 !! The parts-of-speech are:
     +N +A +Adv +V                                 !!≈
-    +Pron +CS +CC +Adp +Po +Pr +Interj +Pcle +Num !!≈
+    +Pron +CS +CC +Adp +Po +Pr +Interj +Part +Det +Num !!≈
 
 !! The parts of speech are further split up into:
-    +Prop +Pers +Dem +Interr +Refl +Recipr +Rel +Indef
+    +Prop +Pers +Dem +Interr +Refl +Recipr +Rel +Art +Def
 
 !! The Usage extents are marked using following tags:
     +Err/Orth
@@ -155,8 +155,11 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 LEXICON Root
 !! The word forms in Quenya language start from the lexeme roots of basic
 !! word classes, or optionally from prefixes:
-    Nouns       ;
-    Adjectives  ;
+    Nouns           ;
+    Adjectives      ;
+    Particles       ;
+    Prepositions    ;
+    Pronouns        ;
     ! Punctuation ;
     ! Symbols     ;
 
