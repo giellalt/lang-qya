@@ -6,7 +6,7 @@ LEXICON Nouns
     ! Lesson 2
     anar                                    NounSuffix-Cons "(the) sun" ;
     isil:iþil                               NounSuffix-Cons "(the) moon" ;
-    dlda                                    NounSuffix      "elf" ;
+    elda                                    NounSuffix      "elf" ;
     lië:lie{+}                              NounSuffix      "people, race" ;
     vendë:{w}ende                           NounSuffix-E    "maiden, virgin" ;
     rocco                                   NounSuffix      "horse" ;

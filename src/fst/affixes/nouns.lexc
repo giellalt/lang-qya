@@ -6,21 +6,21 @@
 ! Standard declensions (nouns that end with -a, -i, -ie, -o, -u)
 
 LEXICON NounSuffix
-    +N:%> Cases ;
-    +N:%> NounNoCase ;
+    +N: Cases ;
+    +N: NounNoCase ;
 
 LEXICON NounNoCase  ! number without case, e.g. axor ilcalannar
-    +Sing: # ;
-    +Dual:t # ;
-    +Dual:{-V}u # ;
-    +Plur:r # ;
-    +Plur+Par:li{+} # ;
+    +Sing:%> # ;
+    +Dual:%>t # ;
+    +Dual:%>{-V}u # ;
+    +Plur:%>r # ;
+    +Plur+Par:%>li{+} # ;
 
 LEXICON Cases
-    +Sing:      CasesSing ;
-    +Dual:      CasesDual ;
-    +Plur:      CasesPlur ;
-    +Plur+Par:  CasesPlurPar ;
+    +Sing:%>        CasesSing ;
+    +Dual:%>        CasesDual ;
+    +Plur:%>        CasesPlur ;
+    +Plur+Par:%>    CasesPlurPar ;
 
 LEXICON CasesSing
     +Nom: # ;
@@ -78,21 +78,21 @@ LEXICON CasesPlurPar
 ! -e declensions (nouns that end with -e)
 
 LEXICON NounSuffix-E
-    +N:%> Cases-E ;
-    +N:%> NounNoCase-E ;
+    +N: Cases-E ;
+    +N: NounNoCase-E ;
 
 LEXICON NounNoCase-E  ! number without case, e.g. axor ilcalannar
-    +Sing: # ;
-    +Dual:t # ;
-    +Dual:{-V}u # ;
-    +Plur:{i} # ;
-    +Plur+Par:li # ;
+    +Sing:%> # ;
+    +Dual:%>t # ;
+    +Dual:%>{-V}u # ;
+    +Plur:%>{i} # ;
+    +Plur+Par:%>li # ;
 
 LEXICON Cases-E
-    +Sing:      CasesSing-E ;
-    +Dual:      CasesDual-E ;
-    +Plur:      CasesPlur-E ;
-    +Plur+Par:  CasesPlurPar-E ;
+    +Sing:%>        CasesSing-E ;
+    +Dual:%>        CasesDual-E ;
+    +Plur:%>        CasesPlur-E ;
+    +Plur+Par:%>    CasesPlurPar-E ;
 
 LEXICON CasesSing-E
     +Nom: # ;
@@ -150,21 +150,21 @@ LEXICON CasesPlurPar-E
 ! -Cons declensions (nouns that end with a consonant)
 
 LEXICON NounSuffix-Cons
-    +N:%> Cases-Cons ;
-    +N:%> NounNoCase-Cons ;
+    +N: Cases-Cons ;
+    +N: NounNoCase-Cons ;
 
 LEXICON NounNoCase-Cons  ! number without case, e.g. axor ilcalannar
-    +Sing: # ;
-    +Dual:t # ;
-    +Dual:{-V}u # ;
-    +Plur:i # ;
-    +Plur+Par:{l}i # ;
+    +Sing:%> # ;
+    +Dual:%>t # ;
+    +Dual:%>{-V}u # ;
+    +Plur:%>i # ;
+    +Plur+Par:%>{l}i # ;
 
 LEXICON Cases-Cons
-    +Sing:      CasesSing-Cons ;
-    +Dual:      CasesDual-Cons ;
-    +Plur:      CasesPlur-Cons ;
-    +Plur+Par:  CasesPlurPar-Cons ;
+    +Sing:%>        CasesSing-Cons ;
+    +Dual:%>        CasesDual-Cons ;
+    +Plur:%>        CasesPlur-Cons ;
+    +Plur+Par:%>    CasesPlurPar-Cons ;
 
 LEXICON CasesSing-Cons
     +Nom: # ;

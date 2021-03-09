@@ -14,7 +14,7 @@ LEXICON AdjNumber
     +Nsing:e # ;
 LEXICON AdjPost
     # ;  ! Could stop right here, even without being labelled as +Sing+Nom or anything
-    :%> Cases ;  ! may be treated directly as a noun, or otherwise receive case endings for its noun
+    Cases ;  ! may be treated directly as a noun, or otherwise receive case endings for its noun
 
 ! EA inflections (adjectives that end with -ea)
 LEXICON AdjSuffix-EA
@@ -27,7 +27,7 @@ LEXICON AdjNumber-EA
     +Nsing:ie # ;
 LEXICON AdjPost-EA
     # ;  ! Could stop right here, even without being labelled as +Sing+Nom or anything
-    :%> Cases ;  ! may be treated directly as a noun, or otherwise receive case endings for its noun
+    Cases ;  ! may be treated directly as a noun, or otherwise receive case endings for its noun
 
 ! E inflections (adjectives that end with -Ce)
 LEXICON AdjSuffix-E
@@ -40,7 +40,7 @@ LEXICON AdjNumber-E
     +Nsing:i # ;
 LEXICON AdjPost-E
     # ;  ! Could stop right here, even without being labelled as +Sing+Nom or anything
-    :%> Cases-E ;  ! may be treated directly as a noun, or otherwise receive case endings for its noun
+    Cases-E ;  ! may be treated directly as a noun, or otherwise receive case endings for its noun
 
 ! Consonant inflections (adjectives that end with -C, typically -in)
 LEXICON AdjSuffix-Cons
@@ -53,7 +53,7 @@ LEXICON AdjNumber-Cons
     +Nsing:i # ;
 LEXICON AdjPost-Cons
     # ;  ! Could stop right here, even without being labelled as +Sing+Nom or anything
-    :%> Cases-Cons ;  ! may be treated directly as a noun, or otherwise receive case endings for its noun
+    Cases-Cons ;  ! may be treated directly as a noun, or otherwise receive case endings for its noun
 
 ! Special inflections (adjectives that end with -e, which is an -i stem)
 LEXICON AdjSuffix-Spec
@@ -66,4 +66,4 @@ LEXICON AdjNumber-Spec
     +Nsing:i # ;
 LEXICON AdjPost-Spec
     :e # ;  ! Could stop right here, even without being labelled as +Sing+Nom or anything
-    :%> Cases ;  ! may be treated directly as a noun, or otherwise receive case endings for its noun
+    Cases ;  ! may be treated directly as a noun, or otherwise receive case endings for its noun

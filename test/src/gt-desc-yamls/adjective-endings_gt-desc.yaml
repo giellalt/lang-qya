@@ -1,0 +1,104 @@
+Config:
+  hfst:
+    Gen: ../../src/generator-gt-desc.hfst
+    Morph: ../../src/analyser-gt-desc.hfst
+
+Tests:
+  
+  # Standard Adjectives
+
+  Standard adjectives ending in -a:  # making sure they can also take case endings as if they were just a noun
+    # No case ending
+    vanya+A: vanya
+    vanya+A+Nsing: vanye
+    # Singular
+    vanya+A+Sing+Nom: vanya
+    vanya+A+Sing+Acc: vanya
+    vanya+A+Sing+Gen: vanyo
+    vanya+A+Sing+Ins: vanyanen
+    vanya+A+Sing+All: vanyanna
+    vanya+A+Sing+Dat: vanyan
+    vanya+A+Sing+Loc: vanyasse
+    vanya+A+Sing+Loc+Short: vanyas
+    vanya+A+Sing+Abl: vanyallo
+    vanya+A+Sing+Poss: vanya{w}a
+    # Dual
+    vanya+A+Dual+Nom: [vanyat, vanyu]
+    vanya+A+Dual+Acc: [vanyat, vanyu]
+    vanya+A+Dual+Gen: [vanyato, vanyuo]
+    vanya+A+Dual+Ins: [vanyanten, vanyunen]
+    vanya+A+Dual+All: [vanyanta, vanyunna]
+    vanya+A+Dual+Gen: [vanyato, vanyuo]
+    vanya+A+Dual+Loc: [vanyatse, vanyusse]
+    vanya+A+Dual+Loc+Short: vanyus  # also vanyates ???
+    vanya+A+Dual+Abl: [vanyalto, vanyullo]
+    vanya+A+Dual+Poss: ['vanyat{w}a', 'vanyu{w}a']
+    # Plural
+    vanya+A+Plur+Nom: vanyar
+    vanya+A+Plur+Acc: vanyar
+    vanya+A+Plur+Gen: vanyaron
+    vanya+A+Plur+Ins: vanyainen
+    vanya+A+Plur+All: vanyannar
+    vanya+A+Plur+Dat: vanyain
+    vanya+A+Plur+Loc: vanyassen
+    vanya+A+Plur+Loc+Short: vanyais
+    vanya+A+Plur+Abl: vanyallon
+    vanya+A+Plur+Poss: vanyai{w}a
+    # Partitive Plural
+    vanya+A+Plur+Par+Nom: vanyali
+    vanya+A+Plur+Par+Acc: vanyali
+    vanya+A+Plur+Par+Gen: vanyalion
+    vanya+A+Plur+Par+Ins: vanyalínen
+    vanya+A+Plur+Par+All: [vanyalinna, vanyalinnar]
+    vanya+A+Plur+Par+Dat: vanyalin
+    vanya+A+Plur+Par+Loc: [vanyalisse, vanyalissen]
+    vanya+A+Plur+Par+Loc+Short: vanyalis
+    vanya+A+Plur+Par+Abl: [vanyalillo, vanyalillon]
+    vanya+A+Plur+Par+Poss: vanyalí{w}a
+  
+  Standard adjectives ending in -ea:
+    laurëa+A: laurea
+    laurëa+A+Nsing: laurie
+    # a few sample case endings
+    laurëa+A+Sing+Gen: laureo
+    laurëa+A+Sing+Loc+Short: laureas
+    laurëa+A+Dual+Ins: [laureanten, laureunen]
+    laurëa+A+Plur+Acc: laurear
+    laurëa+A+Plur+Dat: laureain
+    laurëa+A+Plur+Par+Ins: laurealínen
+  
+  Standard adjectives ending in -e:
+    morë+A: more
+    morë+A+Nsing: mori
+    # a few sample case endings
+    morë+A+Sing+Acc: more
+    morë+A+Sing+Abl: morello
+    morë+A+Dual+All: [morenta, morunna]
+    morë+A+Plur+Nom: mori
+    morë+A+Plur+Dat: morín
+    morë+A+Plur+Par+Gen: morelion
+  
+  Standard adjectives ending in a consonant:
+    firin+A: firin
+    firin+A+Nsing: firini
+    # a few sample case endings
+    firin+A+Sing+Gen: firino
+    firin+A+Dual+Acc: [firint, firinu]
+    firin+A+Dual+Abl: [firinelto, firinullo]
+    firin+A+Plur+Ins: firininen
+    firin+A+Plur+Par+Dat: [firinelin, firillin]
+  
+  # Weirdo adjectives
+  
+  Adjectives ending in -e that have an -i stem:
+    carnë+A: carne
+    carnë+A+Nsing: carni
+    # a few sample case endings
+    carnë+A+Sing+Nom: carne
+    carnë+A+Sing+Loc: carnisse
+    carnë+A+Dual+Ins: [carninten, carnunen]
+    carnë+A+Plur+Ins: [carnínen, carninen]
+    carnë+A+Plur+Loc: carnissen
+    carnë+A+Plur+Par+Dat: carnilin
+  
+  # TODO: add more adjective tests
