@@ -17,6 +17,19 @@ LEXICON NounNoCase  ! number without case, e.g. axor ilcalannar
     +Plur+Par:%>li{+} # ;
 
 LEXICON Cases
+    CasesNumber ;  ! no possessive suffix
+    :| PossessiveSuffix ;
+
+LEXICON PossessiveSuffix
+    +PxSg1:nya      CasesNumber ;
+    +PxSg2:lya      CasesNumber ;
+    +PxSg3:rya      CasesNumber ;
+    +PxDu1+In:lva   CasesNumber ;
+    +PxPl1+In:lma   CasesNumber ;
+    +PxPl1+Ex:mma   CasesNumber ;
+    +PxPl3:nta      CasesNumber ;
+
+LEXICON CasesNumber
     +Sing:%>        CasesSing ;
     +Dual:%>        CasesDual ;
     +Plur:%>        CasesPlur ;

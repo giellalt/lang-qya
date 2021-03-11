@@ -10,6 +10,7 @@ Alphabet
     Á É Í Ó Ú Ä Ë Ï Ö Ü Þ Ñ
 
     ! things to automatically convert (unless otherwise specified below)
+    %|:0  ! start of a possessive suffix
     %>:e  ! start of case ending
     %*:0  ! marks an adjective ending in -e with an -i stem
 
