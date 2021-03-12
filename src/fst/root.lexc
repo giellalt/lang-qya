@@ -28,10 +28,11 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 
 !! The parts-of-speech are:
     +N +A +Adv +V                                 !!≈
-    +Pron +CS +CC +Adp +Po +Pr +Interj +Part +Det +Num !!≈
+    +Pron +CS +CC +Adp +Po +Pr +Intj +Part +Det +Num !!≈
+    +CCONJ +SCONJ
 
 !! The parts of speech are further split up into:
-    +Prop +Pers +Dem +Interr +Refl +Recipr +Rel +Art +Def
+    +Prop +Dem +Int +Refl +Recipr +Rel +Art +Def +Emp
 
 !! The Usage extents are marked using following tags:
     +Err/Orth
@@ -40,16 +41,20 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! The nominals are inflected in the following Case and Number
     +Sing +Dual +Plur +Par +Nsing
     +Nom +Acc +Gen +Ins +All +Dat +Loc +Short +Abl +Poss
+    +Voc  ! just a particle
 
 !! The possession is marked as such:
     +PxSg1 +PxSg2 +PxSg3 +PxDu1 +PxDu2 +PxDu3 +PxPl1 +PxPl2 +PxPl3
+    +In +Ex  ! clusivity
 !! The comparative forms are:
     +Comp +Superl
 !! Numerals are classified under:
     +Attr +Card
     +Ord
 !! Verb moods are:
-    +Ind +Prs +Prt +Pot +Cond +Imprt
+    +Ind +Prs +Prt +Pot +Cond +Imp +Jus
+!! Verb tenses are:
+    +Past +Fut
 !! Verb personal forms are:
     +Sg1 +Sg2 +Sg3 +Du1 +Du2 +Du3 +Pl1 +Pl2 +Pl3
 !! Other verb forms are
@@ -76,7 +81,8 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
     +Plc
     +Org
     +Obj
-    +Ani
+    +Anim
+    +Inan
     +Hum
     +Plant
     +Group
@@ -155,11 +161,15 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 LEXICON Root
 !! The word forms in Quenya language start from the lexeme roots of basic
 !! word classes, or optionally from prefixes:
-    Nouns           ;
     Adjectives      ;
+    Adverbs         ;
+    Conjunctions    ;
+    Nouns           ;
+    Numbers         ;
     Particles       ;
     Prepositions    ;
     Pronouns        ;
+    Verbs           ;
     ! Punctuation ;
     ! Symbols     ;
 

@@ -17,7 +17,7 @@ LEXICON AdjStems
     taura:taur              AdjSuffix       "mighty, masterful" ;
     saila:sail              AdjSuffix       "wise" ;
     úmëa:úm                 AdjSuffix-EA    "abundant, swarming, teeming" ;
-    carnë:carn{stemi2e}     AdjSuffix-Spec  "red" ;
+    carnë:carn{stemi2e}     AdjSuffix-Spec  "red, scarlet" ;
     ninquë:ninqu            AdjSuffix-E     "white" ;
     morë:mor                AdjSuffix-E     "black" ;
     firin                   AdjSuffix-Cons  "dead" ;
@@ -36,5 +36,9 @@ LEXICON AdjStems
     walda:wald              AdjSuffix       "excited, wild" ;
     yonda:yond              AdjSuffix       "wide, roomy, extensive" ;
     sinda:þind              AdjSuffix       "grey" ;
+
+    ilya:ily                AdjSuffix       "all, the whole, each, every" ;
+    mára:már                AdjSuffix       "useful, fit, good" ;
+    vanwa:{w}anw            AdjSuffix       "gone, lost, vanished, departed, dead, past" ;
 
 ! vim: set ft=xfst-lexc:

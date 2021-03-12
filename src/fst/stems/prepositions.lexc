@@ -1,2 +1,18 @@
 LEXICON Prepositions
-    ve+Adp:ve # "like, as" ;
+    apa+Adp:apa #   "after" ;
+    lá+Adp:lá   #   "beyond, over, across" ;
+    
+    mi+Adp:mi               #   "in, within" ;
+    mí+Adp+Det+Art+Def:mí   #   "in, within the" ;  ! TODO: is this tagged right?
+
+    nu+Adp:nu   #   "under" ;
+    or+Adp:or   #   "over" ;
+
+    pa+Adp:pa   #   "on (vertical surface), concerning" ;
+    pá+Adp:pá   #   "on (vertical surface), concerning" ;
+
+    pella+Adp:pella     #   "beyond" ;  ! POSTPOSITION
+    ter+Adp:ter         #   "through, throughout" ;
+    terë+Adp:tere       #   "through, throughout" ;
+    ú+Adp:ú             #   "without" ;
+    ve+Adp:ve           #   "like, as" ;

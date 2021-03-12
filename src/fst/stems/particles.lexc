@@ -1,2 +1,13 @@
 LEXICON Particles
-    i+Det+Art+Def:i # "the" ;
+    a+Part+Voc:a        #   "O" ;
+
+    á+Part+Imp:á        #   "imperative particle" ;
+    a+Part+Imp:a        #   "imperative particle" ;
+
+    ai+Intj:ai          #   "ah, alas" ;
+    
+    cé+Part:cé          #   "maybe" ;
+    ce+Part:ce          #   "maybe" ;
+
+    i+Det+Art+Def:i     #   "the" ;
+    nai+Part+Jus        #   "may" ;

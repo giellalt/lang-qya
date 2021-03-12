@@ -37,5 +37,29 @@ LEXICON Nouns
     ango:ang{stemu2o}                       NounSuffix-Cons "snake" ;
     súrë:súr{stemi2e}                       NounSuffix      "wind, breeze" ;
     lassë:lasse                             NounSuffix-E    "leaf" ;
+    
+    anta                                    NounSuffix      "face" ;
+    atan                                    NounSuffix-Cons "man (as opposed to elf)" ;
+    aurë:aure                               NounSuffix-E    "sunlight, day" ;
+    cálë:cále                               NounSuffix-E    "light" ;
+    cemen                                   NounSuffix-Cons "earth, ground, soil" ;
+    cemendë:cemende                         NounSuffix-E    "earth, ground, soil" ;
+    ëar:ear                                 NounSuffix-Cons "sea" ;
+    Eru                                     NounSuffix      "the One, God" ;
+    írë:íre                                 NounSuffix-E    "desire" ;
+    ilya                                    NounSuffix      "all, the whole, each, every" ;
+    ista                                    NounSuffix      "knowledge" ;
+    lúmë:lúme                               NounSuffix-E    "time, hour" ;
+    lúmë:lúme                               NounSuffix-E    "darkness" ;
+    menel                                   NounSuffix-Cons "the heavens, firmament" ;
+    metta                                   NounSuffix      "end" ;
+    ne                                      NounSuffix-E    "scent" ;
+    nostalë:nostale                         NounSuffix-E    "species, kind" ;
+    orë:or{stemi2e}                         NounSuffix      "grain" ;
+    órë:óre                                 NounSuffix-E    "heart, inner mind (tengwa 21)" ;
+    órë:óre                                 NounSuffix-E    "rising" ;
+    úmë:úme                                 NounSuffix-E    "throng, great collection" ;
+    vanda                                   NounSuffix      "oath, pledge" ;
+    Yehóva                                  NounSuffix      "Jehova" ;
 
 ! vim: set ft=xfst-lexc:
