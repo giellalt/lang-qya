@@ -1,0 +1,13 @@
+LEXICON Conjunctions
+    an+CCONJ:an     #   "for, moreover, plus" ;
+    apa+CCONJ:apa   #   "but" ;
+
+    ar+CCONJ:ar     #   "and" ;
+    a+CCONJ:a       #   "and" ;
+
+    cé+SCONJ:cé     #   "if" ;
+    ce+SCONJ:ce     #   "if" ;
+    
+    írë+SCONJ:íre   #   "when" ;
+    nan+CCONJ:nan   #   "but" ;
+    qui+SCONJ:qui   #   "if" ;

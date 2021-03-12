@@ -1,0 +1,7 @@
+! TODO: sina tana enta should be able of doing sine, tine, ente
+LEXICON Determiners
+    sina    DemonstrativeSuffix "this" ;
+    tana    DemonstrativeSuffix "that" ;
+
+LEXICON DemonstrativeSuffix
+    +A+Dem:   CasesNumber ;

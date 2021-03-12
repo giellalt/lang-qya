@@ -1,0 +1,31 @@
+! # TODO
+LEXICON Verbs
+    Copula ;
+    Existential ;
+    ! standard verbs
+    anta-:anta          Verb-A              "give" ;
+    car-:car            Verb-Cons           "do, make" ;
+    cen-:cen            Verb-Cons           "see, behold" ;
+    ista-:ista          Verb-A              "know" ;  ! irregular past tense: sintë
+    órava-:órava        Verb-A              "have mercy" ;
+    tana-:tana          Verb-A              "show, indicate" ;
+    úm-+V+Neg:úm        Verb-Cons           "not do" ;
+    ! special verbs
+    equë:eque           VerbSuffixSubject   "say, said" ;
+
+LEXICON Copula  ! like Spanish 'ser'
+    ná+V:ná         # ;
+    ná+V+Plur:nar   # ;
+    ná+V+Plur:nár   # ;
+    ná+V+Past:né    # ;
+    ná+V+Imp:na     # ;
+
+LEXICON Existential  ! like Spanish 'estar'
+    ëa+V+Plur:ear       # ;
+    ëa+V+Past:enge      # ;
+
+! TODO
+LEXICON Verb-A
+    # ;
+LEXICON Verb-Cons
+    # ;

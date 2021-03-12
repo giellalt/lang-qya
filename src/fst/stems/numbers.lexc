@@ -1,0 +1,8 @@
+LEXICON Numbers
+    Cardinals ;
+
+LEXICON Cardinals
+    otso    CardinalEnding  "seven" ;
+
+LEXICON CardinalEnding
+    +Num+Card:  # ;
