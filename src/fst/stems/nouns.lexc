@@ -3,63 +3,59 @@
 !! Nouns in the Quenya language are people, places, or things.
 
 LEXICON Nouns
-    ! Lesson 2
-    anar                                    NounSuffix-Cons "(the) sun" ;
-    isil:iþil                               NounSuffix-Cons "(the) moon" ;
-    elda                                    NounSuffix      "elf" ;
-    lië:lie                                 NounSuffix      "people, race" ;
-    vendë:{w}ende                           NounSuffix-E    "maiden, virgin" ;
-    rocco                                   NounSuffix      "horse" ;
-    aran                                    NounSuffix-Cons "king" ;
-    tári                                    NounSuffix      "queen" ;
-    tasar:taþar                             NounSuffix-Cons "willow" ;
-    tasarë:taþare{+}                        NounSuffix-E    "willow" ;
-    ! Lesson 3
-    hen:hen{stemd20}                        NounSuffix-Cons "eye" ;
-    ranco:ranc{stemu2o}                     NounSuffix-Cons "arm" ;
-    ando                                    NounSuffix      "gate"  ;
-    cirya                                   NounSuffix      "ship" ;
     aiwë:aiwe                               NounSuffix-E    "bird" ;
-    talan:tala{stemm2n}                     NounSuffix-Cons "floor" ;
-    nér:n{steme2é}r                         NounSuffix-Cons "man (adult male)" ;
-    nís:n{stemi2í}s{stems20}                NounSuffix-Cons "woman (adult female)" ;
-    sar:sar{stemd20}                        NounSuffix-Cons "pebble, stone" ;
-    sar:sar{stemn20}                        NounSuffix-Cons "pebble, stone" ;
     alda                                    NounSuffix      "tree" ;
-    oron:oron{stemt20}                      NounSuffix-Cons "mountain" ;
-    ! Assorted
-    nénu                                    NounSuffix      "yellow water-lily" ;
-    tyalië:tyalie{+}                        NounSuffix      "sport, play, game" ;
-    coimas                                  NounSuffix-Cons "life-bread, lembas" ;
-    manar                                   NounSuffix-Cons "doom, fate, fortune" ;
-    estel                                   NounSuffix-Cons "trust, hope" ;
-    lirit                                   NounSuffix-Cons "poem" ;
-    ango:ang{stemu2o}                       NounSuffix-Cons "snake" ;
-    súrë:súr{stemi2e}                       NounSuffix      "wind, breeze" ;
-    lassë:lasse                             NounSuffix-E    "leaf" ;
-    
+    anar                                    NounSuffix-Cons "(the) sun" ;
+    ando                                    NounSuffix      "gate"  ;
     anta                                    NounSuffix      "face" ;
+    ango:ang{stemu2o}                       NounSuffix-Cons "snake" ;
+    aran                                    NounSuffix-Cons "king" ;
     atan                                    NounSuffix-Cons "man (as opposed to elf)" ;
-    aurë:aure{+}                            NounSuffix-E    "sunlight, day" ;
+    aurë:aure                               NounSuffix-E    "sunlight, day" ;
     cálë:cále                               NounSuffix-E    "light" ;
     cemen                                   NounSuffix-Cons "earth, ground, soil" ;
     cemendë:cemende                         NounSuffix-E    "earth, ground, soil" ;
+    cirya                                   NounSuffix      "ship" ;
+    coimas                                  NounSuffix-Cons "life-bread, lembas" ;
     ëar:ear                                 NounSuffix-Cons "sea" ;
+    elda                                    NounSuffix      "elf" ;
     Eru                                     NounSuffix      "the One, God" ;
-    írë:íre                                 NounSuffix-E    "desire" ;
+    estel                                   NounSuffix-Cons "trust, hope" ;
+    hen:hen{stemd20}                        NounSuffix-Cons "eye" ;
     ilya                                    NounSuffix      "all, the whole, each, every" ;
+    írë:íre                                 NounSuffix-E    "desire" ;
+    isil:iþil                               NounSuffix-Cons "(the) moon" ;
     ista                                    NounSuffix      "knowledge" ;
+    lassë:lasse                             NounSuffix-E    "leaf" ;
+    lië:lie                                 NounSuffix      "people, race" ;
+    lirit                                   NounSuffix-Cons "poem" ;
     lúmë:lúme                               NounSuffix-E    "time, hour" ;
     lúmë:lúme                               NounSuffix-E    "darkness" ;
+    manar                                   NounSuffix-Cons "doom, fate, fortune" ;
     menel                                   NounSuffix-Cons "the heavens, firmament" ;
     metta                                   NounSuffix      "end" ;
     ne                                      NounSuffix-E    "scent" ;
+    nénu                                    NounSuffix      "yellow water-lily" ;
+    nér:n{steme2é}r                         NounSuffix-Cons "man (adult male)" ;
+    nís:n{stemi2í}s{stems20}                NounSuffix-Cons "woman (adult female)" ;
     nostalë:nostale{+}                      NounSuffix-E    "species, kind" ;
     orë:or{stemi2e}                         NounSuffix      "grain" ;
     órë:óre                                 NounSuffix-E    "heart, inner mind (tengwa 21)" ;
     órë:óre                                 NounSuffix-E    "rising" ;
+    oron:oron{stemt20}                      NounSuffix-Cons "mountain" ;
+    rocco                                   NounSuffix      "horse" ;
+    ranco:ranc{stemu2o}                     NounSuffix-Cons "arm" ;
+    sar:sar{stemd20}                        NounSuffix-Cons "pebble, stone" ;
+    sar:sar{stemn20}                        NounSuffix-Cons "pebble, stone" ;
+    súrë:súr{stemi2e}                       NounSuffix      "wind, breeze" ;
+    talan:tala{stemm2n}                     NounSuffix-Cons "floor" ;
+    tári                                    NounSuffix      "queen" ;
+    tasar:taþar                             NounSuffix-Cons "willow" ;
+    tasarë:taþare{+}                        NounSuffix-E    "willow" ;
+    tyalië:tyalie{+}                        NounSuffix      "sport, play, game" ;
     úmë:úme                                 NounSuffix-E    "throng, great collection" ;
     vanda                                   NounSuffix      "oath, pledge" ;
+    vendë:{w}ende                           NounSuffix-E    "maiden, virgin" ;
     Yehó{w}a                                NounSuffix      "Jehova" ;
 
     ! exceptions

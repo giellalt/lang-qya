@@ -10,35 +10,32 @@ LEXICON AdjPrefix
     @U.AdjSup.FALSE@ AdjStems ;
 
 LEXICON AdjStems
-    ! Lesson 4
-    vanya:vany              AdjSuffix       "beautiful, fair" ;
     alta:alt                AdjSuffix       "large, great" ;
     calima:calim            AdjSuffix       "bright" ;
-    taura:taur              AdjSuffix       "mighty, masterful" ;
-    saila:sail              AdjSuffix       "wise" ;
-    úmëa:úm                 AdjSuffix-EA    "abundant, swarming, teeming" ;
     carnë:carn{stemi2e}     AdjSuffix-Spec  "red, scarlet" ;
-    ninquë:ninqu            AdjSuffix-E     "white" ;
-    morë:mor                AdjSuffix-E     "black" ;
     firin                   AdjSuffix-Cons  "dead" ;
-    ! Assorted
-    laurëa:laur             AdjSuffix-EA    "golden, like gold" ;
     hiswa:hiþw              AdjSuffix       "grey" ;
     hloirëa:hloir           AdjSuffix-EA    "venomous" ;
+    ilya:ily                AdjSuffix       "all, the whole, each, every" ;
+    laurëa:laur             AdjSuffix-EA    "golden, like gold" ;
+    mára:már                AdjSuffix       "useful, fit, good" ;
     moina:moin              AdjSuffix       "familiar, dear" ;
-    sarta:sart              AdjSuffix       "steadfast, trusty, loyal" ;
-    tyelca:tyelc            AdjSuffix       "swift, agile" ;
+    morë:mor                AdjSuffix-E     "black" ;
+    ninquë:ninqu            AdjSuffix-E     "white" ;
     nwalca:ñwalc            AdjSuffix       "cruel" ;
-    rempa:remp              AdjSuffix       "crooked, hooked" ;
-    sanda:þand              AdjSuffix       "firm, true, abiding" ;
     pahta:paht              AdjSuffix       "closed, shut, private" ;
     quinna:quinn            AdjSuffix       "crested" ;
+    rempa:remp              AdjSuffix       "crooked, hooked" ;
+    saila:sail              AdjSuffix       "wise" ;
+    sanda:þand              AdjSuffix       "firm, true, abiding" ;
+    sarta:sart              AdjSuffix       "steadfast, trusty, loyal" ;
+    sinda:þind              AdjSuffix       "grey" ;
+    taura:taur              AdjSuffix       "mighty, masterful" ;
+    tyelca:tyelc            AdjSuffix       "swift, agile" ;
+    úmëa:úm                 AdjSuffix-EA    "abundant, swarming, teeming" ;
+    vanwa:{w}anw            AdjSuffix       "gone, lost, vanished, departed, dead, past" ;
+    vanya:vany              AdjSuffix       "beautiful, fair" ;
     walda:wald              AdjSuffix       "excited, wild" ;
     yonda:yond              AdjSuffix       "wide, roomy, extensive" ;
-    sinda:þind              AdjSuffix       "grey" ;
-
-    ilya:ily                AdjSuffix       "all, the whole, each, every" ;
-    mára:már                AdjSuffix       "useful, fit, good" ;
-    vanwa:{w}anw            AdjSuffix       "gone, lost, vanished, departed, dead, past" ;
 
 ! vim: set ft=xfst-lexc:
