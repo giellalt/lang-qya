@@ -42,7 +42,7 @@ Tests:
     manar+N+Plur+Dat: manarin
     manar+N+Plur+Loc: manarissen
     manar+N+Plur+Loc+Short: manaris
-    manar+N+Plur+Abl: manarillon
+    manar+N+Plur+Abl: [manarillon, manarillor]
     manar+N+Plur+Poss: manari{w}a
     # Partitive Plural
     manar+N+Plur+Par: manalli
@@ -54,7 +54,7 @@ Tests:
     manar+N+Plur+Par+Dat: manallin
     manar+N+Plur+Par+Loc: [manallissen, manallisse]
     manar+N+Plur+Par+Loc+Short: manallis
-    manar+N+Plur+Par+Abl: [manallillon, manallillo]
+    manar+N+Plur+Par+Abl: [manallillon, manallillor, manallillo]
     manar+N+Plur+Par+Poss: manallí{w}a
   
   Standard nouns ending in -Vn:
@@ -92,7 +92,7 @@ Tests:
     aran+N+Plur+Dat: aranin
     aran+N+Plur+Loc: aranissen
     aran+N+Plur+Loc+Short: aranis
-    aran+N+Plur+Abl: aranillon
+    aran+N+Plur+Abl: [aranillon, aranillor]
     aran+N+Plur+Poss: arani{w}a
     # Partitive Plural
     aran+N+Plur+Par: [aralli, araneli]
@@ -104,7 +104,7 @@ Tests:
     aran+N+Plur+Par+Dat: [arallin, aranelin]
     aran+N+Plur+Par+Loc: [arallissen, arallisse, aranelissen, aranelisse]
     aran+N+Plur+Par+Loc+Short: [arallis, aranelis]
-    aran+N+Plur+Par+Abl: [arallillon, arallillo, aranelillon, aranelillo]
+    aran+N+Plur+Par+Abl: [arallillon, arallillor, arallillo, aranelillon, aranelillor, aranelillo]
     aran+N+Plur+Par+Poss: ['arallí{w}a', 'aranelí{w}a']
   
   Standard nouns ending in -Vs:
@@ -142,7 +142,7 @@ Tests:
     coimas+N+Plur+Dat: coimasin
     coimas+N+Plur+Loc: coimasissen
     coimas+N+Plur+Loc+Short: coimasis
-    coimas+N+Plur+Abl: coimasillon
+    coimas+N+Plur+Abl: [coimasillon, coimasillor]
     coimas+N+Plur+Poss: coimasi{w}a
     # Partitive Plural
     coimas+N+Plur+Par: [coimalli, coimaseli]
@@ -154,7 +154,7 @@ Tests:
     coimas+N+Plur+Par+Dat: [coimallin, coimaselin]
     coimas+N+Plur+Par+Loc: [coimallissen, coimallisse, coimaselissen, coimaselisse]
     coimas+N+Plur+Par+Loc+Short: [coimallis, coimaselis]
-    coimas+N+Plur+Par+Abl: [coimallillon, coimallillo, coimaselillon, coimaselillo]
+    coimas+N+Plur+Par+Abl: [coimallillon, coimallillor, coimallillo, coimaselillon, coimaselillor, coimaselillo]
     coimas+N+Plur+Par+Poss: ['coimallí{w}a', 'coimaselí{w}a']
   
   Standard nouns ending in -Vl:
@@ -192,7 +192,7 @@ Tests:
     estel+N+Plur+Dat: estelin
     estel+N+Plur+Loc: estelissen
     estel+N+Plur+Loc+Short: estelis
-    estel+N+Plur+Abl: estelillon
+    estel+N+Plur+Abl: [estelillon, estelillor]
     estel+N+Plur+Poss: esteli{w}a
     # Partitive Plural
     estel+N+Plur+Par: estelli
@@ -204,7 +204,7 @@ Tests:
     estel+N+Plur+Par+Dat: estellin
     estel+N+Plur+Par+Loc: [estellissen, estellisse]
     estel+N+Plur+Par+Loc+Short: estellis
-    estel+N+Plur+Par+Abl: [estellillon, estellillo]
+    estel+N+Plur+Par+Abl: [estellillon, estellillor, estellillo]
     estel+N+Plur+Par+Poss: estellí{w}a
   
   Standard nouns ending in -Vt:
@@ -242,7 +242,7 @@ Tests:
     lirit+N+Plur+Dat: liritin
     lirit+N+Plur+Loc: liritissen
     lirit+N+Plur+Loc+Short: liritis
-    lirit+N+Plur+Abl: liritillon
+    lirit+N+Plur+Abl: [liritillon, liritillor]
     lirit+N+Plur+Poss: liriti{w}a
     # Partitive Plural
     lirit+N+Plur+Par: [liriteli, liriteli]
@@ -254,7 +254,7 @@ Tests:
     lirit+N+Plur+Par+Dat: liritelin
     lirit+N+Plur+Par+Loc: [liritelissen, liritelisse]
     lirit+N+Plur+Par+Loc+Short: liritelis
-    lirit+N+Plur+Par+Abl: [liritelillon, liritelillo]
+    lirit+N+Plur+Par+Abl: [liritelillon, liritelillor, liritelillo]
     lirit+N+Plur+Par+Poss: liritelí{w}a
   
   # Words are also allowed to end in -nt,

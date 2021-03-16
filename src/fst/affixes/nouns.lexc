@@ -65,6 +65,7 @@ LEXICON CasesPlur
     +Loc:ssen # ;
     +Loc+Short:{i}s # ;
     +Abl:llon # ;
+    +Abl:llor # ;  ! alternate ending
     +Poss:{i}{w}a # ;  ! TODO: connect to adjectival endings?
 
 LEXICON CasesPlurPar
@@ -78,8 +79,9 @@ LEXICON CasesPlurPar
     +Loc:lisse # ;  ! n is optional for locative
     +Loc:lissen # ;
     +Loc+Short:lis{+} # ;
-    +Abl:lillo # ;  ! n is optional for ablative
+    +Abl:lillo # ;  ! n/r is optional for ablative
     +Abl:lillon # ;
+    +Abl:lillor # ;  ! alternate ending
     +Poss:lí{w}a # ;  ! TODO: connect to adjectival endings?
 
 
@@ -141,6 +143,7 @@ LEXICON CasesPlur-E
     +Loc:ssen # ;
     +Loc+Short:{í}s # ;
     +Abl:llon # ;
+    +Abl:llor # ;  ! alternate ending
     +Poss:{í}{w}a # ;  ! TODO: connect to adjectival endings?
 
 LEXICON CasesPlurPar-E
@@ -154,8 +157,9 @@ LEXICON CasesPlurPar-E
     +Loc:lisse # ;  ! n is optional for locative
     +Loc:lissen # ;
     +Loc+Short:lis # ;
-    +Abl:lillo # ;  ! n is optional for ablative
+    +Abl:lillo # ;  ! n/r is optional for ablative
     +Abl:lillon # ;
+    +Abl:lillor # ;  ! alternate ending
     +Poss:lí{w}a # ;  ! TODO: connect to adjectival endings?
 
 
@@ -217,6 +221,7 @@ LEXICON CasesPlur-Cons
     +Loc:issen # ;
     +Loc+Short:is # ;
     +Abl:illon # ;
+    +Abl:illor # ;  ! alternate ending
     +Poss:i{w}a # ;  ! TODO: connect to adjectival endings?
 
 LEXICON CasesPlurPar-Cons
@@ -230,8 +235,9 @@ LEXICON CasesPlurPar-Cons
     +Loc:{l}isse # ;  ! n is optional for locative
     +Loc:{l}issen # ;
     +Loc+Short:{l}is # ;
-    +Abl:{l}illo # ;  ! n is optional for ablative
+    +Abl:{l}illo # ;  ! n/r is optional for ablative
     +Abl:{l}illon # ;
+    +Abl:{l}illor # ;
     +Poss:{l}í{w}a # ;  ! TODO: connect to adjectival endings?
 
 

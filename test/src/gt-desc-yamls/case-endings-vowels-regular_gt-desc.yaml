@@ -42,7 +42,7 @@ Tests:
     cirya+N+Plur+Dat: ciryain
     cirya+N+Plur+Loc: ciryassen
     cirya+N+Plur+Loc+Short: ciryais
-    cirya+N+Plur+Abl: ciryallon
+    cirya+N+Plur+Abl: [ciryallon, ciryallor]
     cirya+N+Plur+Poss: ciryai{w}a
     # Partitive Plural
     cirya+N+Plur+Par: ciryali
@@ -54,7 +54,7 @@ Tests:
     cirya+N+Plur+Par+Dat: ciryalin
     cirya+N+Plur+Par+Loc: [ciryalissen, ciryalisse]
     cirya+N+Plur+Par+Loc+Short: ciryalis
-    cirya+N+Plur+Par+Abl: [ciryalillon, ciryalillo]
+    cirya+N+Plur+Par+Abl: [ciryalillon, ciryalillor, ciryalillo]
     cirya+N+Plur+Par+Poss: ciryalí{w}a
   
   Standard nouns ending in -o:
@@ -92,7 +92,7 @@ Tests:
     rocco+N+Plur+Dat: roccoin
     rocco+N+Plur+Loc: roccossen
     rocco+N+Plur+Loc+Short: roccois
-    rocco+N+Plur+Abl: roccollon
+    rocco+N+Plur+Abl: [roccollon, roccollor]
     rocco+N+Plur+Poss: roccoi{w}a
     # Partitive Plural
     rocco+N+Plur+Par: roccoli
@@ -104,7 +104,7 @@ Tests:
     rocco+N+Plur+Par+Dat: roccolin
     rocco+N+Plur+Par+Loc: [roccolissen, roccolisse]
     rocco+N+Plur+Par+Loc+Short: roccolis
-    rocco+N+Plur+Par+Abl: [roccolillon, roccolillo]
+    rocco+N+Plur+Par+Abl: [roccolillon, roccolillor, roccolillo]
     rocco+N+Plur+Par+Poss: roccolí{w}a
   
   Standard nouns ending in -i:
@@ -142,7 +142,7 @@ Tests:
     tári+N+Plur+Dat: [tárín, tárin]
     tári+N+Plur+Loc: tárissen
     tári+N+Plur+Loc+Short: [tárís, táris]
-    tári+N+Plur+Abl: tárillon
+    tári+N+Plur+Abl: [tárillon, tárillor]
     tári+N+Plur+Poss: ['tárí{w}a', 'tári{w}a']
     # Partitive Plural
     tári+N+Plur+Par: tárili
@@ -154,7 +154,7 @@ Tests:
     tári+N+Plur+Par+Dat: tárilin
     tári+N+Plur+Par+Loc: [tárilissen, tárilisse]
     tári+N+Plur+Par+Loc+Short: tárilis
-    tári+N+Plur+Par+Abl: [tárilillon, tárilillo]
+    tári+N+Plur+Par+Abl: [tárilillon, tárilillor, tárilillo]
     tári+N+Plur+Par+Poss: tárilí{w}a
   
   Standard nouns ending in -u:
@@ -192,7 +192,7 @@ Tests:
     nénu+N+Plur+Dat: nénuin
     nénu+N+Plur+Loc: nénussen
     nénu+N+Plur+Loc+Short: nénuis
-    nénu+N+Plur+Abl: nénullon
+    nénu+N+Plur+Abl: [nénullon, nénullor]
     nénu+N+Plur+Poss: nénui{w}a
     # Partitive Plural
     nénu+N+Plur+Par: nénuli
@@ -204,7 +204,7 @@ Tests:
     nénu+N+Plur+Par+Dat: nénulin
     nénu+N+Plur+Par+Loc: [nénulissen, nénulisse]
     nénu+N+Plur+Par+Loc+Short: nénulis
-    nénu+N+Plur+Par+Abl: [nénulillon, nénulillo]
+    nénu+N+Plur+Par+Abl: [nénulillon, nénulillor, nénulillo]
     nénu+N+Plur+Par+Poss: nénulí{w}a
   
   Standard nouns ending in -ie (which include {+}):
@@ -242,7 +242,7 @@ Tests:
     tyalië+N+Plur+Dat: tyalién
     tyalië+N+Plur+Loc: tyaliessen
     tyalië+N+Plur+Loc+Short: tyaliés
-    tyalië+N+Plur+Abl: tyaliellon
+    tyalië+N+Plur+Abl: [tyaliellon, tyaliellor]
     tyalië+N+Plur+Poss: tyalié{w}a
     # Partitive Plural
     tyalië+N+Plur+Par: [tyalieli, tyaliéli]
@@ -254,7 +254,7 @@ Tests:
     tyalië+N+Plur+Par+Dat: [tyalielin, tyaliélin]
     tyalië+N+Plur+Par+Loc: [tyalielissen, tyalielisse]
     tyalië+N+Plur+Par+Loc+Short: [tyalielis, tyaliélis]
-    tyalië+N+Plur+Par+Abl: [tyalielillon, tyalielillo]
+    tyalië+N+Plur+Par+Abl: [tyalielillon, tyalielillor, tyalielillo]
     tyalië+N+Plur+Par+Poss: tyalielí{w}a
   
   Standard nouns ending in -e:
@@ -292,7 +292,7 @@ Tests:
     aiwë+N+Plur+Dat: aiwín
     aiwë+N+Plur+Loc: aiwessen
     aiwë+N+Plur+Loc+Short: aiwís
-    aiwë+N+Plur+Abl: aiwellon
+    aiwë+N+Plur+Abl: [aiwellon, aiwellor]
     aiwë+N+Plur+Poss: aiwí{w}a
     # Partitive Plural
     aiwë+N+Plur+Par: aiweli
@@ -304,5 +304,5 @@ Tests:
     aiwë+N+Plur+Par+Dat: aiwelin
     aiwë+N+Plur+Par+Loc: [aiwelissen, aiwelisse]
     aiwë+N+Plur+Par+Loc+Short: aiwelis
-    aiwë+N+Plur+Par+Abl: [aiwelillon, aiwelillo]
+    aiwë+N+Plur+Par+Abl: [aiwelillon, aiwelillor, aiwelillo]
     aiwë+N+Plur+Par+Poss: aiwelí{w}a

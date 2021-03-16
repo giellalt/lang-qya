@@ -42,7 +42,7 @@ Tests:
     nís+N+Plur+Dat: nissin
     nís+N+Plur+Loc: nississen
     nís+N+Plur+Loc+Short: nissis
-    nís+N+Plur+Abl: nissillon
+    nís+N+Plur+Abl: [nissillon, nissillor]
     nís+N+Plur+Poss: nissi{w}a
     # Partitive Plural
     nís+N+Plur+Par: nisseli
@@ -54,7 +54,7 @@ Tests:
     nís+N+Plur+Par+Dat: nisselin
     nís+N+Plur+Par+Loc: [nisselissen, nisselisse]
     nís+N+Plur+Par+Loc+Short: nisselis
-    nís+N+Plur+Par+Abl: [nisselillon, nisselillo]
+    nís+N+Plur+Par+Abl: [nisselillon, nisselillor, nisselillo]
     nís+N+Plur+Par+Poss: nisselí{w}a
   
   Stem-change nouns where the change is non-final:
@@ -92,7 +92,7 @@ Tests:
     nér+N+Plur+Dat: nerin
     nér+N+Plur+Loc: nerissen
     nér+N+Plur+Loc+Short: neris
-    nér+N+Plur+Abl: nerillon
+    nér+N+Plur+Abl: [nerillon, nerillor]
     nér+N+Plur+Poss: neri{w}a
     # Partitive Plural
     nér+N+Plur+Par: nelli
@@ -104,7 +104,7 @@ Tests:
     nér+N+Plur+Par+Dat: nellin
     nér+N+Plur+Par+Loc: [nellissen, nellisse]
     nér+N+Plur+Par+Loc+Short: nellis
-    nér+N+Plur+Par+Abl: [nellillon, nellillo]
+    nér+N+Plur+Par+Abl: [nellillon, nellillor, nellillo]
     nér+N+Plur+Par+Poss: nellí{w}a
   
   # Stem-change nouns ending in o/u
@@ -144,7 +144,7 @@ Tests:
     ranco+N+Plur+Dat: ranquin
     ranco+N+Plur+Loc: ranquissen
     ranco+N+Plur+Loc+Short: ranquis
-    ranco+N+Plur+Abl: ranquillon
+    ranco+N+Plur+Abl: [ranquillon, ranquillor]
     ranco+N+Plur+Poss: ranqui{w}a
     # Partitive Plural
     ranco+N+Plur+Par: ranculi
@@ -156,7 +156,7 @@ Tests:
     ranco+N+Plur+Par+Dat: ranculin
     ranco+N+Plur+Par+Loc: [ranculissen, ranculisse]
     ranco+N+Plur+Par+Loc+Short: ranculis
-    ranco+N+Plur+Par+Abl: [ranculillon, ranculillo]
+    ranco+N+Plur+Par+Abl: [ranculillon, ranculillor, ranculillo]
     ranco+N+Plur+Par+Poss: ranculí{w}a
 
   Stem-change nouns ending in go/gu- (also shifts to gw):
@@ -194,7 +194,7 @@ Tests:
     ango+N+Plur+Dat: angwin
     ango+N+Plur+Loc: angwissen
     ango+N+Plur+Loc+Short: angwis
-    ango+N+Plur+Abl: angwillon
+    ango+N+Plur+Abl: [angwillon, angwillor]
     ango+N+Plur+Poss: angwi{w}a
     # Partitive Plural
     ango+N+Plur+Par: anguli
@@ -206,7 +206,7 @@ Tests:
     ango+N+Plur+Par+Dat: angulin
     ango+N+Plur+Par+Loc: [angulissen, angulisse]
     ango+N+Plur+Par+Loc+Short: angulis
-    ango+N+Plur+Par+Abl: [angulillon, angulillo]
+    ango+N+Plur+Par+Abl: [angulillon, angulillor, angulillo]
     ango+N+Plur+Par+Poss: angulí{w}a
   
   # Stem-change nouns ending in e/i
@@ -246,7 +246,7 @@ Tests:
     súrë+N+Plur+Dat: [súrin, súrín]
     súrë+N+Plur+Loc: súrissen
     súrë+N+Plur+Loc+Short: [súris, súrís]
-    súrë+N+Plur+Abl: súrillon
+    súrë+N+Plur+Abl: [súrillon, súrillor]
     súrë+N+Plur+Poss: ['súri{w}a', 'súrí{w}a']
     # Partitive Plural
     súrë+N+Plur+Par: súrili
@@ -258,5 +258,5 @@ Tests:
     súrë+N+Plur+Par+Dat: súrilin
     súrë+N+Plur+Par+Loc: [súrilissen, súrilisse]
     súrë+N+Plur+Par+Loc+Short: súrilis
-    súrë+N+Plur+Par+Abl: [súrilillon, súrilillo]
+    súrë+N+Plur+Par+Abl: [súrilillon, súrilillor, súrilillo]
     súrë+N+Plur+Par+Poss: súrilí{w}a

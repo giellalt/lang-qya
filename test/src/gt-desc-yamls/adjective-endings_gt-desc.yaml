@@ -42,7 +42,7 @@ Tests:
     vanya+A+Plur+Dat: vanyain
     vanya+A+Plur+Loc: vanyassen
     vanya+A+Plur+Loc+Short: vanyais
-    vanya+A+Plur+Abl: vanyallon
+    vanya+A+Plur+Abl: [vanyallon, vanyallor]
     vanya+A+Plur+Poss: vanyai{w}a
     # Partitive Plural
     vanya+A+Plur+Par+Nom: vanyali
@@ -53,7 +53,7 @@ Tests:
     vanya+A+Plur+Par+Dat: vanyalin
     vanya+A+Plur+Par+Loc: [vanyalisse, vanyalissen]
     vanya+A+Plur+Par+Loc+Short: vanyalis
-    vanya+A+Plur+Par+Abl: [vanyalillo, vanyalillon]
+    vanya+A+Plur+Par+Abl: [vanyalillo, vanyalillon, vanyalillor]
     vanya+A+Plur+Par+Poss: vanyalí{w}a
   
   Standard adjectives ending in -ea:
