@@ -1,35 +1,42 @@
-! Quenya verbs are conjugated for tense (past, perfect, progressive, aorist, future)
+! Quenya verbs are conjugated for tense/aspect (past, present perfect, present progressive, present simple (aorist), future)
 ! and receive suffixes as pronouns for subject and object
 
-! # TODO
+! ^ is used to mark the root vowel that is lengthened in some forms
+
 LEXICON Verbs
+    ! standard verbs
+    VerbStems ;
+    VerbStems-Vowel ;
+    @U.Tense.Perf@:@U.Tense.Perf@{R}    VerbStems ;
+    @U.Tense.Perf@:@U.Tense.Perf@{R}{R} VerbStems-Vowel ;
+    @U.Tense.PerfNoPrefix@              VerbStems ;
+    @U.Tense.PerfNoPrefix@              VerbStems-Vowel ;
+    ! special verbs
     Copula ;
     Existential ;
-    ! standard verbs
-    anta-:anta          Verb-A              "give" ;
-    car-:car            Verb-Cons           "do, make" ;
-    cen-:cen            Verb-Cons           "see, behold" ;
-    ista-:ista          Verb-A              "know" ;  ! irregular past tense: sintë
-    órava-:órava        Verb-A              "have mercy" ;
-    tana-:tana          Verb-A              "show, indicate" ;
-    úm-+V+Neg:úm        Verb-Cons           "not do" ;
-    ! special verbs
-    equë:eque           VerbSuffixSubject   "say, said" ;
+    equë:eque           VerbSubject         "say, said" ;
+
+LEXICON VerbStems  ! verb stems that start with a consonant
+    car-:c{^a}r         VerbSuffix-Cons     "do, make" ;
+    cen-:c{^e}n         VerbSuffix-Cons     "see, behold" ;
+    tana-:t{^a}na       VerbSuffix-A        "show, indicate" ;
+
+LEXICON VerbStems-Vowel  ! verbs stems that start with a vowel
+    anta-:anta          VerbSuffix-A        "give" ;
+    ista-:ista          VerbSuffix-A        "know" ;  ! irregular past tense: sintë
+    órava-:órava        VerbSuffix-A        "have mercy" ;
+    úm-+V+Neg:úm        VerbSuffix-Cons     "not do" ;
+
+
+! special verbs
 
 LEXICON Copula  ! like Spanish 'ser'
-    ná+V:ná         # ;
-    ná+V+Plur:nar   # ;
-    ná+V+Plur:nár   # ;
-    ná+V+Past:né    # ;
-    ná+V+Fut:nauva  # ;
-    ná+V+Imp:na     # ;
+    ná+V:ná             VerbSubject ;
+    ná+V+Plur:nar       # ;
+    ná+V+Past:né        VerbSubject ;
+    ná+V+Fut:nauva      VerbSubject ;
+    ná+V+Imp:na         VerbSubject ;
 
 LEXICON Existential  ! like Spanish 'estar'
     ëa+V+Plur:ear       # ;
-    ëa+V+Past:enge      # ;
-
-! TODO
-LEXICON Verb-A
-    # ;
-LEXICON Verb-Cons
-    # ;
+    ëa+V+Past:enge      VerbSubject ;

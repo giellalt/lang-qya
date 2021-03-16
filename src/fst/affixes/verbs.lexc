@@ -1,4 +1,32 @@
 ! TODO
-LEXICON VerbSuffixSubject
-    +Sg1:n  # ;
-    +Sg3:s  # ;
+! primary verbs (end in a consonant)
+
+LEXICON VerbSuffix-Cons
+    +V: VerbTense-Cons ;
+
+LEXICON VerbTense-Cons
+    VerbSubject ;
+
+
+! derived verbs (end in -a)
+
+LEXICON VerbSuffix-A
+    +V: VerbTense-A ;
+
+LEXICON VerbTense-A
+    VerbSubject ;
+
+
+! subject agreement or attached pronouns
+
+LEXICON VerbSubject
+    ! attached pronouns
+    +Sing+1:n   # ;
+    +Sing+1:nye # ;
+    +Sing+3:s   # ;
+    +2:lye      # ;
+    +2:l        # ;
+    ! simple number agreement
+    +Sing:  # ;
+    +Plur:r # ;
+    # ;

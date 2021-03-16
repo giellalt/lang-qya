@@ -3,7 +3,7 @@ LEXICON Prepositions
     lá+Adp:lá   #   "beyond, over, across" ;
     
     mi+Adp:mi               #   "in, within" ;
-    mí+Adp+Det+Art+Def:mí   #   "in, within the" ;  ! TODO: is this tagged right?
+    mi+Adp#i+Det+Art+Def:mí #   "in, within the" ;
 
     nu+Adp:nu   #   "under" ;
     or+Adp:or   #   "over" ;

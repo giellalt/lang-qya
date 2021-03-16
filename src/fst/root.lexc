@@ -43,8 +43,10 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
     +Nom +Acc +Gen +Ins +All +Dat +Loc +Short +Abl +Poss
     +Voc  ! just a particle
 
+!! Person is marked with these:
+    +1 +2 +3
 !! The possession is marked as such:
-    +PxSg1 +PxSg2 +PxSg3 +PxDu1 +PxDu2 +PxDu3 +PxPl1 +PxPl2 +PxPl3
+    +Px
     +In +Ex  ! clusivity
 !! The comparative forms are:
     +Comp +Superl
@@ -54,9 +56,9 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! Verb moods are:
     +Ind +Prs +Prt +Pot +Cond +Imp +Jus
 !! Verb tenses are:
-    +Past +Fut
-!! Verb personal forms are:
-    +Sg1 +Sg2 +Sg3 +Du1 +Du2 +Du3 +Pl1 +Pl2 +Pl3
+    +Past +Pres +Fut
+!! Verb aspects are:
+    +Perf +Prog
 !! Other verb forms are
     +Inf +Ger +ConNeg +ConNegII +Neg +ImprtII +PrsPrc +PrfPrc +Sup +VGen +VAbess
 
@@ -119,6 +121,9 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
     {l}     ! an l that triggers total regressive assimilation if possible
     {+}     ! marks a stem in which the final vowel should be lengthened with certain endings
     {n}     ! end of the adjectival superlative prefix, which may retrogressively assimilate
+    {R}     ! used in prefixed reduplication
+    {^a} {^e} {^i} {^o} {^u}  ! used in verb stems to mark which vowel may become long
+    {^}     ! triggers the previous forms to become long
 
 !! Symbols that are written differently in Tengwar script because of etymology, not phonology/context
     {w}  ! w/v (if it's a w or v that can't alternate, just write plain w or v)
@@ -134,6 +139,9 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! For coordinating case
     @U.Case.Voc@ @R.Case.Voc@ @D.Case.Voc@
 !!
+!! For coordinating tense
+    @U.Tense.Perf@ @R.Tense.Perf@ @D.Tense.Perf@
+    @U.Tense.PerfNoPrefix@ @R.Tense.PerfNoPrefix@ @D.Tense.PerfNoPrefix@  ! used to put on a "this is weird" tag for non-prefixed perfect forms
 !! We have manually optimised the structure of our lexicon using following
 !! flag diacritics to restrict morhpological combinatorics - only allow compounds
 !! with verbs if the verb is further derived into a noun again:

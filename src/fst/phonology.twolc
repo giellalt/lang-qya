@@ -25,6 +25,11 @@ Alphabet
     %{%+%}:0
     %{n%}:n
 
+    %{R%}:0
+
+    %{%^a%}:a %{%^e%}:e %{%^i%}:i %{%^o%}:o %{%^u%}:u
+    %{%^%}:0
+
 ;
 
 ! allowed initial consonants: p, q, t, c, f, s, h, m, n, ñ, v, l, r, y, w
@@ -144,3 +149,21 @@ Rules
     %|:0 <=> :Vowel _ ;
 "The | at the start of a possessive ending becomes i when preceded by a consonant and followed by nya"
     %|:i <=> :Consonant _ n y a: ;
+
+
+! prefixed reduplication
+"First {R} becomes a short reduplication of the stem vowel"
+    %{R%}:Vx <=> .#. _ (%{R%}:) Consonant:* :Vy ;
+        where   Vx in (a e i o u a e i o u)
+                Vy in (a e i o u á é í ó ú)
+            matched ;
+"If there's another {R} after an {R} that ended up non-zero, it becomes a reduplication of the consonant after the first vowel"
+    %{R%}:Cx <=> .#. [%{R%}: - :0] _ :Vowel :Cx ;
+        where Cx in Consonant ;
+
+
+"Lengthen stem vowel in verbs when triggered by a later {^}"
+    Vx:Vy <=> _ $%{%^%}: ;
+        where   Vx in (%{%^a%} %{%^e%} %{%^i%} %{%^o%} %{%^u%})
+                Vy in (    á       é       í       ó       ú  )
+            matched ;
