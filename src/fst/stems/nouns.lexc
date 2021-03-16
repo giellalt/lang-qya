@@ -7,13 +7,13 @@ LEXICON Nouns
     anar                                    NounSuffix-Cons "(the) sun" ;
     isil:iþil                               NounSuffix-Cons "(the) moon" ;
     elda                                    NounSuffix      "elf" ;
-    lië:lie{+}                              NounSuffix      "people, race" ;
+    lië:lie                                 NounSuffix      "people, race" ;
     vendë:{w}ende                           NounSuffix-E    "maiden, virgin" ;
     rocco                                   NounSuffix      "horse" ;
     aran                                    NounSuffix-Cons "king" ;
     tári                                    NounSuffix      "queen" ;
     tasar:taþar                             NounSuffix-Cons "willow" ;
-    ! tasarë:taþare{+}                        NounSuffix-E    "willow" ;
+    tasarë:taþare{+}                        NounSuffix-E    "willow" ;
     ! Lesson 3
     hen:hen{stemd20}                        NounSuffix-Cons "eye" ;
     ranco:ranc{stemu2o}                     NounSuffix-Cons "arm" ;
@@ -24,7 +24,7 @@ LEXICON Nouns
     nér:n{steme2é}r                         NounSuffix-Cons "man (adult male)" ;
     nís:n{stemi2í}s{stems20}                NounSuffix-Cons "woman (adult female)" ;
     sar:sar{stemd20}                        NounSuffix-Cons "pebble, stone" ;
-    ! sar:sar{stemn20}                        NounSuffix-Cons "pebble, stone" ;
+    sar:sar{stemn20}                        NounSuffix-Cons "pebble, stone" ;
     alda                                    NounSuffix      "tree" ;
     oron:oron{stemt20}                      NounSuffix-Cons "mountain" ;
     ! Assorted
@@ -40,7 +40,7 @@ LEXICON Nouns
     
     anta                                    NounSuffix      "face" ;
     atan                                    NounSuffix-Cons "man (as opposed to elf)" ;
-    aurë:aure                               NounSuffix-E    "sunlight, day" ;
+    aurë:aure{+}                            NounSuffix-E    "sunlight, day" ;
     cálë:cále                               NounSuffix-E    "light" ;
     cemen                                   NounSuffix-Cons "earth, ground, soil" ;
     cemendë:cemende                         NounSuffix-E    "earth, ground, soil" ;
@@ -54,7 +54,7 @@ LEXICON Nouns
     menel                                   NounSuffix-Cons "the heavens, firmament" ;
     metta                                   NounSuffix      "end" ;
     ne                                      NounSuffix-E    "scent" ;
-    nostalë:nostale                         NounSuffix-E    "species, kind" ;
+    nostalë:nostale{+}                      NounSuffix-E    "species, kind" ;
     orë:or{stemi2e}                         NounSuffix      "grain" ;
     órë:óre                                 NounSuffix-E    "heart, inner mind (tengwa 21)" ;
     órë:óre                                 NounSuffix-E    "rising" ;
