@@ -1,3 +1,6 @@
+! Quenya verbs are conjugated for tense (past, perfect, progressive, aorist, future)
+! and receive suffixes as pronouns for subject and object
+
 ! # TODO
 LEXICON Verbs
     Copula ;
@@ -18,6 +21,7 @@ LEXICON Copula  ! like Spanish 'ser'
     ná+V+Plur:nar   # ;
     ná+V+Plur:nár   # ;
     ná+V+Past:né    # ;
+    ná+V+Fut:nauva  # ;
     ná+V+Imp:na     # ;
 
 LEXICON Existential  ! like Spanish 'estar'
