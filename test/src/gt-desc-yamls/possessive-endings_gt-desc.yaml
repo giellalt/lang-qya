@@ -6,20 +6,36 @@ Config:
 Tests:
 
   Nouns with vowel endings:
-    # TODO: ADD MORE
-    # -nya
+    # nouns in -a
     cirya+N+PxSg1+Sing+Nom: ciryanya
     cirya+N+PxSg1+Sing+Gen: ciryanyo
     cirya+N+PxSg1+Plur+Nom: ciryanyar
     cirya+N+PxSg1+Plur+Par+Ins: ciryanyalínen
+    cirya+N+PxSg3+Sing+Nom: ciryarya
+    cirya+N+PxSg3+Sing+Gen: ciryaryo
+    cirya+N+PxSg3+Plur+Nom: ciryaryar
+    cirya+N+PxSg3+Plur+Par+Ins: ciryaryalínen
+    # nouns in -e
+    aiwë+N+PxSg1+Sing+Nom: aiwenya
+    aiwë+N+PxSg1+Sing+Gen: aiwenyo
+    aiwë+N+PxSg1+Plur+Nom: aiwenyar
+    aiwë+N+PxSg1+Plur+Par+Ins: aiwenyalínen
+    aiwë+N+PxSg3+Sing+Nom: aiwerya
+    aiwë+N+PxSg3+Sing+Gen: aiweryo
+    aiwë+N+PxSg3+Plur+Nom: aiweryar
+    aiwë+N+PxSg3+Plur+Par+Ins: aiweryalínen
   
   Nouns with consonant endings:
-    # TODO: ADD MORE
     # -inya
     anar+N+PxSg1+Sing+Nom: anarinya
     anar+N+PxSg1+Sing+Gen: anarinyo
     anar+N+PxSg1+Plur+Nom: anarinyar
     anar+N+PxSg1+Plur+Par+Ins: anarinyalínen
+    # -erya
+    anar+N+PxSg3+Sing+Nom: anarerya
+    anar+N+PxSg3+Sing+Gen: anareryo
+    anar+N+PxSg3+Plur+Nom: anareryar
+    anar+N+PxSg3+Plur+Par+Ins: anareryalínen
   
   Nouns with stem changes:
     # mid-stem
