@@ -4,39 +4,41 @@
 ! ^ is used to mark the root vowel that is lengthened in some forms
 
 LEXICON Verbs
-    ! standard verbs
-    VerbStems ;
-    VerbStems-Vowel ;
-    @U.Tense.Perf@:@U.Tense.Perf@{R}    VerbStems ;
-    @U.Tense.Perf@:@U.Tense.Perf@{R}{R} VerbStems-Vowel ;
-    @U.Tense.PerfNoPrefix@              VerbStems ;
-    @U.Tense.PerfNoPrefix@              VerbStems-Vowel ;
+    ! no perfective prefix
+    @U.Perf.NoPrefix@                   VerbStems ;
+    @U.Perf.NoPrefix@                   VerbStems-Vowel ;
+    ! yes perfective prefix
+    @U.Perf.YesPrefix@:@U.Perf.YesPrefix@{R}    VerbStems ;
+    @U.Perf.YesPrefix@:@U.Perf.YesPrefix@{R}{R} VerbStems-Vowel ;
     ! special verbs
     Copula ;
     Existential ;
     equë:eque           VerbSubject         "say, said" ;
+    ! #hriz-
 
 LEXICON VerbStems  ! verb stems that start with a consonant
     car-:c{^a}r         VerbSuffix-Cons     "do, make" ;
     cen-:c{^e}n         VerbSuffix-Cons     "see, behold" ;
-    tana-:t{^a}na       VerbSuffix-A        "show, indicate" ;
+    tana-:t{^a}n        VerbSuffix-A        "show, indicate" ;
 
 LEXICON VerbStems-Vowel  ! verbs stems that start with a vowel
-    anta-:anta          VerbSuffix-A        "give" ;
-    ista-:ista          VerbSuffix-A        "know" ;  ! irregular past tense: sintë
-    órava-:órava        VerbSuffix-A        "have mercy" ;
+    anta-:ant           VerbSuffix-A        "give" ;
+    ista-:ist           VerbSuffix-A        "know" ;  ! irregular past tense: sintë
+    órava-:órav         VerbSuffix-A        "have mercy" ;
     úm-+V+Neg:úm        VerbSuffix-Cons     "not do" ;
 
 
 ! special verbs
 
-LEXICON Copula  ! like Spanish 'ser'
-    ná+V:ná             VerbSubject ;
-    ná+V+Plur:nar       # ;
+LEXICON Copula  ! state or attribute
+    ná+V+Pres:ná        VerbSubject ;
+    ná+V+Pres+Plur:nar  # ;
     ná+V+Past:né        VerbSubject ;
     ná+V+Fut:nauva      VerbSubject ;
-    ná+V+Imp:na         VerbSubject ;
+    ná+V+Imp:na         # ;
 
-LEXICON Existential  ! like Spanish 'estar'
-    ëa+V+Plur:ear       # ;
+LEXICON Existential  ! presence or existence, perhaps position
     ëa+V+Past:enge      VerbSubject ;
+    ëa+V+Pres:ea        VerbSubject ;
+    ëa+V+Fut:euva       VerbSubject ;
+    ëa+V+Imp:ea         # ;

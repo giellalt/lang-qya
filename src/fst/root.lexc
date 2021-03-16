@@ -35,6 +35,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
     +Prop +Dem +Int +Refl +Recipr +Rel +Art +Def +Emp
 
 !! The Usage extents are marked using following tags:
+    +Err/-Norm
     +Err/Orth
     +Use/-Spell
 
@@ -124,6 +125,8 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
     {R}     ! used in prefixed reduplication
     {^a} {^e} {^i} {^o} {^u}  ! used in verb stems to mark which vowel may become long
     {^}     ! triggers the previous forms to become long
+    {E}     ! ending for a primary verb in aorist (present simple) tense
+    {N}     ! part of past-tense verb ending; possibly undergoes metathesis with preceding consonant
 
 !! Symbols that are written differently in Tengwar script because of etymology, not phonology/context
     {w}  ! w/v (if it's a w or v that can't alternate, just write plain w or v)
@@ -141,7 +144,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !!
 !! For coordinating tense
     @U.Tense.Perf@ @R.Tense.Perf@ @D.Tense.Perf@
-    @U.Tense.PerfNoPrefix@ @R.Tense.PerfNoPrefix@ @D.Tense.PerfNoPrefix@  ! used to put on a "this is weird" tag for non-prefixed perfect forms
+    @U.Perf.NoPrefix@ @R.Perf.NoPrefix@ @D.Perf.NoPrefix@  ! used to put on a "this is weird" tag for non-prefixed perfect forms
 !! We have manually optimised the structure of our lexicon using following
 !! flag diacritics to restrict morhpological combinatorics - only allow compounds
 !! with verbs if the verb is further derived into a noun again:

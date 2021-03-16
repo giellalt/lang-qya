@@ -1,32 +1,63 @@
 ! TODO
 ! primary verbs (end in a consonant)
-
 LEXICON VerbSuffix-Cons
-    +V: VerbTense-Cons ;
-
+    @U.Perf.NoPrefix@+V:@U.Perf.NoPrefix@ VerbTense-Cons ;
+    +V: VerbTensePerf ;
 LEXICON VerbTense-Cons
-    VerbSubject ;
+    +Past:{N}e          VerbSubject ;
+    +Pres:{E}           VerbSubject ;
+    +Pres+Prog:{^}a     VerbSubject ;
+    +Fut:uva            VerbSubject ;
 
 
 ! derived verbs (end in -a)
-
 LEXICON VerbSuffix-A
-    +V: VerbTense-A ;
+    @U.Perf.NoPrefix@+V:@U.Perf.NoPrefix@ VerbTense-A ;
+    +V: VerbTensePerf ;
+LEXICON VerbTense
+    +Past:ane           VerbSubject ;  ! TODO: some might lose their "derived" ending
+    +Pres:a             VerbSubject ;
+    +Pres+Prog:{^}ea    VerbSubject ;
+    +Fut:uva            VerbSubject ;
 
-LEXICON VerbTense-A
-    VerbSubject ;
+
+! derived verbs (end in -ya)
+LEXICON VerbSuffix-YA
+    @U.Perf.NoPrefix@+V:@U.Perf.NoPrefix@ VerbTense-YA ;
+    +V: VerbTensePerf ;
+LEXICON VerbTense-YA
+    +Past:yane          VerbSubject ;  ! TODO: some might lose their "derived" ending
+    +Pres:ya            VerbSubject ;
+    +Pres+Prog:y{^}ea   VerbSubject ;
+    +Fut:yuva           VerbSubject ;
+
+
+LEXICON VerbTensePerf
+    +Past+Perf:{^}ie    VerbTensePerfEnd ;
+LEXICON VerbTensePerfEnd  ! add the "sketchy" tag iff Tense == PerfNoPrefix
+    @U.Perf.NoPrefix@+Err/-Norm:@U.Perf.NoPrefix@ VerbSubject ;
+    @U.Perf.YesPrefix@ VerbSubject ;
 
 
 ! subject agreement or attached pronouns
 
 LEXICON VerbSubject
     ! attached pronouns
-    +Sing+1:n   # ;
-    +Sing+1:nye # ;
-    +Sing+3:s   # ;
-    +2:lye      # ;
-    +2:l        # ;
+    +Sing+1:n       # ;
+    +Sing+1:nye     # ;
+    +Sing+2:t       # ;
+    +Sing+2:cce     # ;
+    +Sing+2:tye     # ;  ! TODO add a tag to say this is sketchy
+    +Sing+3:s       # ;
+    +Sing+3:rye     # ;  ! TODO add a tag to say this is sketchy
+    +Dual+1+In:lwe  # ;  ! TODO add a tag to say this is sketchy
+    +Plur+1+Ex:mme  # ;
+    +Plur+1+In:lme  # ;
+    +Plur+2:lye     # ;
+    +Plur+2:l       # ;
+    +Plur+3:nte     # ;
     ! simple number agreement
     +Sing:  # ;
     +Plur:r # ;
-    # ;
+
+! TODO: add object pronouns

@@ -29,6 +29,8 @@ Alphabet
 
     %{%^a%}:a %{%^e%}:e %{%^i%}:i %{%^o%}:o %{%^u%}:u
     %{%^%}:0
+    %{E%}:i
+    %{N%}:n
 
 ;
 
@@ -161,9 +163,28 @@ Rules
     %{R%}:Cx <=> .#. [%{R%}: - :0] _ :Vowel :Cx ;
         where Cx in Consonant ;
 
-
 "Lengthen stem vowel in verbs when triggered by a later {^}"
     Vx:Vy <=> _ $%{%^%}: ;
         where   Vx in (%{%^a%} %{%^e%} %{%^i%} %{%^o%} %{%^u%})
                 Vy in (    á       é       í       ó       ú  )
             matched ;
+
+"Primary verb aorist tense ending {E} becomes -e if it's word final (-i otherwise)"
+    %{E%}:e <=> _ :0* .#. ;
+
+! handling {N} in past tense
+"If the last consonant is l/s/þ, {N} assimilates"
+    %{N%}:Cx <=> :Cx _ ;
+        where Cx in (l s þ) ;
+"If the last consonant is incompatible, they switch places (part 1: {N} -> Cx)"
+    %{N%}:Cx <=> Cx: _ ;
+        where   Cx in (t c %{w%} w p) ;
+"If the last consonant is incompatible, they switch places (part 2: Cx -> Cy)"
+    Cx:Cy <=> _ %{N%}:Cx ;
+        where   Cx in (t c %{w%} w p)
+                Cy in (n n n     n m)
+            matched ;
+"If the last consonant is a v, they switch places and mutate (part 1: {N} -> b)"
+    %{N%}:b <=> v: _ ;
+"If the last consonant is a v, they switch places and mutate (part 2: v -> m)"
+    v:m <=> _ %{N%}:b ;

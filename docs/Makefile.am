@@ -7,7 +7,7 @@
 #
 # dir/filename.lexc => filename-dir.md
 
-MD_PAGES=  # root-morphology.md
+# MD_PAGES=  # root-morphology.md
 # clitics-morphology.md       \
 # compounding-morphology.md   \
 # abbreviations-stems.md      \
@@ -34,4 +34,4 @@ MD_PAGES=  # root-morphology.md
 # propernouns-affixes.md      \
 # verbs-affixes.md
 
-include $(top_srcdir)/../giella-core/am-shared/docs-dir-include.am
+# include $(top_srcdir)/../giella-core/am-shared/docs-dir-include.am
