@@ -10,7 +10,7 @@ Alphabet
     Á É Í Ó Ú Ä Ë Ï Ö Ü Þ Ñ
 
     ! things to automatically convert (unless otherwise specified below)
-    %|:0  ! start of a possessive suffix
+    %|:e  ! start of a possessive suffix
     %>:e  ! start of case ending
     %*:0  ! marks an adjective ending in -e with an -i stem
 
@@ -100,15 +100,15 @@ Rules
     [ %{stemd20%}:0 | %{stemt20%}:0 | %{stems20%}:0 | %{stemn20%}:0 | %{stemm2n%}:n
     | %{stemu2o%}:o | %{stemi2e%}:e
     | %{steme2é%}:é | %{stemi2í%}:í ]
-        <=> _ ?* %>: :0* .#. ;
+        <=> _ [? - %|:]* %>: :0* .#. ;
 
 
-"Assimilate r to l when at a morpheme boundary"
+"Assimilate r to l when at the start of a case ending"
     r:l <=> :Vowel _ %>: %{l%}: ;
-"Optionally assimilate n,s,þ to l when at a morpheme boundary"
+"Optionally assimilate n,s,þ to l when at the start of a case ending"
     [ n:l | s:l | þ:l] => :Vowel _ %>: %{l%}: ;
 
-"Situations that force the morpheme boundary to become 0; good phonotactics"
+"Situations that force the > at the start of a case ending to become 0; good phonotactics"
     %>:0 <=>
             _ :0* .#. ;  ! nothing after
             :Vowel :0* _ ; _ :0* :Vowel ;  ! Adjacent vowel
@@ -118,6 +118,7 @@ Rules
                         Cy in (t c d f m p q t v %{w%} y b n p y c d f g q t v %{w%} y s t c d m n p q t s v %{w%} y c q t %{w%} s %{w%} y s p t c m n s l r)
                     matched ;
 
+! superlative adjectival prefix 'an-' (or 'a{n}<')
 "The boundary from the prefix a{n}<- needs to become non-zero, part 1 (list the allowed options)"
     [%<:a | %<:%-] => %{n%}: _ SuperlPrefixNeedsInsert ;
 "The boundary from the prefix a{n}<- needs to become non-zero, part 2 (disallow 0)"
@@ -136,3 +137,10 @@ Rules
     %{n%}:m <=> _ %<:0 [:p | :m] :Vowel ;
 "If the root starts with h-, the border goes to 0, and the n stays, then the h turns to c"
     h:c <=> %{n%}:n %<:0 _ ;
+
+
+! possessive suffixes
+"The | at the start of a possessive ending becomes 0 when preceded by a vowel"
+    %|:0 <=> :Vowel _ ;
+"The | at the start of a possessive ending becomes i when preceded by a consonant and followed by nya"
+    %|:i <=> :Consonant _ n y a: ;

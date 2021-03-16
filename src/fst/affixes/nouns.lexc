@@ -10,24 +10,19 @@ LEXICON NounSuffix
     +N: NounNoCase ;
 
 LEXICON NounNoCase  ! number without case, e.g. axor ilcalannar
-    +Sing:%> # ;
-    +Dual:%>t # ;
-    +Dual:%>{-V}u # ;
-    +Plur:%>r # ;
-    +Plur+Par:%>li{+} # ;
+    +Sing:%>            NounNoCasePost ;
+    +Dual:%>t           NounNoCasePost ;
+    +Dual:%>{-V}u       NounNoCasePost ;
+    +Plur:%>r           NounNoCasePost ;
+    +Plur+Par:%>li{+}   NounNoCasePost ;
+
+LEXICON NounNoCasePost
+    @R.Case.Voc@+Voc:@R.Case.Voc@ # ;
+    @D.Case.Voc@ # ;
 
 LEXICON Cases
     CasesNumber ;  ! no possessive suffix
     :| PossessiveSuffix ;
-
-LEXICON PossessiveSuffix
-    +PxSg1:nya      CasesNumber ;
-    +PxSg2:lya      CasesNumber ;
-    +PxSg3:rya      CasesNumber ;
-    +PxDu1+In:lva   CasesNumber ;
-    +PxPl1+In:lma   CasesNumber ;
-    +PxPl1+Ex:mma   CasesNumber ;
-    +PxPl3:nta      CasesNumber ;
 
 LEXICON CasesNumber
     +Sing:%>        CasesSing ;
@@ -102,6 +97,10 @@ LEXICON NounNoCase-E  ! number without case, e.g. axor ilcalannar
     +Plur+Par:%>li # ;
 
 LEXICON Cases-E
+    CasesNumber-E ;  ! no possessive suffix
+    :| PossessiveSuffix ;
+
+LEXICON CasesNumber-E
     +Sing:%>        CasesSing-E ;
     +Dual:%>        CasesDual-E ;
     +Plur:%>        CasesPlur-E ;
@@ -174,6 +173,10 @@ LEXICON NounNoCase-Cons  ! number without case, e.g. axor ilcalannar
     +Plur+Par:%>{l}i # ;
 
 LEXICON Cases-Cons
+    CasesNumber-Cons ;  ! no possessive suffix
+    :| PossessiveSuffix ;
+
+LEXICON CasesNumber-Cons
     +Sing:%>        CasesSing-Cons ;
     +Dual:%>        CasesDual-Cons ;
     +Plur:%>        CasesPlur-Cons ;
@@ -232,8 +235,20 @@ LEXICON CasesPlurPar-Cons
     +Poss:{l}í{w}a # ;  ! TODO: connect to adjectival endings?
 
 
-! dual endings that use -u (not -t)
+! possessive suffixes
+LEXICON PossessiveSuffix
+    +PxSg1:nya      CasesNumber ;
+    +PxDu1+In:l{w}a CasesNumber ;
+    +PxPl1+In:lma   CasesNumber ;
+    +PxPl1+Ex:mma   CasesNumber ;  ! this form is also for +PxDu1+Ex but I'm not sure how to best represent that
 
+    +PxSg2:lya      CasesNumber ;
+
+    +PxSg3:rya      CasesNumber ;
+    +PxPl3:nta      CasesNumber ;
+
+
+! dual endings that use -u (not -t)
 LEXICON CasesDual-U
     +Nom:{-V}u # ;
     +Acc:{-V}u # ;

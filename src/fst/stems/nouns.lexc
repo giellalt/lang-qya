@@ -60,6 +60,17 @@ LEXICON Nouns
     órë:óre                                 NounSuffix-E    "rising" ;
     úmë:úme                                 NounSuffix-E    "throng, great collection" ;
     vanda                                   NounSuffix      "oath, pledge" ;
-    Yehóva                                  NounSuffix      "Jehova" ;
+    Yehó{w}a                                NounSuffix      "Jehova" ;
+
+    ! exceptions
+
+    ! special cases of hína
+    @U.Case.Voc@hína+N:@U.Case.Voc@hina             NounNoCase  "child (vocative)" ;
+    @U.Case.Voc@hína+N+PxSg1:@U.Case.Voc@hinanya    NounNoCase  "my child (vocative)" ;
+    @U.Case.Voc@hína+N+PxSg1:@U.Case.Voc@hinya      NounNoCase  "my child (vocative)" ;
+    ! special cases of yondo
+    @U.Case.Voc@yondo+N:@U.Case.Voc@yondo           NounNoCase  "son (vocative)" ;
+    @U.Case.Voc@yondo+N+PxSg1:@U.Case.Voc@yondonya  NounNoCase  "my son (vocative)" ;
+    @U.Case.Voc@yondo+N+PxSg1:@U.Case.Voc@yonya     NounNoCase  "my son (vocative)" ;
 
 ! vim: set ft=xfst-lexc:

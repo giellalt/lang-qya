@@ -1,0 +1,69 @@
+Config:
+  hfst:
+    Gen: ../../src/generator-gt-desc.hfst
+    Morph: ../../src/analyser-gt-desc.hfst
+
+Tests:
+
+  Nouns with vowel endings:
+    # TODO: ADD MORE
+    # -nya
+    cirya+N+PxSg1+Sing+Nom: ciryanya
+    cirya+N+PxSg1+Sing+Gen: ciryanyo
+    cirya+N+PxSg1+Plur+Nom: ciryanyar
+    cirya+N+PxSg1+Plur+Par+Ins: ciryanyalínen
+  
+  Nouns with consonant endings:
+    # TODO: ADD MORE
+    # -inya
+    anar+N+PxSg1+Sing+Nom: anarinya
+    anar+N+PxSg1+Sing+Gen: anarinyo
+    anar+N+PxSg1+Plur+Nom: anarinyar
+    anar+N+PxSg1+Plur+Par+Ins: anarinyalínen
+  
+  Nouns with stem changes:
+    # mid-stem
+    nér+N+PxSg1+Sing+Nom: nerinya
+    nér+N+PxSg1+Sing+Gen: nerinyo
+    nér+N+PxSg1+Plur+Nom: nerinyar
+    nér+N+PxSg1+Plur+Par+Ins: nerinyalínen
+    nér+N+PxSg3+Sing+Nom: nererya
+    nér+N+PxSg3+Sing+Gen: nereryo
+    nér+N+PxSg3+Plur+Nom: nereryar
+    nér+N+PxSg3+Plur+Par+Ins: nereryalínen
+    # end of the stem vowel
+    súrë+N+PxSg1+Sing+Nom: súrinya
+    súrë+N+PxSg1+Sing+Gen: súrinyo
+    súrë+N+PxSg1+Plur+Nom: súrinyar
+    súrë+N+PxSg1+Plur+Par+Ins: súrinyalínen
+    súrë+N+PxSg3+Sing+Nom: súrirya
+    súrë+N+PxSg3+Sing+Gen: súriryo
+    súrë+N+PxSg3+Plur+Nom: súriryar
+    súrë+N+PxSg3+Plur+Par+Ins: súriryalínen
+    # end of the stem consonant
+    talan+N+PxSg1+Sing+Nom: talaminya
+    talan+N+PxSg1+Sing+Gen: talaminyo
+    talan+N+PxSg1+Plur+Nom: talaminyar
+    talan+N+PxSg1+Plur+Par+Ins: talaminyalínen
+    talan+N+PxSg3+Sing+Nom: talamerya
+    talan+N+PxSg3+Sing+Gen: talameryo
+    talan+N+PxSg3+Plur+Nom: talameryar
+    talan+N+PxSg3+Plur+Par+Ins: talameryalínen
+    # cu/qu
+    ranco+N+PxSg1+Sing+Nom: rancunya
+    ranco+N+PxSg1+Sing+Gen: rancunyo
+    ranco+N+PxSg1+Plur+Nom: rancunyar
+    ranco+N+PxSg1+Plur+Par+Ins: rancunyalínen
+    ranco+N+PxSg3+Sing+Nom: rancurya
+    ranco+N+PxSg3+Sing+Gen: rancuryo
+    ranco+N+PxSg3+Plur+Nom: rancuryar
+    ranco+N+PxSg3+Plur+Par+Ins: rancuryalínen
+    # gu/gw
+    ango+N+PxSg1+Sing+Nom: angunya
+    ango+N+PxSg1+Sing+Gen: angunyo
+    ango+N+PxSg1+Plur+Nom: angunyar
+    ango+N+PxSg1+Plur+Par+Ins: angunyalínen
+    ango+N+PxSg3+Sing+Nom: angurya
+    ango+N+PxSg3+Sing+Gen: anguryo
+    ango+N+PxSg3+Plur+Nom: anguryar
+    ango+N+PxSg3+Plur+Par+Ins: anguryalínen
