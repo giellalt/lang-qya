@@ -80,7 +80,7 @@ define ConsonantDoubleComboRule [
     {nt} ->  , {nd} ->  ,
     {mp} ->  , {mb} ->  ,
     {nc} ->  , {ng} ->  ,
-    {hw} ->  , {nw} ->  ,
+    {hw} ->  , {nw} ->  ,  ! TODO: sometimes 'nw' should be split up as  +  ???
     {rd} ->  , {ld} ->  ,
     {ch} ->  ,
     {cc} -> {} , {ll} -> {} , {mm} -> {} , {nn} -> {} ,
@@ -91,11 +91,11 @@ define RRule [ r ->  || _ Vowel ];
 
 define ConsonantSimpleRule [
     t ->  , p ->  , c ->  ,
-    þ ->  , f ->  , h ->  ,
+    þ ->  , f ->  , h ->  ,  ! TODO: is this right for plain h? What if it's initial?
     n ->  , m ->  , ñ ->  ,
     r ->  , v ->  , y -> {} ,
     %{w%} ->  , w ->  ,
-    l -> 
+    l ->  , x -> {}
 ];
 
 define LongVowelRule [
