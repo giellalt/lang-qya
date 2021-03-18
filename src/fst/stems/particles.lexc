@@ -10,4 +10,4 @@ LEXICON Particles
     ce+Part:ce          #   "maybe" ;
 
     i+Det+Art+Def:i     #   "the" ;
-    nai+Part+Jus        #   "may" ;
+    nai+Part+Jus:nai    #   "may" ;
