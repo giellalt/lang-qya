@@ -1,0 +1,146 @@
+! Script for Latin to Tengwar for Quenya
+
+! character sets
+define VowelShort   [a | e | i | o | u];
+define VowelLong    [á | é | í | ó | ú];
+define Vowel [ VowelShort | VowelLong ];
+define ConsonantsLongCarrierable [
+     |  |  |  |
+     |  |  | 
+];
+define TokenStart [.#.|%-|% ];
+
+
+! replacements
+
+
+! start by making everything lowercase
+define Decapitation [
+    A -> a , Á -> á , Ä -> ä ,
+    B -> b , C -> c , D -> d ,
+    E -> e , É -> é , Ë -> ë ,
+    F -> f , G -> g , H -> h ,
+    I -> i , Í -> í , Ï -> ï ,
+    J -> j , K -> k , L -> l , M -> m , N -> n ,
+    O -> o , Ó -> ó , Ö -> ö ,
+    P -> p , Q -> q , R -> r , S -> s , T -> t ,
+    U -> u , Ú -> ú , Ü -> ü ,
+    V -> v , W -> w , X -> x , Y -> y , Z -> z
+];
+
+! remove the diaeresis
+define RemoveDiaeresis [ä -> a , ë -> e , ï -> i , ö -> o , ü -> u];
+
+
+
+! get rid of things that look like vowels, but are parts of consonants
+define ConsonantQuRule1 [ {nqu} ->  ];
+define ConsonantQuRule2 [  {qu} ->  ];
+
+define DiphthongsRule [
+    {ai} -> {} , {oi} -> {} , {ui} -> {} ,
+    {au} -> {} , {eu} -> {} , {iu} -> {}
+];
+
+! if a vowel is immediately after a diphthong, it gets a carrier
+define VowelAfterDiphthongRule [
+    a -> {} , e -> {} , i -> {} , o -> {} , u -> {} ,
+    á -> {} , é -> {} , í -> {} , ó -> {} , ú -> {}
+    || [|] ? _
+];
+
+! if after diphthongs there are still two vowels in a row, the second one gets a carrier
+define SecondVowelRule [
+    a -> {} , e -> {} , i -> {} , o -> {} , u -> {} ,
+    á -> {} , é -> {} , í -> {} , ó -> {} , ú -> {}
+    || Vowel _
+];
+
+! all initial vowels get carriers
+define InitialVowelRule [
+    a -> {} , e -> {} , i -> {} , o -> {} , u -> {} ,
+    á -> {} , é -> {} , í -> {} , ó -> {} , ú -> {}
+    || TokenStart _
+];
+
+define InitialHallaRule [ h ->  || TokenStart _ [l|r] ];
+
+define DoubleSDownRule    [ {ss} ->  || _ VowelShort ];
+define DoubleSUpRule      [ {ss} ->  ];
+define SingleSDownRule    [ s ->  || _ VowelShort ];
+define SingleSUpRule      [ s ->  ];
+
+define ConsonantPalatalRule [
+    {ny} -> {} , {my} -> {} , {ty} -> {} ,
+    {ly} -> {} , {ry} -> {} , {hy} -> 
+];
+
+define ConsonantTripleComboRule [ {ngw} ->  ];
+define ConsonantDoubleComboRule [
+    {nt} ->  , {nd} ->  ,
+    {mp} ->  , {mb} ->  ,
+    {nc} ->  , {ng} ->  ,
+    {hw} ->  , {nw} ->  ,
+    {rd} ->  , {ld} ->  ,
+    {ch} ->  ,
+    {cc} -> {} , {ll} -> {} , {mm} -> {} , {nn} -> {} ,
+    {pp} -> {} , {rr} -> {} , {tt} -> {} , {þþ} -> {}
+];
+
+define RRule [ r ->  || _ Vowel ];
+
+define ConsonantSimpleRule [
+    t ->  , p ->  , c ->  ,
+    þ ->  , f ->  , h ->  ,
+    n ->  , m ->  , ñ ->  ,
+    r ->  , v ->  , y -> {} ,
+    %{w%} ->  , w ->  ,
+    l -> 
+];
+
+define LongVowelRule [
+    á -> {} , é -> {} , í -> {} ,
+    ó -> {} , ú -> {}
+];
+
+define LongCarrierMerge [  -> {‍} || ConsonantsLongCarrierable _ ];
+
+define VowelSimpleRule [ a ->  , e ->  , i ->  , o ->  , u ->  ];
+
+define DeleteHyphenRule [%- -> 0];
+
+define PunctuationRule [
+    %, -> ⸱ , %. -> ":" , %; -> ":" ,
+    %! ->  , %? ->  ,
+    %( ->  , %) -> 
+];
+
+! TODO: digits/numbers?
+
+
+! final answer
+read regex [
+    Decapitation                .o.
+    RemoveDiaeresis             .o.
+    ConsonantQuRule1            .o.
+    ConsonantQuRule2            .o.
+    DiphthongsRule              .o.
+    VowelAfterDiphthongRule     .o.
+    SecondVowelRule             .o.
+    InitialVowelRule            .o.
+    InitialHallaRule            .o.
+    DoubleSDownRule             .o.
+    DoubleSUpRule               .o.
+    SingleSDownRule             .o.
+    SingleSUpRule               .o.
+    ConsonantPalatalRule        .o.
+    ConsonantTripleComboRule    .o.
+    ConsonantDoubleComboRule    .o.
+    RRule                       .o.
+    ConsonantSimpleRule         .o.
+    LongVowelRule               .o.
+    LongCarrierMerge            .o.
+    VowelSimpleRule             .o.
+    DeleteHyphenRule            .o.
+    PunctuationRule
+];

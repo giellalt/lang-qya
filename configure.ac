@@ -75,7 +75,7 @@ AC_SUBST([GTLANGUAGE], $GLANGUAGE)
 # can be done programmatically with a regex or xfscript. If not, resources
 # for multiple WS's must be developed and maintained as separate languages.
 AC_SUBST([DEFAULT_WS], ["Latn"])
-AC_SUBST([ALT_WSS], [""])
+AC_SUBST([ALT_WSS], ["Teng"])
 AM_CONDITIONAL([HAVE_ALT_WSS], [test "x$ALT_WSS" != "x"])
 
 # Specify the ISO 3166-1 alpha-2 codes for countries as pr BCP-47. A list of
