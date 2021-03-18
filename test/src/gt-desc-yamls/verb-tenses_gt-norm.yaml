@@ -171,30 +171,115 @@ Tests:
   
   Primary Verbs with past tense metathesis and assimilation:
     # TODO: lav-
-    vanya+A: vanya
+    lav-+V+Past+Sing: lambe
+    lav-+V+Past+Plur: lamber
+    lav-+V+Past+Sing+1: [lamben, lambenye]
+    lav-+V+Past+Perf+Sing: alávie
+    lav-+V+Past+Perf+Plur: alávier
+    lav-+V+Past+Perf+Sing+1: [alávien, alávienye]
+    lav-+V+Past+Perf+Err/-Norm+Sing: lávie
+    lav-+V+Past+Perf+Err/-Norm+Plur: lávier
+    lav-+V+Past+Perf+Err/-Norm+Sing+1: [lávien, lávienye]
+    lav-+V+Pres+Sing: lave
+    lav-+V+Pres+Plur: lavir
+    lav-+V+Pres+Sing+1: [lavin, lavinye]
+    lav-+V+Pres+Prog+Sing: láva
+    lav-+V+Pres+Prog+Plur: lávar
+    lav-+V+Pres+Prog+Sing+1: [lávan, lávanye]
+    lav-+V+Fut+Sing: lavuva
+    lav-+V+Fut+Plur: lavuvar
+    lav-+V+Fut+Sing+1: [lavuvan, lavuvanye]
 
 
   # Derived verbs (end in -a)
 
   Derived Verbs without stem lengthening:
     # TODO: calpa-
-    vanya+A: vanya
+    calpa-+V+Past+Sing: calpane
+    calpa-+V+Past+Plur: calpaner
+    calpa-+V+Past+Sing+1: [calpanen, calpanenye]
+    calpa-+V+Past+Perf+Sing: acalpie
+    calpa-+V+Past+Perf+Plur: acalpier
+    calpa-+V+Past+Perf+Sing+1: [acalpien, acalpienye]
+    calpa-+V+Past+Perf+Err/-Norm+Sing: calpie
+    calpa-+V+Past+Perf+Err/-Norm+Plur: calpier
+    calpa-+V+Past+Perf+Err/-Norm+Sing+1: [calpien, calpienye]
+    calpa-+V+Pres+Sing: calpa
+    calpa-+V+Pres+Plur: calpar
+    calpa-+V+Pres+Sing+1: [calpan, calpanye]
+    calpa-+V+Pres+Prog+Sing: calpea
+    calpa-+V+Pres+Prog+Plur: calpear
+    calpa-+V+Pres+Prog+Sing+1: [calpean, calpeanye]
+    calpa-+V+Fut+Sing: calpuva
+    calpa-+V+Fut+Plur: calpuvar
+    calpa-+V+Fut+Sing+1: [calpuvan, calpuvanye]
 
   Derived Verbs with stem lengthening:
     # TODO: tana-
-    vanya+A: vanya
+    tana-+V+Past+Sing: tanane
+    tana-+V+Past+Plur: tananer
+    tana-+V+Past+Sing+1: [tananen, tananenye]
+    tana-+V+Past+Perf+Sing: atánie
+    tana-+V+Past+Perf+Plur: atánier
+    tana-+V+Past+Perf+Sing+1: [atánien, atánienye]
+    tana-+V+Past+Perf+Err/-Norm+Sing: tánie
+    tana-+V+Past+Perf+Err/-Norm+Plur: tánier
+    tana-+V+Past+Perf+Err/-Norm+Sing+1: [tánien, tánienye]
+    tana-+V+Pres+Sing: tana
+    tana-+V+Pres+Plur: tanar
+    tana-+V+Pres+Sing+1: [tanan, tananye]
+    tana-+V+Pres+Prog+Sing: tánea
+    tana-+V+Pres+Prog+Plur: tánear
+    tana-+V+Pres+Prog+Sing+1: [tánean, táneanye]
+    tana-+V+Fut+Sing: tanuva
+    tana-+V+Fut+Plur: tanuvar
+    tana-+V+Fut+Sing+1: [tanuvan, tanuvanye]
   
 
   # Verbs that start with vowels
 
-  Primary Verbs that start with a vowel:
+  # Primary Verbs that start with a vowel:
     # TODO
-    # long vowel: úm- ???
-    # short vowel: ecces-
-    vanya+A: vanya
+    # long vowel: ???
+    # short vowel: see 'us-' above
 
   Derived Verbs that start with a vowel:
     # TODO
-    # long vowel: órava
+    # long vowel: órava-
+    órava-+V+Past+Sing: óravane
+    órava-+V+Past+Plur: óravaner
+    órava-+V+Past+Sing+1: [óravanen, óravanenye]
+    órava-+V+Past+Perf+Sing: oróravie
+    órava-+V+Past+Perf+Plur: oróravier
+    órava-+V+Past+Perf+Sing+1: [oróravien, oróravienye]
+    órava-+V+Past+Perf+Err/-Norm+Sing: óravie
+    órava-+V+Past+Perf+Err/-Norm+Plur: óravier
+    órava-+V+Past+Perf+Err/-Norm+Sing+1: [óravien, óravienye]
+    órava-+V+Pres+Sing: órava
+    órava-+V+Pres+Plur: óravar
+    órava-+V+Pres+Sing+1: [óravan, óravanye]
+    órava-+V+Pres+Prog+Sing: óravea
+    órava-+V+Pres+Prog+Plur: óravear
+    órava-+V+Pres+Prog+Sing+1: [óravean, óraveanye]
+    órava-+V+Fut+Sing: óravuva
+    órava-+V+Fut+Plur: óravuvar
+    órava-+V+Fut+Sing+1: [óravuvan, óravuvanye]
     # short vowel: anta-
-    vanya+A: vanya
+    anta-+V+Past+Sing: antane
+    anta-+V+Past+Plur: antaner
+    anta-+V+Past+Sing+1: [antanen, antanenye]
+    anta-+V+Past+Perf+Sing: anantie
+    anta-+V+Past+Perf+Plur: anantier
+    anta-+V+Past+Perf+Sing+1: [anantien, anantienye]
+    anta-+V+Past+Perf+Err/-Norm+Sing: antie
+    anta-+V+Past+Perf+Err/-Norm+Plur: antier
+    anta-+V+Past+Perf+Err/-Norm+Sing+1: [antien, antienye]
+    anta-+V+Pres+Sing: anta
+    anta-+V+Pres+Plur: antar
+    anta-+V+Pres+Sing+1: [antan, antanye]
+    anta-+V+Pres+Prog+Sing: antea
+    anta-+V+Pres+Prog+Plur: antear
+    anta-+V+Pres+Prog+Sing+1: [antean, anteanye]
+    anta-+V+Fut+Sing: antuva
+    anta-+V+Fut+Plur: antuvar
+    anta-+V+Fut+Sing+1: [antuvan, antuvanye]
