@@ -1,0 +1,200 @@
+Config:
+  hfst:
+    Gen: ../../src/generator-gt-desc.hfst
+    Morph: ../../src/analyser-gt-desc.hfst
+
+Tests:
+  
+  # Primary verbs (end in a consonant)
+
+  # Primary Verbs without stem lengthening don't really exist
+  # TODO: what about prefixed verbs like hócir- ???
+
+  Primary Verbs with stem lengthening:
+    car-+V+Past+Sing: carne
+    car-+V+Past+Plur: carner
+    car-+V+Past+Sing+1: [carnen, carnenye]
+    car-+V+Past+Perf+Sing: acárie
+    car-+V+Past+Perf+Plur: acárier
+    car-+V+Past+Perf+Sing+1: [acárien, acárienye]
+    car-+V+Past+Perf+Err/-Norm+Sing: cárie
+    car-+V+Past+Perf+Err/-Norm+Plur: cárier
+    car-+V+Past+Perf+Err/-Norm+Sing+1: [cárien, cárienye]
+    car-+V+Pres+Sing: care
+    car-+V+Pres+Plur: carir
+    car-+V+Pres+Sing+1: [carin, carinye]
+    car-+V+Pres+Prog+Sing: cára
+    car-+V+Pres+Prog+Plur: cárar
+    car-+V+Pres+Prog+Sing+1: [cáran, cáranye]
+    car-+V+Fut+Sing: caruva
+    car-+V+Fut+Plur: caruvar
+    car-+V+Fut+Sing+1: [caruvan, caruvanye]
+  
+  Primary Verbs with past tense metathesis:
+    # TODO
+    # -t: hat-
+    hat-+V+Past+Sing: hante
+    hat-+V+Past+Plur: hanter
+    hat-+V+Past+Sing+1: [hanten, hantenye]
+    hat-+V+Past+Perf+Sing: ahátie
+    hat-+V+Past+Perf+Plur: ahátier
+    hat-+V+Past+Perf+Sing+1: [ahátien, ahátienye]
+    hat-+V+Past+Perf+Err/-Norm+Sing: hátie
+    hat-+V+Past+Perf+Err/-Norm+Plur: hátier
+    hat-+V+Past+Perf+Err/-Norm+Sing+1: [hátien, hátienye]
+    hat-+V+Pres+Sing: hate
+    hat-+V+Pres+Plur: hatir
+    hat-+V+Pres+Sing+1: [hatin, hatinye]
+    hat-+V+Pres+Prog+Sing: háta
+    hat-+V+Pres+Prog+Plur: hátar
+    hat-+V+Pres+Prog+Sing+1: [hátan, hátanye]
+    hat-+V+Fut+Sing: hatuva
+    hat-+V+Fut+Plur: hatuvar
+    hat-+V+Fut+Sing+1: [hatuvan, hatuvanye]
+    # -c: tec-
+    tec-+V+Past+Sing: tence
+    tec-+V+Past+Plur: tencer
+    tec-+V+Past+Sing+1: [tencen, tencenye]
+    tec-+V+Past+Perf+Sing: etécie
+    tec-+V+Past+Perf+Plur: etécier
+    tec-+V+Past+Perf+Sing+1: [etécien, etécienye]
+    tec-+V+Past+Perf+Err/-Norm+Sing: técie
+    tec-+V+Past+Perf+Err/-Norm+Plur: técier
+    tec-+V+Past+Perf+Err/-Norm+Sing+1: [técien, técienye]
+    tec-+V+Pres+Sing: tece
+    tec-+V+Pres+Plur: tecir
+    tec-+V+Pres+Sing+1: [tecin, tecinye]
+    tec-+V+Pres+Prog+Sing: téca
+    tec-+V+Pres+Prog+Plur: técar
+    tec-+V+Pres+Prog+Sing+1: [técan, técanye]
+    tec-+V+Fut+Sing: tecuva
+    tec-+V+Fut+Plur: tecuvar
+    tec-+V+Fut+Sing+1: [tecuvan, tecuvanye]
+    # -p: top-
+    top-+V+Past+Sing: tompe
+    top-+V+Past+Plur: tomper
+    top-+V+Past+Sing+1: [tompen, tompenye]
+    top-+V+Past+Perf+Sing: otópie
+    top-+V+Past+Perf+Plur: otópier
+    top-+V+Past+Perf+Sing+1: [otópien, otópienye]
+    top-+V+Past+Perf+Err/-Norm+Sing: tópie
+    top-+V+Past+Perf+Err/-Norm+Plur: tópier
+    top-+V+Past+Perf+Err/-Norm+Sing+1: [tópien, tópienye]
+    top-+V+Pres+Sing: tope
+    top-+V+Pres+Plur: topir
+    top-+V+Pres+Sing+1: [topin, topinye]
+    top-+V+Pres+Prog+Sing: tópa
+    top-+V+Pres+Prog+Plur: tópar
+    top-+V+Pres+Prog+Sing+1: [tópan, tópanye]
+    top-+V+Fut+Sing: topuva
+    top-+V+Fut+Plur: topuvar
+    top-+V+Fut+Sing+1: [topuvan, topuvanye]
+    # -w: cav-/ca{w}-
+    cav-+V+Past+Sing: can{w}e
+    cav-+V+Past+Plur: can{w}er
+    cav-+V+Past+Sing+1: ['can{w}en', 'can{w}enye']
+    cav-+V+Past+Perf+Sing: acá{w}ie
+    cav-+V+Past+Perf+Plur: acá{w}ier
+    cav-+V+Past+Perf+Sing+1: ['acá{w}ien', 'acá{w}ienye']
+    cav-+V+Past+Perf+Err/-Norm+Sing: cá{w}ie
+    cav-+V+Past+Perf+Err/-Norm+Plur: cá{w}ier
+    cav-+V+Past+Perf+Err/-Norm+Sing+1: ['cá{w}ien', 'cá{w}ienye']
+    cav-+V+Pres+Sing: ca{w}e
+    cav-+V+Pres+Plur: ca{w}ir
+    cav-+V+Pres+Sing+1: ['ca{w}in', 'ca{w}inye']
+    cav-+V+Pres+Prog+Sing: cá{w}a
+    cav-+V+Pres+Prog+Plur: cá{w}ar
+    cav-+V+Pres+Prog+Sing+1: ['cá{w}an', 'cá{w}anye']
+    cav-+V+Fut+Sing: ca{w}uva
+    cav-+V+Fut+Plur: ca{w}uvar
+    cav-+V+Fut+Sing+1: ['ca{w}uvan', 'ca{w}uvanye']
+  
+  Primary Verbs with past tense assimilation:
+    # TODO
+    # -l: col-
+    col-+V+Past+Sing: colle
+    col-+V+Past+Plur: coller
+    col-+V+Past+Sing+1: [collen, collenye]
+    col-+V+Past+Perf+Sing: ocólie
+    col-+V+Past+Perf+Plur: ocólier
+    col-+V+Past+Perf+Sing+1: [ocólien, ocólienye]
+    col-+V+Past+Perf+Err/-Norm+Sing: cólie
+    col-+V+Past+Perf+Err/-Norm+Plur: cólier
+    col-+V+Past+Perf+Err/-Norm+Sing+1: [cólien, cólienye]
+    col-+V+Pres+Sing: cole
+    col-+V+Pres+Plur: colir
+    col-+V+Pres+Sing+1: [colin, colinye]
+    col-+V+Pres+Prog+Sing: cóla
+    col-+V+Pres+Prog+Plur: cólar
+    col-+V+Pres+Prog+Sing+1: [cólan, cólanye]
+    col-+V+Fut+Sing: coluva
+    col-+V+Fut+Plur: coluvar
+    col-+V+Fut+Sing+1: [coluvan, coluvanye]
+    # -s: us-
+    us-+V+Past+Sing: usse
+    us-+V+Past+Plur: usser
+    us-+V+Past+Sing+1: [ussen, ussenye]
+    us-+V+Past+Perf+Sing: usúsie
+    us-+V+Past+Perf+Plur: usúsier
+    us-+V+Past+Perf+Sing+1: [usúsien, usúsienye]
+    us-+V+Past+Perf+Err/-Norm+Sing: úsie
+    us-+V+Past+Perf+Err/-Norm+Plur: úsier
+    us-+V+Past+Perf+Err/-Norm+Sing+1: [úsien, úsienye]
+    us-+V+Pres+Sing: use
+    us-+V+Pres+Plur: usir
+    us-+V+Pres+Sing+1: [usin, usinye]
+    us-+V+Pres+Prog+Sing: úsa
+    us-+V+Pres+Prog+Plur: úsar
+    us-+V+Pres+Prog+Sing+1: [úsan, úsanye]
+    us-+V+Fut+Sing: usuva
+    us-+V+Fut+Plur: usuvar
+    us-+V+Fut+Sing+1: [usuvan, usuvanye]
+    # -þ: ces-
+    ces-+V+Past+Sing: ceþþe
+    ces-+V+Past+Plur: ceþþer
+    ces-+V+Past+Sing+1: [ceþþen, ceþþenye]
+    ces-+V+Past+Perf+Sing: ecéþie
+    ces-+V+Past+Perf+Plur: ecéþier
+    ces-+V+Past+Perf+Sing+1: [ecéþien, ecéþienye]
+    ces-+V+Past+Perf+Err/-Norm+Sing: céþie
+    ces-+V+Past+Perf+Err/-Norm+Plur: céþier
+    ces-+V+Past+Perf+Err/-Norm+Sing+1: [céþien, céþienye]
+    ces-+V+Pres+Sing: ceþe
+    ces-+V+Pres+Plur: ceþir
+    ces-+V+Pres+Sing+1: [ceþin, ceþinye]
+    ces-+V+Pres+Prog+Sing: céþa
+    ces-+V+Pres+Prog+Plur: céþar
+    ces-+V+Pres+Prog+Sing+1: [céþan, céþanye]
+    ces-+V+Fut+Sing: ceþuva
+    ces-+V+Fut+Plur: ceþuvar
+    ces-+V+Fut+Sing+1: [ceþuvan, ceþuvanye]
+  
+  Primary Verbs with past tense metathesis and assimilation:
+    # TODO: lav-
+    vanya+A: vanya
+
+
+  # Derived verbs (end in -a)
+
+  Derived Verbs without stem lengthening:
+    # TODO: calpa-
+    vanya+A: vanya
+
+  Derived Verbs with stem lengthening:
+    # TODO: tana-
+    vanya+A: vanya
+  
+
+  # Verbs that start with vowels
+
+  Primary Verbs that start with a vowel:
+    # TODO
+    # long vowel: úm- ???
+    # short vowel: ecces-
+    vanya+A: vanya
+
+  Derived Verbs that start with a vowel:
+    # TODO
+    # long vowel: órava
+    # short vowel: anta-
+    vanya+A: vanya

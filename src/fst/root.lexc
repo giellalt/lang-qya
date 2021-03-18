@@ -144,7 +144,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !!
 !! For coordinating tense
     @U.Tense.Perf@ @R.Tense.Perf@ @D.Tense.Perf@
-    @U.Perf.NoPrefix@ @R.Perf.NoPrefix@ @D.Perf.NoPrefix@  ! used to put on a "this is weird" tag for non-prefixed perfect forms
+    @U.Perf.NoPrefix@ @U.Perf.YesPrefix@  ! used to put on a "this is weird" tag for non-prefixed perfect forms
 !! We have manually optimised the structure of our lexicon using following
 !! flag diacritics to restrict morhpological combinatorics - only allow compounds
 !! with verbs if the verb is further derived into a noun again:
