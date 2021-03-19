@@ -55,6 +55,7 @@ Definitions
     ConsonantCluster = [:Consonant :Consonant] | :x ;  ! x is really cs
     Diphthong = [:a :i] | [:a :u] | [:e :u] | [:o :i] | [:u :i] | [:i :u] ;
     SuperlPrefixNeedsInsert = [ConsonantCluster - [:t :y]] ;  ! ty is the only cluster that can start a word which n is allowed to precede
+    ShortVowelDeletionTrigger = (%{%+%}:0) %>:0 %{%-V%}: ;
 
 
 
@@ -66,6 +67,7 @@ Rules
 
 "Delete a 'u' that's in the case ending if it's followed by a vowel (gu/gw part 1)"
     u:0 <=> g %{stemu2o%}: %>: %{%-V%}: _ Vowel ;
+            _ ShortVowelDeletionTrigger ;
 "Convert gu to gw when followed by a vowel, if the u is a u->o stem (gu/gw part 2)"
     %{stemu2o%}:w <=> g _ :0* [Vowel - u] ;
 
@@ -76,10 +78,12 @@ Rules
 
 "Plural endings with {i} or {í} delete a preceding e"
     e:0 <=> _ (%{%+%}:0) %>:0 [%{i%}: | %{í%}:] ;
+            _ ShortVowelDeletionTrigger ;
 "If the ending {i} deletes a preceding -e (in -ie), it becomes é"
     %{i%}:é <=> i e:0 [:0 - e:]* _ ;
 "Plural endings with {i} delete a preceding i"
     i:0 <=> _ %>:0 %{i%}: ;
+            _ ShortVowelDeletionTrigger ;
 "If the ending {i} deletes a preceding i, it could become long"
     %{i%}:í => [i:0 | %{stemi2e%}:0] [:0 - i:]* _ ;
 
@@ -97,10 +101,8 @@ Rules
 
 "Genitive ending {o} deletes a preceding a,o"
     Vx:0 <=> _ %>:0 %{o%}: ;
+             _ ShortVowelDeletionTrigger ;
         where Vx in (a o) ;
-"Deleting a short vowel from a triggered deletion"
-    Vx:0 <=> _ (%{%+%}:0) %>:0 %{%-V%}: ;
-        where Vx in (ShortVowel) ;
 
 
 "Stems that alter when no suffix is attached"
