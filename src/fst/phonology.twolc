@@ -63,15 +63,15 @@ Rules
 
 "Convert cu to qu when followed by a vowel, if the u is a u->o stem (cu/qu part 1)"
     c:q <=> _ %{stemu2o%}: :0* [[Vowel - u] | u Vowel] ;
-"If the next vowel is a u, make stemu2o go to 0, not u (cu/qu  2)"
-    %{stemu2o%}:0 <=> c: _ :0* u ;
 
 "Delete a 'u' that's in the case ending if it's followed by a vowel (gu/gw part 1)"
     u:0 <=> g %{stemu2o%}: %>: %{%-V%}: _ Vowel ;
 "Convert gu to gw when followed by a vowel, if the u is a u->o stem (gu/gw part 2)"
     %{stemu2o%}:w <=> g _ :0* [Vowel - u] ;
-"If the next vowel is a u, make stemu2o go to 0, not u (gu/gw part 3)"
-    %{stemu2o%}:0 <=> g _ :0* u ;
+
+"If the next vowel is a u, make stemu2o go to 0, not u (cu/qu part 2, and gu/gw part 3)"
+    %{stemu2o%}:0 <=>   g _ :0* u ;
+                        c: _ :0* u ;
 
 
 "Plural endings with {i} or {í} delete a preceding e"

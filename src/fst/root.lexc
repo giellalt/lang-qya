@@ -184,7 +184,7 @@ LEXICON Root
     Prepositions    ;
     Pronouns        ;
     Verbs           ;
-    ! Punctuation ;
+    ! Punctuation ;  ! TODO: uncomment these so they can be used
     ! Symbols     ;
 
 ! vim: set ft=xfst-lexc:

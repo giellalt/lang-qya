@@ -14,7 +14,7 @@ LEXICON VerbTense-Cons
 LEXICON VerbSuffix-A
     @U.Perf.NoPrefix@+V:@U.Perf.NoPrefix@ VerbTense-A ;
     +V: VerbTensePerf ;
-LEXICON VerbTense
+LEXICON VerbTense-A
     +Past:ane           VerbSubject ;  ! TODO: some might lose their "derived" ending
     +Pres:a             VerbSubject ;
     +Pres+Prog:{^}ea    VerbSubject ;

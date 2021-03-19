@@ -33,6 +33,7 @@ LEXICON VerbStems  ! verb stems that start with a consonant
     top-:t{^o}p         VerbSuffix-Cons     "cover" ;
 
 LEXICON VerbStems-Vowel  ! verbs stems that start with a vowel
+    alya-:al            VerbSuffix-YA       "cause to prosper, bless, help" ;
     anta-:ant           VerbSuffix-A        "give" ;
     ista-:ist           VerbSuffix-A        "know" ;  ! irregular past tense: sintë
     órava-:órav         VerbSuffix-A        "have mercy" ;
