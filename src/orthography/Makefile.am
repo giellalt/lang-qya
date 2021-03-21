@@ -9,6 +9,7 @@
 GT_ORTHOGRAPHIC_REGEX_SRCS=\
 		inituppercase.regex \
 		spellrelax.regex    \
+		spellrelax.Latn.regex \
 		spellrelax.Teng.regex \
 		spellrelax-mobile-keyboard.regex \
 		spellrelax-tags.regex
@@ -16,7 +17,8 @@ GT_ORTHOGRAPHIC_REGEX_SRCS=\
 GT_ORTHOGRAPHIC_XFSCRIPT_SRCS=\
 		allcaps.xfscript      \
 		downcase-derived_proper-strings.xfscript \
-		Latn-to-Teng.xfscript \
+		Latq-to-Latn.xfscript \
+		Latq-to-Teng.xfscript \
 		spellrelax-with-tags.xfscript
 
 # Add extra targets here:

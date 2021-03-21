@@ -74,8 +74,10 @@ AC_SUBST([GTLANGUAGE], $GLANGUAGE)
 # It is assumed that conversion from the default WS to the alternate WS(s)
 # can be done programmatically with a regex or xfscript. If not, resources
 # for multiple WS's must be developed and maintained as separate languages.
-AC_SUBST([DEFAULT_WS], ["Latn"])
-AC_SUBST([ALT_WSS], ["Teng"])
+AC_SUBST([DEFAULT_WS], ["Latq"])
+# 'Latq' is a Latin-based orthography specific to this project that gives
+# lexically specified underlying forms so it can be correctly converted to regular Latin (Latn) or Tengwar (Teng)
+AC_SUBST([ALT_WSS], ["Latn Teng"])
 AM_CONDITIONAL([HAVE_ALT_WSS], [test "x$ALT_WSS" != "x"])
 
 # Specify the ISO 3166-1 alpha-2 codes for countries as pr BCP-47. A list of

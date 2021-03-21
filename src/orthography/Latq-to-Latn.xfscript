@@ -1,0 +1,6 @@
+# TODO
+define WRule [%{w%} -> w];
+
+read regex [
+    WRule
+];
