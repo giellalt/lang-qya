@@ -29,7 +29,18 @@
 Ë (->) E .o.
 Ï (->) I .o.
 Ö (->) O .o.
-Ü (->) U .o. 
+Ü (->) U .o.
+# or put dots where there shouldn't be
+a (->) ä .o.
+e (->) ë .o.
+i (->) ï .o.
+o (->) ö .o.
+u (->) ü .o.
+A (->) Ä .o.
+E (->) Ë .o.
+I (->) Ï .o.
+O (->) Ö .o.
+U (->) Ü .o.
 # doubled vowels are long
 á (->) aa .o.
 é (->) ee .o.

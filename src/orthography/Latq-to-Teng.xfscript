@@ -16,12 +16,12 @@ define WordBoundary [\InputAlphabet | .#.];
 
 
 ! start by getting rid of flag diacritics, then making everything lowercase
-define DeleteFlagsRule [
-    "@U.AdjSup.TRUE@" -> 0 , "@U.AdjSup.FALSE@" -> 0 ,
-    "@U.Case.Voc@" -> 0 , "@R.Case.Voc@" -> 0 , "@D.Case.Voc@" -> 0 ,
-    "@U.Tense.Perf@" -> 0 , "@R.Tense.Perf@" -> 0 , "@D.Tense.Perf@" -> 0 ,
-    "@U.Perf.NoPrefix@" -> 0 , "@U.Perf.YesPrefix@" -> 0
-];
+! define DeleteFlagsRule [
+!     "@U.AdjSup.TRUE@" -> 0 , "@U.AdjSup.FALSE@" -> 0 ,
+!     "@U.Case.Voc@" -> 0 , "@R.Case.Voc@" -> 0 , "@D.Case.Voc@" -> 0 ,
+!     "@U.Tense.Perf@" -> 0 , "@R.Tense.Perf@" -> 0 , "@D.Tense.Perf@" -> 0 ,
+!     "@U.Perf.NoPrefix@" -> 0 , "@U.Perf.YesPrefix@" -> 0
+! ];
 define Decapitation [
     A -> a , Á -> á , Ä -> ä ,
     B -> b , C -> c , D -> d ,
@@ -128,7 +128,7 @@ define PunctuationRule [
 
 ! final answer
 read regex [
-    DeleteFlagsRule             .o.
+!     DeleteFlagsRule             .o.
     Decapitation                .o.
     RemoveDiaeresis             .o.
     ConsonantQuRule1            .o.
