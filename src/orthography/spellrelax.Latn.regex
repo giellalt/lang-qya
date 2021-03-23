@@ -35,7 +35,9 @@
 é (->) ee .o.
 í (->) ii .o.
 ó (->) oo .o.
-ú (->) uu
+ú (->) uu .o.
+# other
+c (->) k
 ;
 
 # Explanation:

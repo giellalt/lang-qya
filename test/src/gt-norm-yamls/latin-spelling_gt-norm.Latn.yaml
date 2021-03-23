@@ -15,6 +15,13 @@ Tests:
     # regular w stays
     aiwë+N+Sing+All: aiwenna
   
+  Proper spelling with þ:
+    tasar+N+Sing+Nom: tasar
+    ces-+V+Fut+Sing: cesuva
+    ces-+V+Past+Plur: cesser
+    sinda+A: sinda
+    sinda+A+Superl: assinda
+  
   Proper use of diaeresis:
     # non-final e
     tyalië+N+Sing+All: tyalienna

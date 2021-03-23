@@ -26,7 +26,7 @@ LEXICON VerbStems  ! verb stems that start with a consonant
     ceuta-:ceut         VerbSuffix-A        "renew, refresh" ;
     col-:c{^o}l         VerbSuffix-Cons     "bear, carry" ;
     hat-:h{^a}t         VerbSuffix-Cons     "fling" ;
-    hócir-:hóc{^i}r     VerbSuffix-Cons     "cut off (to then take or use it)" ;
+    hócir-:hóc{^i}r     VerbSuffix-Cons     "cut off (to then take or use it)" ;  ! TODO: this has a prefix!
     ! lav as lick has a special past tense
     lav-:l{^a}v         VerbSuffix-Cons     "yield, allow, grant" ;
     tana-:t{^a}n        VerbSuffix-A        "show, indicate" ;

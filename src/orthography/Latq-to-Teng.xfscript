@@ -8,13 +8,20 @@ define ConsonantsLongCarrierable [
      |  |  |  |
      |  |  | 
 ];
-define TokenStart [.#.|%-|% ];
+define InputAlphabet [q|w|%{w%}|e|é|r|t|y|u|ú|i|í|o|ó|ö|p|a|á|s|þ|d|f|g|h|j|k|l|z|x|c|v|b|n|ñ|m];
+define WordBoundary [\InputAlphabet | .#.];
 
 
 ! replacements
 
 
-! start by making everything lowercase
+! start by getting rid of flag diacritics, then making everything lowercase
+define DeleteFlagsRule [
+    "@U.AdjSup.TRUE@" -> 0 , "@U.AdjSup.FALSE@" -> 0 ,
+    "@U.Case.Voc@" -> 0 , "@R.Case.Voc@" -> 0 , "@D.Case.Voc@" -> 0 ,
+    "@U.Tense.Perf@" -> 0 , "@R.Tense.Perf@" -> 0 , "@D.Tense.Perf@" -> 0 ,
+    "@U.Perf.NoPrefix@" -> 0 , "@U.Perf.YesPrefix@" -> 0
+];
 define Decapitation [
     A -> a , Á -> á , Ä -> ä ,
     B -> b , C -> c , D -> d ,
@@ -34,8 +41,8 @@ define RemoveDiaeresis [ä -> a , ë -> e , ï -> i , ö -> o , ü -> u];
 
 
 ! get rid of things that look like vowels, but are parts of consonants
-define ConsonantQuRule1 [ {nqu} ->  ];
-define ConsonantQuRule2 [  {qu} ->  ];
+define ConsonantQuRule1 [ {nqu} ->  , {ñqu} ->  ];
+define ConsonantQuRule2 [ {qu} ->  ];
 
 define DiphthongsRule [
     {ai} -> {} , {oi} -> {} , {ui} -> {} ,
@@ -60,10 +67,10 @@ define SecondVowelRule [
 define InitialVowelRule [
     a -> {} , e -> {} , i -> {} , o -> {} , u -> {} ,
     á -> {} , é -> {} , í -> {} , ó -> {} , ú -> {}
-    || TokenStart _
+    || WordBoundary _
 ];
 
-define InitialHallaRule [ h ->  || TokenStart _ [l|r] ];
+define InitialHallaRule [ h ->  || WordBoundary _ [l|r] ];
 
 define DoubleSDownRule    [ {ss} ->  || _ VowelShort ];
 define DoubleSUpRule      [ {ss} ->  ];
@@ -71,16 +78,17 @@ define SingleSDownRule    [ s ->  || _ VowelShort ];
 define SingleSUpRule      [ s ->  ];
 
 define ConsonantPalatalRule [
-    {ny} -> {} , {my} -> {} , {ty} -> {} ,
+    {ny} -> {} , {ñy} -> {} , {my} -> {} , {ty} -> {} ,
     {ly} -> {} , {ry} -> {} , {hy} -> 
 ];
 
-define ConsonantTripleComboRule [ {ngw} ->  ];
+define ConsonantTripleComboRule [ {ngw} ->  , {ñgw} ->  ];
+define InitialNWRule [ {nw} ->  , {ñw} ->  || WordBoundary _ ];
 define ConsonantDoubleComboRule [
     {nt} ->  , {nd} ->  ,
     {mp} ->  , {mb} ->  ,
-    {nc} ->  , {ng} ->  ,
-    {hw} ->  , {nw} ->  ,  ! TODO: sometimes 'nw' should be split up as  +  ???
+    {nc} ->  , {ñc} ->  , {ng} ->  , {ñg} ->  ,
+    {hw} ->  ,
     {rd} ->  , {ld} ->  ,
     {ch} ->  ,
     {cc} -> {} , {ll} -> {} , {mm} -> {} , {nn} -> {} ,
@@ -120,6 +128,7 @@ define PunctuationRule [
 
 ! final answer
 read regex [
+    DeleteFlagsRule             .o.
     Decapitation                .o.
     RemoveDiaeresis             .o.
     ConsonantQuRule1            .o.
@@ -135,6 +144,7 @@ read regex [
     SingleSUpRule               .o.
     ConsonantPalatalRule        .o.
     ConsonantTripleComboRule    .o.
+    InitialNWRule               .o.
     ConsonantDoubleComboRule    .o.
     RRule                       .o.
     ConsonantSimpleRule         .o.
