@@ -1,0 +1,14 @@
+Config:
+  hfst:
+    Gen: ../../src/generator-gt-norm.hfst
+    Morph: ../../src/analyser-gt-norm.hfst
+
+Tests:
+
+  NORM ANA recognizes only those without +Err/-Norm:
+    car-+V+Past+Perf+Sing: acárie
+    car-+V+Past+Perf+Err/-Norm+Sing: ~cárie
+    car-+V+Past+Perf+Plur: acárier
+    car-+V+Past+Perf+Err/-Norm+Plur: ~cárier
+    car-+V+Past+Perf+Sing+1: [acárien, acárienye]
+    car-+V+Past+Perf+Err/-Norm+Sing+1: [~cárien, ~cárienye]

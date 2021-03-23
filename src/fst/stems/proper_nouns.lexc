@@ -1,0 +1,6 @@
+! TODO
+LEXICON ProperNouns
+    Eärendil:Earendil                       NounSuffix-Cons "Sea-friend" ;
+    Elendil                                 NounSuffix-Cons "Star-friend" ;
+    Eönwë:Eonwe                             NounSuffix-E ;
+    Yehóva:Yehó{w}a                         NounSuffix      "Jehova" ;

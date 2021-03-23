@@ -1,0 +1,35 @@
+Config:
+  hfst:
+    Gen: ../../src/generator-gt-norm.Latn.hfst
+    Morph: ../../src/analyser-gt-norm.Latn.hfst
+
+Tests:
+  
+  When {w} is spelled as v vs w:  # making sure they can also take case endings as if they were just a noun
+    # Word initial -> v
+    vendë+N+Sing+All: vendenna
+    # Intervocalic -> v
+    Yehóva+N+Sing+Nom: Yehóva
+    # Elsewhere -> w
+    atar+N+Sing+Poss: atarwa
+    # regular w stays
+    aiwë+N+Sing+All: aiwenna
+  
+  Proper use of diaeresis:
+    # non-final e
+    tyalië+N+Sing+All: tyalienna
+    tië+N+Sing+All: tienna
+    loëndë+N+Sing+All: loëndenna
+    laurëa+A: laurëa
+    lassë+N+Sing+Gen: lassëo
+    ceuta-+V+Pres+Sing: ceuta
+    cemen+N+Sing+Nom: cemen
+    # e as the only vowel
+    ve+Adp: ve
+    # word-final e
+    tië+N+Sing+Loc: tiessë
+    laurëa+A+Nsing: laurië
+    # capital E
+    Eärendil+N+Sing+Nom: Eärendil
+    Elendil+N+Sing+Nom: Elendil
+    Eönwë+N+Sing+Nom: Eönwë

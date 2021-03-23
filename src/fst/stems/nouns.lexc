@@ -11,6 +11,7 @@ LEXICON Nouns
     ango:ang{stemu2o}                       NounSuffix-Cons "snake" ;
     aran                                    NounSuffix-Cons "king" ;
     atan                                    NounSuffix-Cons "man (as opposed to elf)" ;
+    atar                                    NounSuffix-Cons "father" ;
     aurë:aure                               NounSuffix-E    "sunlight, day" ;
     cálë:cále                               NounSuffix-E    "light" ;
     cemen                                   NounSuffix-Cons "earth, ground, soil" ;
@@ -29,6 +30,7 @@ LEXICON Nouns
     lassë:lasse                             NounSuffix-E    "leaf" ;
     lië:lie                                 NounSuffix      "people, race" ;
     lirit                                   NounSuffix-Cons "poem" ;
+    loëndë:loende                           NounSuffix-E    "year-middle, day between June and July" ;
     lúmë:lúme                               NounSuffix-E    "time, hour" ;
     lúmë:lúme                               NounSuffix-E    "darkness" ;
     manar                                   NounSuffix-Cons "doom, fate, fortune" ;
@@ -52,11 +54,11 @@ LEXICON Nouns
     tári                                    NounSuffix      "queen" ;
     tasar:taþar                             NounSuffix-Cons "willow" ;
     tasarë:taþare{+}                        NounSuffix-E    "willow" ;
+    tië:tie                                 NounSuffix      "path" ;
     tyalië:tyalie{+}                        NounSuffix      "sport, play, game" ;
     úmë:úme                                 NounSuffix-E    "throng, great collection" ;
     vanda                                   NounSuffix      "oath, pledge" ;
     vendë:{w}ende                           NounSuffix-E    "maiden, virgin" ;
-    Yehó{w}a                                NounSuffix      "Jehova" ;
 
     ! exceptions
 

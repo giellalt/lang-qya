@@ -47,7 +47,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
 !! Person is marked with these:
     +1 +2 +3
 !! The possession is marked as such:
-    +Px
+    +PxSg1 +PxSg2 +PxSg3 +PxDu1 +PxDu2 +PxDu3 +PxPl1 +PxPl2 +PxPl3
     +In +Ex  ! clusivity
 !! The comparative forms are:
     +Comp +Superl
@@ -183,6 +183,7 @@ LEXICON Root
     Particles       ;
     Prepositions    ;
     Pronouns        ;
+    ProperNouns     ;
     Verbs           ;
     ! Punctuation ;  ! TODO: uncomment these so they can be used
     ! Symbols     ;

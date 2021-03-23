@@ -1,6 +1,28 @@
-# TODO
-define WRule [%{w%} -> w];
+# converting from underlying form to normal Latin orthography
+
+define Vowel [a|e|i|o|u|á|é|í|ó|ú];
+
+define WilyaRule1 [ %{w%} -> v || .#. _ ];
+define WilyaRule2 [ %{w%} -> v || Vowel _ Vowel ];
+define WilyaRule3 [ %{w%} -> w ];
+
+define SuleRule [ þ -> s ];
+
+# diaeresis
+define FinalENotAloneRule [ e -> ë || Vowel ?* _ .#. ];
+define NotDiphthongERule1 [ e -> ë || _ [a|o] ];
+define NotDiphthongERule2 [ e -> ë || o _ ];
+define CapitalEARule [ a -> ä || E _ ];
+define CapitalEORule [ o -> ö || E _ ];
 
 read regex [
-    WRule
+    WilyaRule1  .o.
+    WilyaRule2  .o.
+    WilyaRule3  .o.
+    SuleRule    .o.
+    FinalENotAloneRule  .o.
+    NotDiphthongERule1  .o.
+    NotDiphthongERule2  .o.
+    CapitalEARule   .o.
+    CapitalEORule
 ];

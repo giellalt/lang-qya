@@ -1,20 +1,20 @@
 ! TODO
 LEXICON Pronouns
     ! Relative
-    ya+Pron+Rel+Inan:ya     Cases   "which, what" ;
-    yë+Pron+Rel+Anim:ye     Cases-E "who, whom" ;
+    ya+Pron+Rel+Inan:ya         Cases   "which, what" ;
+    yë+Pron+Rel+Anim:ye         Cases-E "who, whom" ;
     
     ! Personal
-    ni+Pron+Sg1:ni          Cases   "I, me" ;
-    inyë+Pron+Sg1+Emp:inye  Cases   "I, me" ;
+    ni+Pron+Sing+1:ni           Cases   "I, me" ;
+    inyë+Pron+Sing+1+Emp:inye   Cases   "I, me" ;
 
-    let+Pron+Du2:let        Cases   "you (dual)" ;
-    lë+Pron+Pl2:le          Cases   "you (plural)" ;
-    lé+Pron+Pl2+Emp:lé      Cases   "you (plural)" ;
+    let+Pron+Dual+2:let         Cases   "you (Dual)" ;
+    lë+Pron+Plur+2:le           Cases   "you (Plural)" ;
+    lé+Pron+Plur+2+Emp:lé       Cases   "you (Plural)" ;
 
-    sa+Pron+Sg3+Inan:sa     Cases   "it" ;
-    së+Pron+Sg3+Anim:se     Cases-E "he, him, she, her, it" ;
-    te+Pron+Pl3:te          Cases-E "they, them" ;
+    sa+Pron+Sing+3+Inan:sa      Cases   "it" ;
+    së+Pron+Sing+3+Anim:se      Cases-E "he, him, she, her, it" ;
+    te+Pron+Plur+3:te           Cases-E "they, them" ;
 
     ! Interrogative
-    man+Pron+Int:man        #       "who, what" ;
+    man+Pron+Int:man            #       "who, what" ;

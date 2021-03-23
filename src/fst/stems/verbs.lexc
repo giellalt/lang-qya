@@ -23,6 +23,7 @@ LEXICON VerbStems  ! verb stems that start with a consonant
     cav-:c{^a}{w}       VerbSuffix-Cons     "bow" ;
     cen-:c{^e}n         VerbSuffix-Cons     "see, behold" ;
     ces-:c{^e}þ         VerbSuffix-Cons     "enquire of, question, examine" ;
+    ceuta-:ceut         VerbSuffix-A        "renew, refresh" ;
     col-:c{^o}l         VerbSuffix-Cons     "bear, carry" ;
     hat-:h{^a}t         VerbSuffix-Cons     "fling" ;
     hócir-:hóc{^i}r     VerbSuffix-Cons     "cut off (to then take or use it)" ;

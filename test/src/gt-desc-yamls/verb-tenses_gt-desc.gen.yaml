@@ -14,11 +14,11 @@ Tests:
     car-+V+Past+Sing: carne
     car-+V+Past+Plur: carner
     car-+V+Past+Sing+1: [carnen, carnenye]
-    car-+V+Past+Perf+Sing: acárie
-    car-+V+Past+Perf+Plur: acárier
-    car-+V+Past+Perf+Sing+1: [acárien, acárienye]
+    car-+V+Past+Perf+Sing: [acárie, cárie]
     car-+V+Past+Perf+Err/-Norm+Sing: cárie
+    car-+V+Past+Perf+Plur: [acárier, cárier]
     car-+V+Past+Perf+Err/-Norm+Plur: cárier
+    car-+V+Past+Perf+Sing+1: [acárien, acárienye, cárien, cárienye]
     car-+V+Past+Perf+Err/-Norm+Sing+1: [cárien, cárienye]
     car-+V+Pres+Sing: care
     car-+V+Pres+Plur: carir
@@ -36,11 +36,11 @@ Tests:
     hat-+V+Past+Sing: hante
     hat-+V+Past+Plur: hanter
     hat-+V+Past+Sing+1: [hanten, hantenye]
-    hat-+V+Past+Perf+Sing: ahátie
-    hat-+V+Past+Perf+Plur: ahátier
-    hat-+V+Past+Perf+Sing+1: [ahátien, ahátienye]
+    hat-+V+Past+Perf+Sing: [ahátie, hátie]
     hat-+V+Past+Perf+Err/-Norm+Sing: hátie
+    hat-+V+Past+Perf+Plur: [ahátier, hátier]
     hat-+V+Past+Perf+Err/-Norm+Plur: hátier
+    hat-+V+Past+Perf+Sing+1: [ahátien, ahátienye, hátien, hátienye]
     hat-+V+Past+Perf+Err/-Norm+Sing+1: [hátien, hátienye]
     hat-+V+Pres+Sing: hate
     hat-+V+Pres+Plur: hatir
@@ -55,11 +55,11 @@ Tests:
     tec-+V+Past+Sing: tence
     tec-+V+Past+Plur: tencer
     tec-+V+Past+Sing+1: [tencen, tencenye]
-    tec-+V+Past+Perf+Sing: etécie
-    tec-+V+Past+Perf+Plur: etécier
-    tec-+V+Past+Perf+Sing+1: [etécien, etécienye]
+    tec-+V+Past+Perf+Sing: [etécie, técie]
     tec-+V+Past+Perf+Err/-Norm+Sing: técie
+    tec-+V+Past+Perf+Plur: [etécier, técier]
     tec-+V+Past+Perf+Err/-Norm+Plur: técier
+    tec-+V+Past+Perf+Sing+1: [etécien, etécienye, técien, técienye]
     tec-+V+Past+Perf+Err/-Norm+Sing+1: [técien, técienye]
     tec-+V+Pres+Sing: tece
     tec-+V+Pres+Plur: tecir
@@ -74,11 +74,11 @@ Tests:
     top-+V+Past+Sing: tompe
     top-+V+Past+Plur: tomper
     top-+V+Past+Sing+1: [tompen, tompenye]
-    top-+V+Past+Perf+Sing: otópie
-    top-+V+Past+Perf+Plur: otópier
-    top-+V+Past+Perf+Sing+1: [otópien, otópienye]
+    top-+V+Past+Perf+Sing: [otópie, tópie]
     top-+V+Past+Perf+Err/-Norm+Sing: tópie
+    top-+V+Past+Perf+Plur: [otópier, tópier]
     top-+V+Past+Perf+Err/-Norm+Plur: tópier
+    top-+V+Past+Perf+Sing+1: [otópien, otópienye, tópien, tópienye]
     top-+V+Past+Perf+Err/-Norm+Sing+1: [tópien, tópienye]
     top-+V+Pres+Sing: tope
     top-+V+Pres+Plur: topir
@@ -93,11 +93,11 @@ Tests:
     cav-+V+Past+Sing: can{w}e
     cav-+V+Past+Plur: can{w}er
     cav-+V+Past+Sing+1: ['can{w}en', 'can{w}enye']
-    cav-+V+Past+Perf+Sing: acá{w}ie
-    cav-+V+Past+Perf+Plur: acá{w}ier
-    cav-+V+Past+Perf+Sing+1: ['acá{w}ien', 'acá{w}ienye']
+    cav-+V+Past+Perf+Sing: ['acá{w}ie', 'cá{w}ie']
     cav-+V+Past+Perf+Err/-Norm+Sing: cá{w}ie
+    cav-+V+Past+Perf+Plur: ['acá{w}ier', 'cá{w}ier']
     cav-+V+Past+Perf+Err/-Norm+Plur: cá{w}ier
+    cav-+V+Past+Perf+Sing+1: ['acá{w}ien', 'acá{w}ienye', 'cá{w}ien', 'cá{w}ienye']
     cav-+V+Past+Perf+Err/-Norm+Sing+1: ['cá{w}ien', 'cá{w}ienye']
     cav-+V+Pres+Sing: ca{w}e
     cav-+V+Pres+Plur: ca{w}ir
@@ -115,11 +115,11 @@ Tests:
     col-+V+Past+Sing: colle
     col-+V+Past+Plur: coller
     col-+V+Past+Sing+1: [collen, collenye]
-    col-+V+Past+Perf+Sing: ocólie
-    col-+V+Past+Perf+Plur: ocólier
-    col-+V+Past+Perf+Sing+1: [ocólien, ocólienye]
+    col-+V+Past+Perf+Sing: [ocólie, cólie]
     col-+V+Past+Perf+Err/-Norm+Sing: cólie
+    col-+V+Past+Perf+Plur: [ocólier, cólier]
     col-+V+Past+Perf+Err/-Norm+Plur: cólier
+    col-+V+Past+Perf+Sing+1: [ocólien, ocólienye, cólien, cólienye]
     col-+V+Past+Perf+Err/-Norm+Sing+1: [cólien, cólienye]
     col-+V+Pres+Sing: cole
     col-+V+Pres+Plur: colir
@@ -134,11 +134,11 @@ Tests:
     us-+V+Past+Sing: usse
     us-+V+Past+Plur: usser
     us-+V+Past+Sing+1: [ussen, ussenye]
-    us-+V+Past+Perf+Sing: usúsie
-    us-+V+Past+Perf+Plur: usúsier
-    us-+V+Past+Perf+Sing+1: [usúsien, usúsienye]
+    us-+V+Past+Perf+Sing: [usúsie, úsie]
     us-+V+Past+Perf+Err/-Norm+Sing: úsie
+    us-+V+Past+Perf+Plur: [usúsier, úsier]
     us-+V+Past+Perf+Err/-Norm+Plur: úsier
+    us-+V+Past+Perf+Sing+1: [usúsien, usúsienye, úsien, úsienye]
     us-+V+Past+Perf+Err/-Norm+Sing+1: [úsien, úsienye]
     us-+V+Pres+Sing: use
     us-+V+Pres+Plur: usir
@@ -153,11 +153,11 @@ Tests:
     ces-+V+Past+Sing: ceþþe
     ces-+V+Past+Plur: ceþþer
     ces-+V+Past+Sing+1: [ceþþen, ceþþenye]
-    ces-+V+Past+Perf+Sing: ecéþie
-    ces-+V+Past+Perf+Plur: ecéþier
-    ces-+V+Past+Perf+Sing+1: [ecéþien, ecéþienye]
+    ces-+V+Past+Perf+Sing: [ecéþie, céþie]
     ces-+V+Past+Perf+Err/-Norm+Sing: céþie
+    ces-+V+Past+Perf+Plur: [ecéþier, céþier]
     ces-+V+Past+Perf+Err/-Norm+Plur: céþier
+    ces-+V+Past+Perf+Sing+1: [ecéþien, ecéþienye, céþien, céþienye]
     ces-+V+Past+Perf+Err/-Norm+Sing+1: [céþien, céþienye]
     ces-+V+Pres+Sing: ceþe
     ces-+V+Pres+Plur: ceþir
@@ -174,11 +174,11 @@ Tests:
     lav-+V+Past+Sing: lambe
     lav-+V+Past+Plur: lamber
     lav-+V+Past+Sing+1: [lamben, lambenye]
-    lav-+V+Past+Perf+Sing: alávie
-    lav-+V+Past+Perf+Plur: alávier
-    lav-+V+Past+Perf+Sing+1: [alávien, alávienye]
+    lav-+V+Past+Perf+Sing: [alávie, lávie]
     lav-+V+Past+Perf+Err/-Norm+Sing: lávie
+    lav-+V+Past+Perf+Plur: [alávier, lávier]
     lav-+V+Past+Perf+Err/-Norm+Plur: lávier
+    lav-+V+Past+Perf+Sing+1: [alávien, alávienye, lávien, lávienye]
     lav-+V+Past+Perf+Err/-Norm+Sing+1: [lávien, lávienye]
     lav-+V+Pres+Sing: lave
     lav-+V+Pres+Plur: lavir
@@ -198,11 +198,11 @@ Tests:
     calpa-+V+Past+Sing: calpane
     calpa-+V+Past+Plur: calpaner
     calpa-+V+Past+Sing+1: [calpanen, calpanenye]
-    calpa-+V+Past+Perf+Sing: acalpie
-    calpa-+V+Past+Perf+Plur: acalpier
-    calpa-+V+Past+Perf+Sing+1: [acalpien, acalpienye]
+    calpa-+V+Past+Perf+Sing: [acalpie, calpie]
     calpa-+V+Past+Perf+Err/-Norm+Sing: calpie
+    calpa-+V+Past+Perf+Plur: [acalpier, calpier]
     calpa-+V+Past+Perf+Err/-Norm+Plur: calpier
+    calpa-+V+Past+Perf+Sing+1: [acalpien, acalpienye, calpien, calpienye]
     calpa-+V+Past+Perf+Err/-Norm+Sing+1: [calpien, calpienye]
     calpa-+V+Pres+Sing: calpa
     calpa-+V+Pres+Plur: calpar
@@ -219,11 +219,11 @@ Tests:
     tana-+V+Past+Sing: tanane
     tana-+V+Past+Plur: tananer
     tana-+V+Past+Sing+1: [tananen, tananenye]
-    tana-+V+Past+Perf+Sing: atánie
-    tana-+V+Past+Perf+Plur: atánier
-    tana-+V+Past+Perf+Sing+1: [atánien, atánienye]
+    tana-+V+Past+Perf+Sing: [atánie, tánie]
     tana-+V+Past+Perf+Err/-Norm+Sing: tánie
+    tana-+V+Past+Perf+Plur: [atánier, tánier]
     tana-+V+Past+Perf+Err/-Norm+Plur: tánier
+    tana-+V+Past+Perf+Sing+1: [atánien, atánienye, tánien, tánienye]
     tana-+V+Past+Perf+Err/-Norm+Sing+1: [tánien, tánienye]
     tana-+V+Pres+Sing: tana
     tana-+V+Pres+Plur: tanar
@@ -249,11 +249,11 @@ Tests:
     órava-+V+Past+Sing: óravane
     órava-+V+Past+Plur: óravaner
     órava-+V+Past+Sing+1: [óravanen, óravanenye]
-    órava-+V+Past+Perf+Sing: oróravie
-    órava-+V+Past+Perf+Plur: oróravier
-    órava-+V+Past+Perf+Sing+1: [oróravien, oróravienye]
+    órava-+V+Past+Perf+Sing: [oróravie, óravie]
     órava-+V+Past+Perf+Err/-Norm+Sing: óravie
+    órava-+V+Past+Perf+Plur: [oróravier, óravier]
     órava-+V+Past+Perf+Err/-Norm+Plur: óravier
+    órava-+V+Past+Perf+Sing+1: [oróravien, oróravienye, óravien, óravienye]
     órava-+V+Past+Perf+Err/-Norm+Sing+1: [óravien, óravienye]
     órava-+V+Pres+Sing: órava
     órava-+V+Pres+Plur: óravar
@@ -268,11 +268,11 @@ Tests:
     anta-+V+Past+Sing: antane
     anta-+V+Past+Plur: antaner
     anta-+V+Past+Sing+1: [antanen, antanenye]
-    anta-+V+Past+Perf+Sing: anantie
-    anta-+V+Past+Perf+Plur: anantier
-    anta-+V+Past+Perf+Sing+1: [anantien, anantienye]
+    anta-+V+Past+Perf+Sing: [anantie, antie]
     anta-+V+Past+Perf+Err/-Norm+Sing: antie
+    anta-+V+Past+Perf+Plur: [anantier, antier]
     anta-+V+Past+Perf+Err/-Norm+Plur: antier
+    anta-+V+Past+Perf+Sing+1: [anantien, anantienye, antien, antienye]
     anta-+V+Past+Perf+Err/-Norm+Sing+1: [antien, antienye]
     anta-+V+Pres+Sing: anta
     anta-+V+Pres+Plur: antar
