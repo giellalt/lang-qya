@@ -431,7 +431,7 @@ esac
 AC_SUBST(CYGWINJAVAPATH)
 
 # Check for SubEthaEdit/see
-AC_PATH_PROG([SEE], [see], [], [$PATH$PATH_SEPARATOR$with_see])
+AC_PATH_PROG([SEE], [cat], [], [$PATH$PATH_SEPARATOR$with_see])
 
 # Check for grammar checker validation tool:
 AC_PATH_PROG([DIVVUN_VALIDATE_SUGGEST], [divvun-validate-suggest], [no], [$PATH$PATH_SEPARATOR$with_divvun_validate_suggest])

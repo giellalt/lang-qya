@@ -1,0 +1,18 @@
+! TODO
+LEXICON ProperNouns
+    Eärendil:Earendil                       ProperNounSuffix-Cons   "Sea-friend" ;
+    Elendil                                 ProperNounSuffix-Cons   "Star-friend" ;
+    Eönwë:Eonwe                             ProperNounSuffix-E ;
+    Yehóva:Yehó{w}a                         ProperNounSuffix        "Jehova" ;
+
+LEXICON ProperNounSuffix
+    +N+Prop:    Cases ;
+    +N+Prop:    NounNoCase ;
+
+LEXICON ProperNounSuffix-E
+    +N+Prop:    Cases-E ;
+    +N+Prop:    NounNoCase-E ;
+
+LEXICON ProperNounSuffix-Cons
+    +N+Prop:    Cases-Cons ;
+    +N+Prop:    NounNoCase-Cons ;

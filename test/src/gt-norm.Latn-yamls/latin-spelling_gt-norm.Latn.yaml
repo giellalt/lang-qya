@@ -9,7 +9,7 @@ Tests:
     # Word initial -> v
     vendë+N+Sing+All: vendenna
     # Intervocalic -> v
-    Yehóva+N+Sing+Nom: Yehóva
+    Yehóva+N+Prop+Sing+Nom: Yehóva
     # Elsewhere -> w
     atar+N+Sing+Poss: atarwa
     # regular w stays
@@ -37,6 +37,6 @@ Tests:
     tië+N+Sing+Loc: tiessë
     laurëa+A+Nsing: laurië
     # capital E
-    Eärendil+N+Sing+Nom: Eärendil
-    Elendil+N+Sing+Nom: Elendil
-    Eönwë+N+Sing+Nom: Eönwë
+    Eärendil+N+Prop+Sing+Nom: Eärendil
+    Elendil+N+Prop+Sing+Nom: Elendil
+    Eönwë+N+Prop+Sing+Nom: Eönwë

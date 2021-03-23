@@ -17,6 +17,7 @@ define WilyaRule2 [ %{w%} -> v || Vowel _ Vowel ];
 define WilyaRule3 [ %{w%} -> w ];
 
 define SuleRule [ þ -> s ];
+define NgoldoRule [ ñ -> n];
 
 # diaeresis
 define FinalENotAloneRule [ e -> ë || Vowel ?* _ .#. ];
@@ -31,6 +32,7 @@ read regex [
     WilyaRule2  .o.
     WilyaRule3  .o.
     SuleRule    .o.
+    NgoldoRule  .o.
     FinalENotAloneRule  .o.
     NotDiphthongERule1  .o.
     NotDiphthongERule2  .o.

@@ -23,8 +23,8 @@
 POS=verbs
 ### in ###
 source_file=${srcdir}/../../../src/fst/stems/${POS}.lexc
-generator_file=./../../../src/generator-gt-norm
-analyser_file=./../../../src/analyser-gt-norm
+generator_file=./../../../src/generator-gt-norm.Latn
+analyser_file=./../../../src/analyser-gt-norm.Latn
 
 ### out ###
 # Temporary files:
@@ -93,9 +93,9 @@ for f in $fsttype; do
         let "transducer_found += 1"
 
 ###### Test non-comopunds: #######
-        # generate verbs in infitive, extract the resulting generated lemma,
+        # generate verbs in simplest form, extract the resulting generated lemma,
         # store it:
-        sed 's/$/+V+Inf/' $lemmas | $lookup_tool $generator_file.$suffix \
+        sed 's/$/+V+Pres+Sing/' $lemmas | $lookup_tool $generator_file.$suffix \
             | fgrep -v "+?" | grep -v "^$" | cut -f2 | sort -u \
             > $generated_lemmas.$f.txt 
 
@@ -108,7 +108,7 @@ for f in $fsttype; do
         # Open the diff file in SubEthaEdit (if there is a diff):
         if [ -s $result_file.$f.txt ]; then
             grep -v '^$' $result_file.$f.txt \
-              | sed 's/$/+V+Inf/' \
+              | sed 's/$/+V+Pres+Sing/' \
               | $lookup_tool $generator_file.$suffix \
               > $gen_result_file.$f.txt
             # If we have an analyser, analyse the missing lemmas as well:
