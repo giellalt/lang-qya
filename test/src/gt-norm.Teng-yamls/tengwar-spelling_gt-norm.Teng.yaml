@@ -1,0 +1,59 @@
+Config:
+  hfst:
+    Gen: ../../src/generator-gt-norm.Teng.hfst
+    Morph: ../../src/analyser-gt-norm.Teng.hfst
+
+Tests:
+  
+  Invisible flag diacritics don't break things:
+    sinda+A+Superl:   # superlative adjectival prefix, first flag
+    vanwa+A:   # superlative adjectival prefix, second flag
+    yondo+N+Sing+Voc:   # vocative flag at the start
+    lav-+V+Past+Sing:   # perfective prefix, second flag
+  
+  Lexically/Etymologically specified spelling differences:
+    # w and {w} are spelled with v/wilya, plain v spelled with vala
+    aiwë+N+Sing+Nom: 
+    vendë+N+Sing+Nom: 
+    vanwa+A: 
+    vanya+A: 
+    # þ is spelled with sule, plain s with silme
+    isil+N+Sing+Nom: 
+    coimas+N+Sing+Nom: 
+    # ñ is spelled with n(g)oldo, ñw with n(g)walme
+    noldo+N+Sing+Nom: 
+    nwalca+A: 
+  
+  Context-dependent alternations:
+    # TODO: what should an initial h be?
+    #  and ss are right-side-up or upside-down correctly
+    lassë+N+Sing+Nom: 
+    estel+N+Sing+Nom: 
+    coimas+N+Plur+Nom: 
+    # An s after a fitting consonant is done as a hook
+    axo+N+Sing+Nom: 
+    lapsë+N+Sing+Nom: 
+    otso+Num+Card: 
+    # Long carrier merges with things that have a long downward stem
+    cálë+N+Sing+Nom: ‍
+    tári+N+Sing+Nom: ‍
+    cen-+V+Past+Perf+Sing: ‍
+    # Consonant combinations
+    quenta+N+Sing+Nom: 
+    alda+N+Sing+Nom: 
+    lav-+V+Past+Sing: 
+    ango+N+Sing+Nom: 
+    ango+N+Plur+Nom: 
+    Varda+N+Prop+Sing+Nom: 
+    imbë+Adp: 
+    # Diphthongs
+    cirya+N+Plur+Ins: 
+    coimas+N+Sing+Nom: 
+    nénu+N+Plur+Ins: 
+    aurë+N+Sing+Nom: 
+    ëa+V+Fut+Sing: 
+    tiuco+N+Sing+Nom: 
+    oio+Adv: 
+    # Doubled consonants
+    metta+N+Sing+Nom: 
+    quinna+A: 

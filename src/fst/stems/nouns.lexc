@@ -13,6 +13,7 @@ LEXICON Nouns
     atan                                    NounSuffix-Cons "man (as opposed to elf)" ;
     atar                                    NounSuffix-Cons "father" ;
     aurë:aure                               NounSuffix-E    "sunlight, day" ;
+    axo                                     NounSuffix      "bone" ;
     cálë:cále                               NounSuffix-E    "light" ;
     cemen                                   NounSuffix-Cons "earth, ground, soil" ;
     cemendë:cemende                         NounSuffix-E    "earth, ground, soil" ;
@@ -27,6 +28,7 @@ LEXICON Nouns
     írë:íre                                 NounSuffix-E    "desire" ;
     isil:iþil                               NounSuffix-Cons "(the) moon" ;
     ista                                    NounSuffix      "knowledge" ;
+    lapsë:lapse                             NounSuffix-E    "babe" ;
     lassë:lasse                             NounSuffix-E    "leaf" ;
     lië:lie                                 NounSuffix      "people, race" ;
     lirit                                   NounSuffix-Cons "poem" ;
@@ -40,11 +42,14 @@ LEXICON Nouns
     nénu                                    NounSuffix      "yellow water-lily" ;
     nér:n{steme2é}r                         NounSuffix-Cons "man (adult male)" ;
     nís:n{stemi2í}s{stems20}                NounSuffix-Cons "woman (adult female)" ;
+    noldo:ñoldo                             NounSuffix      "one of the people of the Noldor, one of the wise folk" ;
     nostalë:nostale{+}                      NounSuffix-E    "species, kind" ;
+    oio                                     NounSuffix      "endless period" ;
     orë:or{stemi2e}                         NounSuffix      "grain" ;
     órë:óre                                 NounSuffix-E    "heart, inner mind (tengwa 21)" ;
     órë:óre                                 NounSuffix-E    "rising" ;
     oron:oron{stemt20}                      NounSuffix-Cons "mountain" ;
+    quenta                                  NounSuffix      "tale, narrative, story" ;
     rocco                                   NounSuffix      "horse" ;
     ranco:ranc{stemu2o}                     NounSuffix-Cons "arm" ;
     sar:sar{stemd20}                        NounSuffix-Cons "pebble, stone" ;
@@ -55,6 +60,7 @@ LEXICON Nouns
     tasar:taþar                             NounSuffix-Cons "willow" ;
     tasarë:taþare{+}                        NounSuffix-E    "willow" ;
     tië:tie                                 NounSuffix      "path" ;
+    tiuco                                   NounSuffix      "thigh" ;
     tyalië:tyalie{+}                        NounSuffix      "sport, play, game" ;
     úmë:úme                                 NounSuffix-E    "throng, great collection" ;
     vanda                                   NounSuffix      "oath, pledge" ;

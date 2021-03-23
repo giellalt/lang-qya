@@ -1,6 +1,7 @@
 LEXICON Prepositions
-    apa+Adp:apa #   "after" ;
-    lá+Adp:lá   #   "beyond, over, across" ;
+    apa+Adp:apa     #   "after" ;
+    imbë+Adp:imbe   #   "between" ;
+    lá+Adp:lá       #   "beyond, over, across" ;
     
     mi+Adp:mi               #   "in, within" ;
     mi+Adp#i+Det+Art+Def:mí #   "in, within the" ;

@@ -3,6 +3,7 @@ LEXICON ProperNouns
     Eärendil:Earendil                       ProperNounSuffix-Cons   "Sea-friend" ;
     Elendil                                 ProperNounSuffix-Cons   "Star-friend" ;
     Eönwë:Eonwe                             ProperNounSuffix-E ;
+    Varda                                   ProperNounSuffix ;
     Yehóva:Yehó{w}a                         ProperNounSuffix        "Jehova" ;
 
 LEXICON ProperNounSuffix

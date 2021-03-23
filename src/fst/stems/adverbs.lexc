@@ -2,6 +2,8 @@ LEXICON Adverbs
     la+Adv+Neg:la       #   "no, not" ;
     lá+Adv+Neg+Emp:lá   #   "no, not" ;
 
+    oio+Adv:oio         #   "ever" ;
+
     sí+Adv:sí           #   "here, now" ;
     sin+Adv:sin         #   "here, now" ;
     sín+Adv:sín         #   "here, now" ;

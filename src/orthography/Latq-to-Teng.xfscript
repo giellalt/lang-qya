@@ -9,7 +9,9 @@ define ConsonantsLongCarrierable [
      |  |  | 
 ];
 define InputAlphabet [q|w|%{w%}|e|é|r|t|y|u|ú|i|í|o|ó|ö|p|a|á|s|þ|d|f|g|h|j|k|l|z|x|c|v|b|n|ñ|m];
-define WordBoundary [\InputAlphabet | .#.];
+define OutputAlphabet [|||||||||||||||||||||||||||||||||||||||‍||||||||];
+define FullAlphabet [InputAlphabet|OutputAlphabet];
+define WordBoundary [\FullAlphabet | .#.];
 
 
 ! replacements
@@ -72,11 +74,6 @@ define InitialVowelRule [
 
 define InitialHallaRule [ h ->  || WordBoundary _ [l|r] ];
 
-define DoubleSDownRule    [ {ss} ->  || _ VowelShort ];
-define DoubleSUpRule      [ {ss} ->  ];
-define SingleSDownRule    [ s ->  || _ VowelShort ];
-define SingleSUpRule      [ s ->  ];
-
 define ConsonantPalatalRule [
     {ny} -> {} , {ñy} -> {} , {my} -> {} , {ty} -> {} ,
     {ly} -> {} , {ry} -> {} , {hy} -> 
@@ -105,6 +102,13 @@ define ConsonantSimpleRule [
     %{w%} ->  , w ->  ,
     l ->  , x -> {}
 ];
+
+define DoubleSDownRule    [ {ss} ->  || _ VowelShort ];
+define DoubleSUpRule      [ {ss} ->  ];
+define HookSRule1 [ s ->  || [|||||||||||] _ ];  ! left hook for left-facing bows
+define HookSRule2 [ s ->  || [|||||||||||] _ ];  ! right hook for right-facing bows
+define SingleSDownRule    [ s ->  || _ VowelShort ];
+define SingleSUpRule      [ s ->  ];
 
 define LongVowelRule [
     á -> {} , é -> {} , í -> {} ,
@@ -138,16 +142,18 @@ read regex [
     SecondVowelRule             .o.
     InitialVowelRule            .o.
     InitialHallaRule            .o.
-    DoubleSDownRule             .o.
-    DoubleSUpRule               .o.
-    SingleSDownRule             .o.
-    SingleSUpRule               .o.
     ConsonantPalatalRule        .o.
     ConsonantTripleComboRule    .o.
     InitialNWRule               .o.
     ConsonantDoubleComboRule    .o.
     RRule                       .o.
     ConsonantSimpleRule         .o.
+    DoubleSDownRule             .o.
+    DoubleSUpRule               .o.
+    HookSRule1                  .o.
+    HookSRule2                  .o.
+    SingleSDownRule             .o.
+    SingleSUpRule               .o.
     LongVowelRule               .o.
     LongCarrierMerge            .o.
     VowelSimpleRule             .o.
