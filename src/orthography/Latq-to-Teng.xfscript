@@ -1,4 +1,4 @@
-! Script for Latin to Tengwar for Quenya
+! Script for underlying form (Latq) to Tengwar (Teng) for Quenya
 
 ! character sets
 define VowelShort   [a | e | i | o | u];
@@ -17,13 +17,7 @@ define WordBoundary [\FullAlphabet | .#.];
 ! replacements
 
 
-! start by getting rid of flag diacritics, then making everything lowercase
-! define DeleteFlagsRule [
-!     "@U.AdjSup.TRUE@" -> 0 , "@U.AdjSup.FALSE@" -> 0 ,
-!     "@U.Case.Voc@" -> 0 , "@R.Case.Voc@" -> 0 , "@D.Case.Voc@" -> 0 ,
-!     "@U.Tense.Perf@" -> 0 , "@R.Tense.Perf@" -> 0 , "@D.Tense.Perf@" -> 0 ,
-!     "@U.Perf.NoPrefix@" -> 0 , "@U.Perf.YesPrefix@" -> 0
-! ];
+! start by making everything lowercase
 define Decapitation [
     A -> a , Á -> á , Ä -> ä ,
     B -> b , C -> c , D -> d ,
@@ -132,7 +126,6 @@ define PunctuationRule [
 
 ! final answer
 read regex [
-!     DeleteFlagsRule             .o.
     Decapitation                .o.
     RemoveDiaeresis             .o.
     ConsonantQuRule1            .o.

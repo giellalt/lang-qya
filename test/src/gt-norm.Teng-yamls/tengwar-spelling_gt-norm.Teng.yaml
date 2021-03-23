@@ -8,7 +8,6 @@ Tests:
   Invisible flag diacritics don't break things:
     sinda+A+Superl:   # superlative adjectival prefix, first flag
     vanwa+A:   # superlative adjectival prefix, second flag
-    yondo+N+Sing+Voc:   # vocative flag at the start
     lav-+V+Past+Sing:   # perfective prefix, second flag
   
   Lexically/Etymologically specified spelling differences:
@@ -57,3 +56,5 @@ Tests:
     # Doubled consonants
     metta+N+Sing+Nom: 
     quinna+A: 
+    # initial y
+    yondo+N+Sing+Voc: 
