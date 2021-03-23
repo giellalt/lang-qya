@@ -22,6 +22,7 @@ TESTS+=run-gt-norm-anayaml-testcases.sh \
 # This is for yaml tests requiring BOTH an analyser AND a generator:
 if WANT_GENERATION
 TESTS+=run-gt-norm-yaml-testcases.sh \
+       run-gt-norm.Latn-yaml-testcases.sh \
        run-gt-desc-yaml-testcases.sh \
        run-lexc-testcases.sh
 endif # WANT_GENERATION
