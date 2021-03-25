@@ -133,25 +133,26 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
     ! th/s is written as þ
     ! ŋ/n is written as ñ
 
-!! !!Flag diacritics
-!!
+!! Fakey flag diacritics, really archiphonemes used by phonology.twolc to achieve the same thing as flag diacritics
+!! 
 !! For coordinating the adjectival superlative prefix with tags that come later
-    @U.AdjSup.TRUE@
-    @U.AdjSup.FALSE@
-!!
+    [+AdjSup] [-AdjSup]
+!! 
 !! For coordinating case
-    @U.Case.Voc@ @R.Case.Voc@ @D.Case.Voc@
-!!
+    [+Voc] [-Voc]
+!! 
 !! For coordinating tense
-    @U.Tense.Perf@ @R.Tense.Perf@ @D.Tense.Perf@
-    @U.Perf.NoPrefix@ @U.Perf.YesPrefix@  ! used to put on a "this is weird" tag for non-prefixed perfect forms
+    [+Perf] [-Perf]  ! used to put on a "this is weird" tag for non-prefixed perfect forms
+!! 
+!! !!Flag diacritics
+!! 
 !! We have manually optimised the structure of our lexicon using following
 !! flag diacritics to restrict morhpological combinatorics - only allow compounds
 !! with verbs if the verb is further derived into a noun again:
     @P.NeedNoun.ON@    !!≈ | @CODE@ | (Dis)allow compounds with verbs unless nominalised
     @D.NeedNoun.ON@    !!≈ | @CODE@ | (Dis)allow compounds with verbs unless nominalised
     @C.NeedNoun@       !!≈ | @CODE@ | (Dis)allow compounds with verbs unless nominalised
-!!
+!! 
 !! For languages that allow compounding, the following flag diacritics are needed
 !! to control position-based compounding restrictions for nominals. Their use is
 !! handled automatically if combined with +CmpN/xxx tags. If not used, they will
@@ -164,7 +165,7 @@ Multichar_Symbols  !!≈ !!!Definitions for @CODE@
     @U.CmpNone.FALSE@ !!≈ | @CODE@ | Combines with the prev tag to prohibit compounding
     @P.CmpOnly.TRUE@  !!≈ | @CODE@ | Sets a flag to indicate that the word has passed R
     @D.CmpOnly.FALSE@ !!≈ | @CODE@ | Disallow words coming directly from root.
-!!
+!! 
 !! Use the following flag diacritics to control downcasing of derived proper
 !! nouns (e.g. Finnish Pariisi -> pariisilainen). See e.g. North Sámi for how to use
 !! these flags. There exists a ready-made regex that will do the actual down-casing

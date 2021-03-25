@@ -69,12 +69,12 @@ LEXICON Nouns
     ! exceptions
 
     ! special cases of hína
-    @U.Case.Voc@hína+N:@U.Case.Voc@hina             NounNoCase  "child (vocative)" ;
-    @U.Case.Voc@hína+N+PxSg1:@U.Case.Voc@hinanya    NounNoCase  "my child (vocative)" ;
-    @U.Case.Voc@hína+N+PxSg1:@U.Case.Voc@hinya      NounNoCase  "my child (vocative)" ;
+    hína+N:[+Voc]hina             NounNoCase  "child (vocative)" ;
+    hína+N+PxSg1:[+Voc]hinanya    NounNoCase  "my child (vocative)" ;
+    hína+N+PxSg1:[+Voc]hinya      NounNoCase  "my child (vocative)" ;
     ! special cases of yondo
-    @U.Case.Voc@yondo+N:@U.Case.Voc@yondo           NounNoCase  "son (vocative)" ;
-    @U.Case.Voc@yondo+N+PxSg1:@U.Case.Voc@yondonya  NounNoCase  "my son (vocative)" ;
-    @U.Case.Voc@yondo+N+PxSg1:@U.Case.Voc@yonya     NounNoCase  "my son (vocative)" ;
+    yondo+N:[+Voc]yondo           NounNoCase  "son (vocative)" ;
+    yondo+N+PxSg1:[+Voc]yondonya  NounNoCase  "my son (vocative)" ;
+    yondo+N+PxSg1:[+Voc]yonya     NounNoCase  "my son (vocative)" ;
 
 ! vim: set ft=xfst-lexc:

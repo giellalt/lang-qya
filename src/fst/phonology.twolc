@@ -32,6 +32,9 @@ Alphabet
     %{E%}:i
     %{N%}:n
 
+    ! fake flage diacritics
+    %[%+Voc%]:0 %[%-Voc%]:0
+
 ;
 
 ! allowed initial consonants: p, q, t, c, f, s, h, m, n, ñ, v, l, r, y, w
@@ -115,7 +118,7 @@ Rules
 "Assimilate r to l when at the start of a case ending"
     r:l <=> :Vowel _ %>: %{l%}: ;
 "Optionally assimilate n,s,þ to l when at the start of a case ending"
-    [ n:l | s:l | þ:l] => :Vowel _ %>: %{l%}: ;
+    [ n:l | s:l | þ:l ] => :Vowel _ %>: %{l%}: ;
 
 "Situations that force the > at the start of a case ending to become 0; good phonotactics"
     %>:0 <=>
@@ -190,3 +193,11 @@ Rules
     %{N%}:b <=> v: _ ;
 "If the last consonant is a v, they switch places and mutate (part 2: v -> m)"
     v:m <=> _ %{N%}:b ;
+
+
+
+"Block mismatched Vocative tags"
+    Tx:0 /<=    Ty: ?* _ ;
+        where   Tx in (%[%+Voc%] %[%-Voc%])
+                Ty in (%[%-Voc%] %[%+Voc%])
+            matched ;

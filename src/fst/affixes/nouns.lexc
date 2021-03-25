@@ -7,7 +7,7 @@
 
 LEXICON NounSuffix
     +N: Cases ;
-    +N: NounNoCase ;
+    +N:[-Voc] NounNoCase ;
 
 LEXICON NounNoCase  ! number without case, e.g. axor ilcalannar
     +Sing:%>            NounNoCasePost ;
@@ -17,8 +17,8 @@ LEXICON NounNoCase  ! number without case, e.g. axor ilcalannar
     +Plur+Par:%>li{+}   NounNoCasePost ;
 
 LEXICON NounNoCasePost
-    @R.Case.Voc@+Voc:@R.Case.Voc@ # ;
-    @D.Case.Voc@ # ;
+    +Voc:[+Voc] # ;
+    :[-Voc] # ;
 
 LEXICON Cases
     CasesNumber ;  ! no possessive suffix
@@ -262,7 +262,7 @@ LEXICON CasesDual-U
     +Ins:{-V}unen # ;
     +All:{-V}unna # ;
     +Dat:{-V}un # ;
-    +Dat:{-V}uen # "weight: -1.0" ;  ! poorly attested
+    +Dat+Err/-Norm:{-V}uen # ;  ! poorly attested
     +Loc:{-V}usse # ;
     +Loc+Short:{-V}us # ;
     +Abl:{-V}ullo # ;
