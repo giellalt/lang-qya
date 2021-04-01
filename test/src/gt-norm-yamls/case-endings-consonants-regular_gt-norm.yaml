@@ -1,7 +1,7 @@
 Config:
   hfst:
-    Gen: ../../src/generator-gt-desc.hfst
-    Morph: ../../src/analyser-gt-desc.hfst
+    Gen: ../../src/generator-gt-norm.hfst
+    Morph: ../../src/analyser-gt-norm.hfst
 
 Tests:
   
@@ -27,7 +27,7 @@ Tests:
     manar+N+Dual+Gen: [manarto, manaruo]
     manar+N+Dual+Ins: [manarenten, manarunen]
     manar+N+Dual+All: [manarenta, manarunna]
-    manar+N+Dual+Dat: [manarent, manarun, manaruen]
+    manar+N+Dual+Dat: [manarent, manarun]
     manar+N+Dual+Loc: [manaretse, manarusse]
     manar+N+Dual+Loc+Short: manarus  # also manartes ???
     manar+N+Dual+Abl: [manarelto, manarullo]
@@ -77,7 +77,7 @@ Tests:
     aran+N+Dual+Gen: [aranto, aranuo]
     aran+N+Dual+Ins: [aranenten, aranunen]
     aran+N+Dual+All: [aranenta, aranunna]
-    aran+N+Dual+Dat: [aranent, aranun, aranuen]
+    aran+N+Dual+Dat: [aranent, aranun]
     aran+N+Dual+Loc: [aranetse, aranusse]
     aran+N+Dual+Loc+Short: aranus  # also arantes ???
     aran+N+Dual+Abl: [aranelto, aranullo]
@@ -127,7 +127,7 @@ Tests:
     coimas+N+Dual+Gen: [coimasto, coimasuo]
     coimas+N+Dual+Ins: [coimasenten, coimasunen]
     coimas+N+Dual+All: [coimasenta, coimasunna]
-    coimas+N+Dual+Dat: [coimasent, coimasun, coimasuen]
+    coimas+N+Dual+Dat: [coimasent, coimasun]
     coimas+N+Dual+Loc: [coimasetse, coimasusse]
     coimas+N+Dual+Loc+Short: coimasus  # also coimastes ???
     coimas+N+Dual+Abl: [coimaselto, coimasullo]
@@ -177,7 +177,7 @@ Tests:
     estel+N+Dual+Gen: [estelto, esteluo]
     estel+N+Dual+Ins: [estelenten, estelunen]
     estel+N+Dual+All: [estelenta, estelunna]
-    estel+N+Dual+Dat: [estelent, estelun, esteluen]
+    estel+N+Dual+Dat: [estelent, estelun]
     estel+N+Dual+Loc: [esteletse, estelusse]
     estel+N+Dual+Loc+Short: estelus  # also esteltes ???
     estel+N+Dual+Abl: [estelelto, estelullo]
@@ -227,7 +227,7 @@ Tests:
     lirit+N+Dual+Gen: [liritto, lirituo]
     lirit+N+Dual+Ins: [liritenten, liritunen]
     lirit+N+Dual+All: [liritenta, liritunna]
-    lirit+N+Dual+Dat: [liritent, liritun, lirituen]
+    lirit+N+Dual+Dat: [liritent, liritun]
     lirit+N+Dual+Loc: [liritetse, liritusse]
     lirit+N+Dual+Loc+Short: liritus  # also lirittes ???
     lirit+N+Dual+Abl: [liritelto, liritullo]

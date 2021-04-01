@@ -32,8 +32,10 @@ Alphabet
     %{E%}:i
     %{N%}:n
 
-    ! fake flage diacritics
+    ! fake flag diacritics
     %[%+Voc%]:0 %[%-Voc%]:0
+    %[%+AdjSup%]:0 %[%-AdjSup%]:0
+    %[%+Perf%]:0 %[%-Perf%]:0
 
 ;
 
@@ -52,13 +54,15 @@ Sets
 
     Consonant = b c d f g h l m n ñ p q r s þ t v w x y %{w%}
                 B C D F G H L M N Ñ P Q R S Þ T V W X Y ;
+    
+    FakeFlagDiacritics = %[%+Voc%] %[%-Voc%] %[%+AdjSup%] %[%-AdjSup%] %[%+Perf%] %[%-Perf%] ;
 
 
 Definitions
     ConsonantCluster = [:Consonant :Consonant] | :x ;  ! x is really cs
     Diphthong = [:a :i] | [:a :u] | [:e :u] | [:o :i] | [:u :i] | [:i :u] ;
     SuperlPrefixNeedsInsert = [ConsonantCluster - [:t :y]] ;  ! ty is the only cluster that can start a word which n is allowed to precede
-    ShortVowelDeletionTrigger = (%{%+%}:0) %>:0 %{%-V%}: ;
+    ShortVowelDeletionTrigger = (%{%+%}:0) FakeFlagDiacritics:* %>:0 %{%-V%}: ;
 
 
 
@@ -66,10 +70,10 @@ Rules
 
 
 "Convert cu to qu when followed by a vowel, if the u is a u->o stem (cu/qu part 1)"
-    c:q <=> _ %{stemu2o%}: :0* [[Vowel - u] | u Vowel] ;
+    c:q <=> _ %{stemu2o%}: :0* [[Vowel - u] | u :0* Vowel] ;
 
 "Delete a 'u' that's in the case ending if it's followed by a vowel (gu/gw part 1)"
-    u:0 <=> g %{stemu2o%}: %>: %{%-V%}: _ Vowel ;
+    u:0 <=> g %{stemu2o%}: :0* %>: %{%-V%}: _ Vowel ;
             _ ShortVowelDeletionTrigger ;
 "Convert gu to gw when followed by a vowel, if the u is a u->o stem (gu/gw part 2)"
     %{stemu2o%}:w <=> g _ :0* [Vowel - u] ;
@@ -80,30 +84,30 @@ Rules
 
 
 "Plural endings with {i} or {í} delete a preceding e"
-    e:0 <=> _ (%{%+%}:0) %>:0 [%{i%}: | %{í%}:] ;
+    e:0 <=> _ (%{%+%}:0) FakeFlagDiacritics:* %>:0 [%{i%}: | %{í%}:] ;
             _ ShortVowelDeletionTrigger ;
 "If the ending {i} deletes a preceding -e (in -ie), it becomes é"
     %{i%}:é <=> i e:0 [:0 - e:]* _ ;
 "Plural endings with {i} delete a preceding i"
-    i:0 <=> _ %>:0 %{i%}: ;
+    i:0 <=> _ FakeFlagDiacritics:* %>:0 %{i%}: ;
             _ ShortVowelDeletionTrigger ;
 "If the ending {i} deletes a preceding i, it could become long"
     %{i%}:í => [i:0 | %{stemi2e%}:0] [:0 - i:]* _ ;
 
 "Adjective with an i2e stem, no case suffix, delete the i2e; also {-V} and a plural ending with {i} both delete it"
-    %{stemi2e%}:0 <=> _ %*: [i | e] .#. ;
-                      _ (%*:) %>:0 [%{%-V%}: | %{i%}:] ;
+    %{stemi2e%}:0 <=> _ %*: :0* [i | e] .#. ;
+                      _ (%*:) FakeFlagDiacritics:* %>:0 [%{%-V%}: | %{i%}:] ;
 
 
 "Words marked with {+} have the final vowel lengthened with certain endings, also marked with {+}"
-    Vx:Vy => _ %{%+%}: ?* %{%+%}: .#. ;
+    Vx:Vy => _ %{%+%}: ?* %{%+%}: :0* .#. ;
         where   Vx in (a e i o u)
                 Vy in (á é í ó ú)
             matched ;
 
 
 "Genitive ending {o} deletes a preceding a,o"
-    Vx:0 <=> _ %>:0 %{o%}: ;
+    Vx:0 <=> _ FakeFlagDiacritics:* %>:0 %{o%}: ;
              _ ShortVowelDeletionTrigger ;
         where Vx in (a o) ;
 
@@ -112,13 +116,13 @@ Rules
     [ %{stemd20%}:0 | %{stemt20%}:0 | %{stems20%}:0 | %{stemn20%}:0 | %{stemm2n%}:n
     | %{stemu2o%}:o | %{stemi2e%}:e
     | %{steme2é%}:é | %{stemi2í%}:í ]
-        <=> _ [? - %|:]* %>: :0* .#. ;
+        <=> _ [? - %|:]* :0* %>: :0* .#. ;
 
 
 "Assimilate r to l when at the start of a case ending"
-    r:l <=> :Vowel _ %>: %{l%}: ;
+    r:l <=> :Vowel _ :0* %>: %{l%}: ;
 "Optionally assimilate n,s,þ to l when at the start of a case ending"
-    [ n:l | s:l | þ:l ] => :Vowel _ %>: %{l%}: ;
+    [ n:l | s:l | þ:l ] => :Vowel _ :0* %>: %{l%}: ;
 
 "Situations that force the > at the start of a case ending to become 0; good phonotactics"
     %>:0 <=>
@@ -160,12 +164,12 @@ Rules
 
 ! prefixed reduplication
 "First {R} becomes a short reduplication of the stem vowel"
-    %{R%}:Vx <=> .#. _ (%{R%}:) Consonant:* :Vy ;
+    %{R%}:Vx <=> .#. :0* _ (%{R%}:) Consonant:* :Vy ;
         where   Vx in (a e i o u a e i o u)
                 Vy in (a e i o u á é í ó ú)
             matched ;
 "If there's another {R} after an {R} that ended up non-zero, it becomes a reduplication of the consonant after the first vowel"
-    %{R%}:Cx <=> .#. [%{R%}: - :0] _ :Vowel :Cx ;
+    %{R%}:Cx <=> .#. :0* [%{R%}: - :0] _ :Vowel :Cx ;
         where Cx in Consonant ;
 
 "Lengthen stem vowel in verbs when triggered by a later {^}"
@@ -179,20 +183,20 @@ Rules
 
 ! handling {N} in past tense
 "If the last consonant is l/s/þ, {N} assimilates"
-    %{N%}:Cx <=> :Cx _ ;
+    %{N%}:Cx <=> :Cx :0* _ ;
         where Cx in (l s þ) ;
 "If the last consonant is incompatible, they switch places (part 1: {N} -> Cx)"
-    %{N%}:Cx <=> Cx: _ ;
+    %{N%}:Cx <=> Cx: :0* _ ;
         where   Cx in (t c %{w%} w p) ;
 "If the last consonant is incompatible, they switch places (part 2: Cx -> Cy)"
-    Cx:Cy <=> _ %{N%}:Cx ;
+    Cx:Cy <=> _ :0* %{N%}:Cx ;
         where   Cx in (t c %{w%} w p)
                 Cy in (n n n     n m)
             matched ;
 "If the last consonant is a v, they switch places and mutate (part 1: {N} -> b)"
-    %{N%}:b <=> v: _ ;
+    %{N%}:b <=> v: :0* _ ;
 "If the last consonant is a v, they switch places and mutate (part 2: v -> m)"
-    v:m <=> _ %{N%}:b ;
+    v:m <=> _ :0* %{N%}:b ;
 
 
 
@@ -200,4 +204,14 @@ Rules
     Tx:0 /<=    Ty: ?* _ ;
         where   Tx in (%[%+Voc%] %[%-Voc%])
                 Ty in (%[%-Voc%] %[%+Voc%])
+            matched ;
+"Block mismatched Superlative tags"
+    Tx:0 /<=    Ty: ?* _ ;
+        where   Tx in (%[%+AdjSup%] %[%-AdjSup%])
+                Ty in (%[%-AdjSup%] %[%+AdjSup%])
+            matched ;
+"Block mismatched Perfect tags"
+    Tx:0 /<=    Ty: ?* _ ;
+        where   Tx in (%[%+Perf%] %[%-Perf%])
+                Ty in (%[%-Perf%] %[%+Perf%])
             matched ;

@@ -6,8 +6,8 @@ LEXICON Adjectives
     AdjPrefix ;
 
 LEXICON AdjPrefix
-    @U.AdjSup.TRUE@:@U.AdjSup.TRUE@a{n}%< AdjStems ;  ! TODO: add twolc rules for {n} and <
-    @U.AdjSup.FALSE@ AdjStems ;
+    :[+AdjSup]a{n}%<    AdjStems ;  ! TODO: add twolc rules for {n} and <
+    :[-AdjSup]          AdjStems ;
 
 LEXICON AdjStems
     alta:alt                AdjSuffix       "large, great" ;

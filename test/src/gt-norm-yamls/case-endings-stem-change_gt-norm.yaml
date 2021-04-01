@@ -1,7 +1,7 @@
 Config:
   hfst:
-    Gen: ../../src/generator-gt-desc.hfst
-    Morph: ../../src/analyser-gt-desc.hfst
+    Gen: ../../src/generator-gt-norm.hfst
+    Morph: ../../src/analyser-gt-norm.hfst
 
 Tests:
 
@@ -27,7 +27,7 @@ Tests:
     nís+N+Dual+Gen: [nisseto, nissuo]
     nís+N+Dual+Ins: [nissenten, nissunen]
     nís+N+Dual+All: [nissenta, nissunna]
-    nís+N+Dual+Dat: [nissent, nissun, nissuen]
+    nís+N+Dual+Dat: [nissent, nissun]
     nís+N+Dual+Loc: [nissetse, nissusse]
     nís+N+Dual+Loc+Short: nissus  # also nisstes ???
     nís+N+Dual+Abl: [nisselto, nissullo]
@@ -77,7 +77,7 @@ Tests:
     nér+N+Dual+Gen: [nerto, neruo]
     nér+N+Dual+Ins: [nerenten, nerunen]
     nér+N+Dual+All: [nerenta, nerunna]
-    nér+N+Dual+Dat: [nerent, nerun, neruen]
+    nér+N+Dual+Dat: [nerent, nerun]
     nér+N+Dual+Loc: [neretse, nerusse]
     nér+N+Dual+Loc+Short: nerus  # also nertes ???
     nér+N+Dual+Abl: [nerelto, nerullo]
@@ -129,7 +129,7 @@ Tests:
     ranco+N+Dual+Gen: [rancuto, ranquo]
     ranco+N+Dual+Ins: [rancunten, rancunen]
     ranco+N+Dual+All: [rancunta, rancunna]
-    ranco+N+Dual+Dat: [rancunt, rancun, ranquen]
+    ranco+N+Dual+Dat: [rancunt, rancun]
     ranco+N+Dual+Loc: [rancutse, rancusse]
     ranco+N+Dual+Loc+Short: rancus  # also rancutes ???
     ranco+N+Dual+Abl: [ranculto, rancullo]
@@ -179,7 +179,7 @@ Tests:
     ango+N+Dual+Gen: [anguto, angwo]
     ango+N+Dual+Ins: [angunten, angunen]
     ango+N+Dual+All: [angunta, angunna]
-    ango+N+Dual+Dat: [angunt, angun, angwen]
+    ango+N+Dual+Dat: [angunt, angun]
     ango+N+Dual+Loc: [angutse, angusse]
     ango+N+Dual+Loc+Short: angus  # also angutes ???
     ango+N+Dual+Abl: [angulto, angullo]
@@ -231,7 +231,7 @@ Tests:
     súrë+N+Dual+Gen: [súrito, súruo]
     súrë+N+Dual+Ins: [súrinten, súrunen]
     súrë+N+Dual+All: [súrinta, súrunna]
-    súrë+N+Dual+Dat: [súrint, súrun, súruen]
+    súrë+N+Dual+Dat: [súrint, súrun]
     súrë+N+Dual+Loc: [súritse, súrusse]
     súrë+N+Dual+Loc+Short: súrus  # also súrites ???
     súrë+N+Dual+Abl: [súrilto, súrullo]

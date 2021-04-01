@@ -1,7 +1,7 @@
 Config:
   hfst:
-    Gen: ../../src/generator-gt-desc.hfst
-    Morph: ../../src/analyser-gt-desc.hfst
+    Gen: ../../src/generator-gt-norm.hfst
+    Morph: ../../src/analyser-gt-norm.hfst
 
 Tests:
 
@@ -27,7 +27,7 @@ Tests:
     cirya+N+Dual+Gen: [ciryato, ciryuo]
     cirya+N+Dual+Ins: [ciryanten, ciryunen]
     cirya+N+Dual+All: [ciryanta, ciryunna]
-    cirya+N+Dual+Dat: [ciryant, ciryun, ciryuen]
+    cirya+N+Dual+Dat: [ciryant, ciryun]
     cirya+N+Dual+Loc: [ciryatse, ciryusse]
     cirya+N+Dual+Loc+Short: ciryus  # also ciryates ???
     cirya+N+Dual+Abl: [ciryalto, ciryullo]
@@ -77,7 +77,7 @@ Tests:
     rocco+N+Dual+Gen: [roccoto, roccuo]
     rocco+N+Dual+Ins: [rocconten, roccunen]
     rocco+N+Dual+All: [rocconta, roccunna]
-    rocco+N+Dual+Dat: [roccont, roccun, roccuen]
+    rocco+N+Dual+Dat: [roccont, roccun]
     rocco+N+Dual+Loc: [roccotse, roccusse]
     rocco+N+Dual+Loc+Short: roccus  # also roccotes ???
     rocco+N+Dual+Abl: [roccolto, roccullo]
@@ -127,7 +127,7 @@ Tests:
     tári+N+Dual+Gen: [tárito, táruo]
     tári+N+Dual+Ins: [tárinten, tárunen]
     tári+N+Dual+All: [tárinta, tárunna]
-    tári+N+Dual+Dat: [tárint, tárun, táruen]
+    tári+N+Dual+Dat: [tárint, tárun]
     tári+N+Dual+Loc: [táritse, tárusse]
     tári+N+Dual+Loc+Short: tárus  # also tárites ???
     tári+N+Dual+Abl: [tárilto, tárullo]
@@ -177,7 +177,7 @@ Tests:
     nénu+N+Dual+Gen: [nénuto, nénuo]
     nénu+N+Dual+Ins: [nénunten, nénunen]
     nénu+N+Dual+All: [nénunta, nénunna]
-    nénu+N+Dual+Dat: [nénunt, nénun, nénuen]
+    nénu+N+Dual+Dat: [nénunt, nénun]
     nénu+N+Dual+Loc: [nénutse, nénusse]
     nénu+N+Dual+Loc+Short: nénus  # also nénutes ???
     nénu+N+Dual+Abl: [nénulto, nénullo]
@@ -227,7 +227,7 @@ Tests:
     tyalië+N+Dual+Gen: [tyalieto, tyaliéto, tyaliuo]
     tyalië+N+Dual+Ins: [tyalienten, tyaliunen]
     tyalië+N+Dual+All: [tyalienta, tyaliunna]
-    tyalië+N+Dual+Dat: [tyalient, tyaliun, tyaliuen]
+    tyalië+N+Dual+Dat: [tyalient, tyaliun]
     tyalië+N+Dual+Loc: [tyalietse, tyaliusse]
     tyalië+N+Dual+Loc+Short: tyalius  # also tyalietes ???
     tyalië+N+Dual+Abl: [tyalielto, tyaliullo]
@@ -277,7 +277,7 @@ Tests:
     aiwë+N+Dual+Gen: [aiweto, aiwuo]
     aiwë+N+Dual+Ins: [aiwenten, aiwunen]
     aiwë+N+Dual+All: [aiwenta, aiwunna]
-    aiwë+N+Dual+Dat: [aiwent, aiwun, aiwuen]
+    aiwë+N+Dual+Dat: [aiwent, aiwun]
     aiwë+N+Dual+Loc: [aiwetse, aiwusse]
     aiwë+N+Dual+Loc+Short: aiwus  # also aiwetes ???
     aiwë+N+Dual+Abl: [aiwelto, aiwullo]

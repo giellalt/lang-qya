@@ -5,11 +5,11 @@
 
 LEXICON Verbs
     ! no perfective prefix
-    @U.Perf.NoPrefix@                   VerbStems ;
-    @U.Perf.NoPrefix@                   VerbStems-Vowel ;
+    :[-Perf]    VerbStems ;
+    :[-Perf]    VerbStems-Vowel ;
     ! yes perfective prefix
-    @U.Perf.YesPrefix@:@U.Perf.YesPrefix@{R}    VerbStems ;
-    @U.Perf.YesPrefix@:@U.Perf.YesPrefix@{R}{R} VerbStems-Vowel ;
+    :[+Perf]{R}    VerbStems ;
+    :[+Perf]{R}{R} VerbStems-Vowel ;
     ! special verbs
     Copula ;
     Existential ;

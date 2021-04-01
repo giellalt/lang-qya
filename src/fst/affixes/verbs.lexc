@@ -1,7 +1,7 @@
 ! TODO
 ! primary verbs (end in a consonant)
 LEXICON VerbSuffix-Cons
-    @U.Perf.NoPrefix@+V:@U.Perf.NoPrefix@ VerbTense-Cons ;
+    +V:[-Perf] VerbTense-Cons ;
     +V: VerbTensePerf ;
 LEXICON VerbTense-Cons
     +Past:{N}e          VerbSubject ;
@@ -12,7 +12,7 @@ LEXICON VerbTense-Cons
 
 ! derived verbs (end in -a)
 LEXICON VerbSuffix-A
-    @U.Perf.NoPrefix@+V:@U.Perf.NoPrefix@ VerbTense-A ;
+    +V:[-Perf] VerbTense-A ;
     +V: VerbTensePerf ;
 LEXICON VerbTense-A
     +Past:ane           VerbSubject ;  ! TODO: some might lose their "derived" ending
@@ -23,7 +23,7 @@ LEXICON VerbTense-A
 
 ! derived verbs (end in -ya)
 LEXICON VerbSuffix-YA
-    @U.Perf.NoPrefix@+V:@U.Perf.NoPrefix@ VerbTense-YA ;
+    +V:[-Perf] VerbTense-YA ;
     +V: VerbTensePerf ;
 LEXICON VerbTense-YA
     +Past:yane          VerbSubject ;  ! TODO: some might lose their "derived" ending
@@ -35,8 +35,8 @@ LEXICON VerbTense-YA
 LEXICON VerbTensePerf
     +Past+Perf:{^}ie    VerbTensePerfEnd ;
 LEXICON VerbTensePerfEnd  ! add the "sketchy" tag iff Tense == PerfNoPrefix
-    @U.Perf.NoPrefix@+Err/-Norm:@U.Perf.NoPrefix@ VerbSubject ;
-    @U.Perf.YesPrefix@ VerbSubject ;
+    +Err/-Norm:[-Perf] VerbSubject ;
+    :[+Perf] VerbSubject ;
 
 
 ! subject agreement or attached pronouns

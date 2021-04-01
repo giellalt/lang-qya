@@ -7,8 +7,8 @@
 LEXICON AdjSuffix
     +A: AdjSuper ;
 LEXICON AdjSuper
-    @U.AdjSup.TRUE@+Superl:@U.AdjSup.TRUE@ AdjNumber ;
-    @U.AdjSup.FALSE@ AdjNumber ;
+    +Superl:[+AdjSup] AdjNumber ;
+    :[-AdjSup] AdjNumber ;
 LEXICON AdjNumber
     :a AdjPost ;
     +Nsing:e # ;
@@ -20,8 +20,8 @@ LEXICON AdjPost
 LEXICON AdjSuffix-EA
     +A: AdjSuper-EA ;
 LEXICON AdjSuper-EA
-    @U.AdjSup.TRUE@+Superl:@U.AdjSup.TRUE@ AdjNumber-EA ;
-    @U.AdjSup.FALSE@ AdjNumber-EA ;
+    +Superl:[+AdjSup] AdjNumber-EA ;
+    :[-AdjSup] AdjNumber-EA ;
 LEXICON AdjNumber-EA
     :ea AdjPost-EA ;
     +Nsing:ie # ;
@@ -33,8 +33,8 @@ LEXICON AdjPost-EA
 LEXICON AdjSuffix-E
     +A: AdjSuper-E ;
 LEXICON AdjSuper-E
-    @U.AdjSup.TRUE@+Superl:@U.AdjSup.TRUE@ AdjNumber-E ;
-    @U.AdjSup.FALSE@ AdjNumber-E ;
+    +Superl:[+AdjSup] AdjNumber-E ;
+    :[-AdjSup] AdjNumber-E ;
 LEXICON AdjNumber-E
     :e AdjPost-E ;
     +Nsing:i # ;
@@ -46,8 +46,8 @@ LEXICON AdjPost-E
 LEXICON AdjSuffix-Cons
     +A: AdjSuper-Cons ;
 LEXICON AdjSuper-Cons
-    @U.AdjSup.TRUE@+Superl:@U.AdjSup.TRUE@ AdjNumber-Cons ;
-    @U.AdjSup.FALSE@ AdjNumber-Cons ;
+    +Superl:[+AdjSup] AdjNumber-Cons ;
+    :[-AdjSup] AdjNumber-Cons ;
 LEXICON AdjNumber-Cons
     :0 AdjPost-Cons ;
     +Nsing:i # ;
@@ -59,8 +59,8 @@ LEXICON AdjPost-Cons
 LEXICON AdjSuffix-Spec
     +A:* AdjSuper-Spec ;
 LEXICON AdjSuper-Spec
-    @U.AdjSup.TRUE@+Superl:@U.AdjSup.TRUE@ AdjNumber-Spec ;
-    @U.AdjSup.FALSE@ AdjNumber-Spec ;
+    +Superl:[+AdjSup] AdjNumber-Spec ;
+    :[-AdjSup] AdjNumber-Spec ;
 LEXICON AdjNumber-Spec
     AdjPost-Spec ;
     +Nsing:i # ;
