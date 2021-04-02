@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <hfstspeller dtdversion="1.0" hfstversion="3">
   <info>
-    <locale>qya</locale>
+    <locale>qya-Latn</locale>
     <title>Giellatekno/Divvun/UiT fst-based speller for Quenya</title>
     <description>This is an fst-based speller for Quenya. It is based
     on the normative subset of the morphological analyser for Quenya.
-    This speller is for the UNDERLYING FORM and should not be used.
+    This speller is for the Latin-based script.
     The source code can be found at:
     https://victorio.uit.no/langtech/trunk/langs/qya/
     License: GPL3+.</description>
