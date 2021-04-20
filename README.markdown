@@ -10,7 +10,8 @@ authors named in the AUTHORS file are available to grant other licencing
 choices.
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-qya)](https://github.com/giellalt/lang-qya/issues)
- [![Build Status](https://github.com/giellalt/lang-qya/workflows/Build%20Speller%20Archives%20and%20Bundles/badge.svg)](https://github.com/giellalt/lang-qya/actions)
+[![Build Status](https://github.com/giellalt/lang-qya/workflows/Build%20Speller%20Archives%20and%20Bundles/badge.svg)](https://github.com/giellalt/lang-qya/actions)
+[![License](https://img.shields.io/github/license/giellalt/template-lang-qya)](https://raw.githubusercontent.com/giellalt/lang-qya/develop/LICENSE)
 
 Install proofing tools and [keyboards](https://github.com/giellalt/keyboard-qya)
 for the Quenya language by using the [Divvun Installer](http://divvun.no)
