@@ -1,0 +1,8 @@
+* [nouns-stems-fst-src.md](nouns-stems-fst-src.md)
+* [adjectives-stems-fst-src.md](adjectives-stems-fst-src.md)
+* [phonology-fst-src.md](phonology-fst-src.md)
+* [nouns-affixes-fst-src.md](nouns-affixes-fst-src.md)
+* [adjectives-affixes-fst-src.md](adjectives-affixes-fst-src.md)
+* [root-fst-src.md](root-fst-src.md)
+* [transcriptor-abbrevs2text-transcriptions-src.md](transcriptor-abbrevs2text-transcriptions-src.md)
+* [transcriptor-numbers-digit2text-transcriptions-src.md](transcriptor-numbers-digit2text-transcriptions-src.md)
