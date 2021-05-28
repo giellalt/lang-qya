@@ -3,13 +3,13 @@ The Quenya morphology and tools
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-qya)](https://github.com/giellalt/lang-qya/issues)
 [![Build Status](https://github.com/giellalt/lang-qya/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-qya/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-qya)](https://raw.githubusercontent.com/giellalt/lang-qya/develop/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-qya)](https://raw.githubusercontent.com/giellalt/lang-qya/main/LICENSE)
 
 This repository contains finite state source files for the Quenya language,
 for building morphological analysers, proofing tools
 and dictionaries. The data and implementation are licenced under GPLv3
 licence, also detailed in the
-[LICENCE](https://github.com/giellalt/lang-qya/blob/develop/LICENCE). The
+[LICENSE](https://github.com/giellalt/lang-qya/blob/main/LICENSE). The
 authors named in the AUTHORS file are available to grant other licencing
 choices.
 
@@ -77,7 +77,7 @@ svn checkout https://github.com/giellalt/lang-qya.git/trunk lang-qya
 Building and installation
 -------------------------
 
-[INSTALL](https://github.com/giellalt/lang-qya/blob/develop/INSTALL)
+[INSTALL](https://github.com/giellalt/lang-qya/blob/main/INSTALL)
 describes the GNU build system in detail, but for most users it is the usual:
 
 ```sh
