@@ -604,14 +604,50 @@ These were the set types.
 
 
 
-Nouns
-Nouns in the Quenya language are people, places, or things.
+Adjective inflection
+The Quenya language adjectives inflect by number, and may receive nominal cases.
 
 
 
 
-Adjectives
-Adjectives in the Quenya language give descriptions or attributes.
+
+
+Noun inflection
+The Quenya language nouns inflect in cases.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -664,50 +700,14 @@ The Quenya morphophonological/twol rules file !
 
 
 
-Noun inflection
-The Quenya language nouns inflect in cases.
+Adjectives
+Adjectives in the Quenya language give descriptions or attributes.
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Adjective inflection
-The Quenya language adjectives inflect by number, and may receive nominal cases.
-
-
+Nouns
+Nouns in the Quenya language are people, places, or things.
 
 
 
@@ -807,22 +807,6 @@ word classes, or optionally from prefixes:
 
 
 
-We describe here how abbreviations are in Quenya are read out, e.g.
-for text-to-speech systems.
-
-For example:
-
- * s.:syntynyt # ;  
- * os.:omaa% sukua # ;  
- * v.:vuosi # ;  
- * v.:vuonna # ;  
- * esim.:esimerkki # ; 
- * esim.:esimerkiksi # ; 
-
-
-
-
-
 
 
 
@@ -873,4 +857,20 @@ For example:
 % kolon% :%:     Root ;
 % sárggis% :%-   Root ; 
 % násti% :%*     Root ; 
+
+
+
+
+We describe here how abbreviations are in Quenya are read out, e.g.
+for text-to-speech systems.
+
+For example:
+
+ * s.:syntynyt # ;  
+ * os.:omaa% sukua # ;  
+ * v.:vuosi # ;  
+ * v.:vuonna # ;  
+ * esim.:esimerkki # ; 
+ * esim.:esimerkiksi # ; 
+
 
