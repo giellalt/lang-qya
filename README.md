@@ -3,7 +3,7 @@ The Quenya morphology and tools
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-qya)](https://github.com/giellalt/lang-qya/issues)
 [![Build Status](https://github.com/giellalt/lang-qya/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-qya/actions)
-[![License](https://img.shields.io/github/license/giellalt/lang-qya)](https://raw.githubusercontent.com/giellalt/lang-qya/main/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-qya)](https://github.com/giellalt/lang-qya/blob/main/LICENSE)
 
 This repository contains finite state source files for the Quenya language,
 for building morphological analysers, proofing tools
