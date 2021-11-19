@@ -605,21 +605,7 @@ These were the set types.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-qya/blob/main/../src/cg3/functions.cg3)</small>Nouns
-Nouns in the Quenya language are people, places, or things.
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/stems/nouns.lexc)</small>Adjectives
-Adjectives in the Quenya language give descriptions or attributes.
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/stems/adjectives.lexc)</small>=================================== !
+<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-qya/blob/main/../src/cg3/functions.cg3)</small>=================================== !
 The Quenya morphophonological/twol rules file !
 =================================== !
 
@@ -718,7 +704,21 @@ The Quenya language adjectives inflect by number, and may receive nominal cases.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/affixes/adjectives.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/affixes/adjectives.lexc)</small>Nouns
+Nouns in the Quenya language are people, places, or things.
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/stems/nouns.lexc)</small>Adjectives
+Adjectives in the Quenya language give descriptions or attributes.
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/stems/adjectives.lexc)</small>
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Quenya LANGUAGE.
 
 
