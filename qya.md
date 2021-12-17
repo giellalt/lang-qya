@@ -654,57 +654,7 @@ The Quenya morphophonological/twol rules file !
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/phonology.twolc)</small>Noun inflection
-The Quenya language nouns inflect in cases.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/affixes/nouns.lexc)</small>Adjective inflection
-The Quenya language adjectives inflect by number, and may receive nominal cases.
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/affixes/adjectives.lexc)</small>Nouns
+<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/phonology.twolc)</small>Nouns
 Nouns in the Quenya language are people, places, or things.
 
 
@@ -811,7 +761,57 @@ The word forms in Quenya language start from the lexeme roots of basic
 word classes, or optionally from prefixes:
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/root.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/root.lexc)</small>Noun inflection
+The Quenya language nouns inflect in cases.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/affixes/nouns.lexc)</small>Adjective inflection
+The Quenya language adjectives inflect by number, and may receive nominal cases.
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/affixes/adjectives.lexc)</small>
 
 
 We describe here how abbreviations are in Quenya are read out, e.g.
