@@ -605,7 +605,56 @@ These were the set types.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-qya/blob/main/../src/cg3/functions.cg3)</small>
+<small>This (part of) documentation was generated from [../src/cg3/functions.cg3](http://github.com/giellalt/lang-qya/blob/main/../src/cg3/functions.cg3)</small>=================================== !
+The Quenya morphophonological/twol rules file !
+=================================== !
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/phonology.twolc)</small>
 INTRODUCTION TO MORPHOLOGICAL ANALYSER OF Quenya LANGUAGE.
 
 
@@ -698,7 +747,16 @@ The word forms in Quenya language start from the lexeme roots of basic
 word classes, or optionally from prefixes:
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/root.lexc)</small>Noun inflection
+<small>This (part of) documentation was generated from [../src/fst/root.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/root.lexc)</small>Adjective inflection
+The Quenya language adjectives inflect by number, and may receive nominal cases.
+
+
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/affixes/adjectives.lexc)</small>Noun inflection
 The Quenya language nouns inflect in cases.
 
 
@@ -739,79 +797,21 @@ The Quenya language nouns inflect in cases.
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/affixes/nouns.lexc)</small>Adjective inflection
-The Quenya language adjectives inflect by number, and may receive nominal cases.
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/affixes/adjectives.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/affixes/adjectives.lexc)</small>=================================== !
-The Quenya morphophonological/twol rules file !
-=================================== !
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/phonology.twolc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/phonology.twolc)</small>Nouns
-Nouns in the Quenya language are people, places, or things.
-
-
-
-
-* * *
-<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/stems/nouns.lexc)</small>Adjectives
+<small>This (part of) documentation was generated from [../src/fst/affixes/nouns.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/affixes/nouns.lexc)</small>Adjectives
 Adjectives in the Quenya language give descriptions or attributes.
 
 
 
 
 * * *
-<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/stems/adjectives.lexc)</small>
+<small>This (part of) documentation was generated from [../src/fst/stems/adjectives.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/stems/adjectives.lexc)</small>Nouns
+Nouns in the Quenya language are people, places, or things.
+
+
+
+
+* * *
+<small>This (part of) documentation was generated from [../src/fst/stems/nouns.lexc](http://github.com/giellalt/lang-qya/blob/main/../src/fst/stems/nouns.lexc)</small>
 
 
 We describe here how abbreviations are in Quenya are read out, e.g.
