@@ -1,7 +1,7 @@
 # Quenya documentation
 
 [![Maturity: Experiment](https://img.shields.io/badge/Maturity-Experiment-black.svg)](https://giellalt.github.io/MaturityClassification.html)
-[![License](https://img.shields.io/github/license/giellalt/lang-qya)](https://raw.githubusercontent.com/giellalt/lang-qya/main/LICENSE)
+[![License](https://img.shields.io/github/license/giellalt/lang-qya)](https://github.com/giellalt/lang-qya/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-qya)](https://github.com/giellalt/lang-qya/issues)
 [![Build status](https://github.com/giellalt/lang-qya/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-qya/actions)
 
