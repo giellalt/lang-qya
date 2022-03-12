@@ -2,7 +2,7 @@ The Quenya morphology and tools
 ==========================================
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-qya)](https://github.com/giellalt/lang-qya/issues)
-[![Build Status](https://github.com/giellalt/lang-qya/workflows/Speller%20CI+CD/badge.svg)](https://github.com/giellalt/lang-qya/actions)
+[![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-qya/main/badge.svg)](https://github.com/giellalt/lang-qya/actions)
 [![License](https://img.shields.io/github/license/giellalt/lang-qya)](https://github.com/giellalt/lang-qya/blob/main/LICENSE)
 
 This repository contains finite state source files for the Quenya language,
