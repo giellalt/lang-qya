@@ -2,7 +2,7 @@ The Quenya morphology and tools
 ==========================================
 
 [![GitHub issues](https://img.shields.io/github/issues-raw/giellalt/lang-qya)](https://github.com/giellalt/lang-qya/issues)
-[![Build Status](https://divvun-tc.thetc.se/api/github/v1/repository/giellalt/lang-qya/main/badge.svg)](https://github.com/giellalt/lang-qya/actions)
+[![Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-qya/main/badge.svg)](https://github.com/giellalt/lang-qya/actions)
 [![License](https://img.shields.io/github/license/giellalt/lang-qya)](https://github.com/giellalt/lang-qya/blob/main/LICENSE)
 [![Desktop speller download](https://img.shields.io/badge/download%40latest-desktop--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-qya?platform=desktop&channel=nightly)
 [![Mobile speller download](https://img.shields.io/badge/download%40latest-mobile--bhfst-brightgreen)](https://pahkat.uit.no/main/download/speller-qya?platform=mbile&channel=nightly)
