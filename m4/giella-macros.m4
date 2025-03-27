@@ -308,7 +308,7 @@ esac
 AC_SUBST(CYGWINJAVAPATH)
 
 # Check for SubEthaEdit/see
-AC_PATH_PROG([SEE], [cat], [], [$PATH$PATH_SEPARATOR$with_see])
+AC_PATH_PROG([SEE], [see], [], [$PATH$PATH_SEPARATOR$with_see])
 
 # Check for grammar checker validation tool:
 AC_PATH_PROG([DIVVUN_VALIDATE_SUGGEST], [divvun-validate-suggest], [no], [$PATH$PATH_SEPARATOR$with_divvun_validate_suggest])
@@ -1103,18 +1103,27 @@ cd $gt_SHARED_FAILS
 ./autogen.sh && ./configure && make])])
 AS_IF([test "x$gt_need_gnu_make" = xyes],
       [tput setaf 1
-       AC_MSG_WARN([GNU make 4+ will be required to build giellalt from now on (Feb 2025):
+       AC_MSG_ERROR([GNU make 4+ is required to build giellalt:
 
-if you are using a MacOS do:
+if you are using a MacOS and homebrew do:
     brew install make
 and setup following the instructions given or at https://formulae.brew.sh/formula/make:
     PATH="\$HOMEBREW_PREFIX/opt/make/libexec/gnubin:\$PATH"
 into your .zshrc or .bashrc.
+
+if you are using a MacOS and macports do:
+    sudo port install gmake
+and setup following instructions given:
+    PATH="/opt/local/libexec/gnubin:\$PATH"
 See https://github.com/giellalt/giella-core/issues/79 for background and further instructions
 
-If you see this message it means that we have detected old GNU make or apple’s
-make on your system and you will need to fix this or the make will likely fail.
-also this message will be turned into fatal error soon...
+If you updated gnu make but still get this error–the PATH setting has probably not worked;
+    make --version
+should print something like:
+    GNU Make 4.4.1
+if it shows you:
+    GNU Make 3.81
+it means that it uses Apple's make version. (sometimes restart after changing zshrc or bashrc can help)
 ])
        tput sgr0])
 ]) # gt_PRINT_FOOTER
