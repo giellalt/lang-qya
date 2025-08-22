@@ -1,7 +1,7 @@
 Config:
   hfst:
-    Gen: ../../src/generator-gt-norm.Latn.hfst
-    Morph: ../../src/analyser-gt-norm.Latn.hfst
+    Gen: ../../generator-gt-norm.Latn.hfst
+    Morph: ../../analyser-gt-norm.Latn.hfst
 
 Tests:
   
