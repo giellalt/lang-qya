@@ -4,7 +4,8 @@
 ![Lemma count](https://img.shields.io/endpoint?url=https%3A%2F%2Fraw.githubusercontent.com%2Fgiellalt%2Flang-qya%2Fgh-pages%2Flemmacount.json)
 [![License](https://img.shields.io/github/license/giellalt/lang-qya)](https://github.com/giellalt/lang-qya/blob/main/LICENSE)
 [![Issues](https://img.shields.io/github/issues/giellalt/lang-qya)](https://github.com/giellalt/lang-qya/issues)
-[![Build Status](https://divvun-tc.giellalt.org/api/github/v1/repository/giellalt/lang-qya/main/badge.svg)](https://github.com/giellalt/lang-qya/actions)
+[![Build Status](https://builds.giellalt.org/api/badge/lang-qya?label=CI)](https://builds.giellalt.org/pipelines/lang-qya/builds/latest)
+[![Glottolog](https://img.shields.io/badge/Glottolog-green)](https://glottolog.org/resource/languoid/id/quen1234)
 
 This page documents the work on the **Quenya language model**. 
 
