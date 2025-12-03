@@ -24,7 +24,7 @@ version = "0.1.0"
 name = "Quenya"
 version = "0.1.0"
 
-[package.tts-text-proc]
+[package.tts-textproc]
 name = "Quenya"
 version = "0.1.0"
 
