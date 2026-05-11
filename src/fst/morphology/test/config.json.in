@@ -1,0 +1,20 @@
+{
+    "analyser": "@abs_builddir@/../../analyser-gt-norm.hfstol",
+    "generator": "@abs_builddir@/../../generator-gt-norm.hfstol",
+    "nouns": {
+        "lexcfile": "@abs_srcdir@/../stems/nouns.lexc",
+        "lemmatags": ["+N+Sing+Nom", "+N+Plur+Nom"]
+    },
+    "adjectives": {
+        "lexcfile": "@abs_srcdir@/../stems/adjectives.lexc",
+        "lemmatags": ["+A"]
+    },
+    "propernouns": {
+        "lexcfile": "@abs_srcdir@/../stems/propernouns.lexc",
+        "lemmatags": ["+N+Prop+Sing+Nom"]
+    },
+    "verbs": {
+        "lexcfile": "@abs_srcdir@/../stems/verbs.lexc",
+        "lemmatags": ["+V+Pres+Sing"]
+    }
+}
