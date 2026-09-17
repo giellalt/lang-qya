@@ -1,0 +1,17 @@
+{
+  "dialects": null,
+  "areas": null,
+  "orthographies": null,
+  "writing_systems": [
+    {
+      "code": "Latn",
+      "has_speller": true,
+      "has_grammar_checker": false
+    },
+    {
+      "code": "Teng",
+      "has_speller": true,
+      "has_grammar_checker": false
+    }
+  ]
+}
